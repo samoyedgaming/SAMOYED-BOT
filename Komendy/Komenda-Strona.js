@@ -9,7 +9,7 @@ module.exports = {
     description: "Wysyła strone serwera",
     usage: " ",
     guildOnly: true,
-    aliases: ["l"],
+    aliases: [""],
     userPermissions: [FLAGS.SEND_MESSAGES],
 
 run(msg) {
