@@ -28,6 +28,7 @@
     "@mapbox/node-pre-gyp": "github:mapbox/node-pre-gyp",
     "ascii-table": "^0.0.9",
     "axios": "^0.21.1",
+    "canvas": "^2.6.1",
     "chalk": "^1.1.3",
     "discord": "^0.8.2",
     "discord.js": "^12.5.1",
