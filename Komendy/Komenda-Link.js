@@ -21,6 +21,6 @@ run(msg) {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true)
 
-        channel.send(embed)
+        msg.channel.send(embed)
     }
 }
