@@ -17,7 +17,7 @@ run(msg) {
         
         .setTitle(botname)
         .setColor(0xb65307)
-        .setDescription("LINK NIGDY NIE WYGAŚNIE:   --->  https://discord.gg/QVS2eP6fHW <--- ZAPRASZAMY WSZYSTKICH! :heart:")
+        .setDescription("LINK NIGDY NIE WYGAŚNIE:   --->  https://dsc.gg/samoyedgaming <--- ZAPRASZAMY WSZYSTKICH! :heart:")
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true)
 
