@@ -8,8 +8,7 @@ module.exports = {
     guildOnly: true,
 
     async run(msg, args) {
-
-        const userLevel = "15"
+        const level1 = "16"
 
         const canvas = Canvas.createCanvas(900, 300)
         const ctx = canvas.getContext("2d")
@@ -32,7 +31,7 @@ module.exports = {
 
         ctx.font = "50px Consolas"
         ctx.fillStyle = "#10cbde"
-        ctx.fillText(`${userLevel}`, 810, 80)
+        ctx.fillText(`${level1}`, 810, 80)
         
         ctx.beginPath()
         ctx.arc(150, 150, 95, 0, Math.PI * 2, true)

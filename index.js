@@ -2,6 +2,7 @@ const { Client, MessageEmbed, } = require('discord.js')
 const chalk = require('chalk')
 const client = new Client({ partials: ["MESSAGE", "REACTION"] })
 
+
 const { token, prefix } = require("./Config/config.js")
 
 const commandHandler = require("./Handlery/command.handler.js")
@@ -14,6 +15,8 @@ const botauthor = '<@622714126841675778>'
 const botversion = 'v1.0 beta'
 const botname = "Samoyed Bot"
 
+
+
 const log = console.log
 
 commandHandler(client)
@@ -23,7 +26,10 @@ eventHandler(client)
 
 const rulesMessageId = "813075657353330718"
 const guildRoles = {
-  SAMOYED: "770932698554171412"
+  SAMOYED: "770932698554171412",
+  PLEC: "813398860705431603",
+  PLATFORMA: "813398318893367306",
+  GRA: "813397652305346602",
 }
 
 client.on('ready', () => {
@@ -65,6 +71,87 @@ client.on("messageReactionRemove", async (reaction, user) => {
 
     if (reaction.emoji.name === "👍") {
     member.roles.remove(guildRoles.SAMOYED)
+    }
+ }
+})
+client.on("messageReactionAdd", async (reaction, user) => {
+  if (reaction.partial) await reaction.fetch()
+
+  const { message } = reaction
+  //zmienić rulesmessage id 
+  if (message.id === rulesMessageId) {
+    const member = message.channel.guild.members.cache.get(user.id)
+
+    if (reaction.emoji.name === "👍") {
+    member.roles.add(guildRoles.PLEC)
+    }
+ }
+})
+
+client.on("messageReactionRemove", async (reaction, user) => {
+  if (reaction.partial) await reaction.fetch()
+
+  const { message } = reaction
+  //zmienić rulesmessage id 
+  if (message.id === rulesMessageId) {
+    const member = message.channel.guild.members.cache.get(user.id)
+
+    if (reaction.emoji.name === "👍") {
+    member.roles.remove(guildRoles.PLEC)
+    }
+ }
+})
+client.on("messageReactionAdd", async (reaction, user) => {
+  if (reaction.partial) await reaction.fetch()
+
+  const { message } = reaction
+  //zmienić rulesmessage id 
+  if (message.id === rulesMessageId) {
+    const member = message.channel.guild.members.cache.get(user.id)
+
+    if (reaction.emoji.name === "👍") {
+    member.roles.add(guildRoles.GRA)
+    }
+ }
+})
+
+client.on("messageReactionRemove", async (reaction, user) => {
+  if (reaction.partial) await reaction.fetch()
+
+  const { message } = reaction
+  //zmienić rulesmessage id 
+  if (message.id === rulesMessageId) {
+    const member = message.channel.guild.members.cache.get(user.id)
+
+    if (reaction.emoji.name === "👍") {
+    member.roles.remove(guildRoles.GRA)
+    }
+ }
+})
+client.on("messageReactionAdd", async (reaction, user) => {
+  if (reaction.partial) await reaction.fetch()
+
+  const { message } = reaction
+  //zmienić rulesmessage id 
+  if (message.id === rulesMessageId) {
+    const member = message.channel.guild.members.cache.get(user.id)
+
+    if (reaction.emoji.name === "👍") {
+    member.roles.add(guildRoles.PLATFORMA)
+    }
+ }
+})
+
+client.on("messageReactionRemove", async (reaction, user) => {
+  if (reaction.partial) await reaction.fetch()
+
+  const { message } = reaction
+  //zmienić rulesmessage id 
+  if (message.id === rulesMessageId) {
+    const member = message.channel.guild.members.cache.get(user.id)
+
+    if (reaction.emoji.name === "👍") {
+    member.roles.remove(guildRoles.PLATFORMA)
     }
  }
 })
