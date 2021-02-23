@@ -25,13 +25,13 @@ module.exports = {
         ctx.fillStyle = "white"
         ctx.fillText(msg.member.displayName, 275, 200)
 
-        ctx.font = "30px Consolas"
+        ctx.font = "30px Unispace"
         ctx.fillStyle = "#118591"
-        ctx.fillText(`LEVEL`, 720, 80)
+        ctx.fillText(`Level`, 710, 80)
 
-        ctx.font = "50px Consolas"
+        ctx.font = "50px Unispace"
         ctx.fillStyle = "#10cbde"
-        ctx.fillText(`${level1}`, 810, 80)
+        ctx.fillText(`${level1}`, 810, 85)
         
         ctx.beginPath()
         ctx.arc(150, 150, 95, 0, Math.PI * 2, true)

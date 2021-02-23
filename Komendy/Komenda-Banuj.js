@@ -2,7 +2,7 @@ const { Permissions: { FLAGS } } = require("discord.js")
 
 
 const { MessageEmbed } = require('discord.js')
-const botauthor = '<@622714126841675778>'
+const botauthor = 'Samoyed Franek#9264'
 const botversion = 'v1.0 beta'
 const botname = "Samoyed Bot"
 module.exports = {

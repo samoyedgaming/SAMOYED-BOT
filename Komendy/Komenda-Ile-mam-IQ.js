@@ -9,7 +9,7 @@ module.exports = {
         const random = Math.floor(Math.random() * 501)
 
         const { channel } = msg
-        const botauthor = '<@622714126841675778>'
+        const botauthor = 'Samoyed Franek#9264'
         const botversion = 'v1.0 beta'
         const botname = "Samoyed Bot"
         const botdescription = "Jestem Botem który zastępuje większość botów."
