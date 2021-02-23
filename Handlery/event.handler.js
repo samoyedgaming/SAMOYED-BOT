@@ -29,20 +29,20 @@ module.exports = (client) => {
         const event = require(__dirname + `/../Eventy/${file}`)
 
         if (!event.run) {
-            console.log(chalk.redBright`Event '${file}' brakuje: run()`) 
+            console.log(chalk.red`Event '${file}' brakuje: run()`) 
 
-            process.exit(1)
+
         }else if (typeof event.run !== "function") {
             console.log(`Event ${file} potrzebuje funkcji 'run'`)
         
-        process.exit(1)
+
         }
         if (serverEvents.includes(event.name)) {
             client.on(event.name, event.run)
             registeredEventsCount ++
         }else {
-            console.log(chalk.redBright(`Nie ma eventu o nazwie ${event.name} w pliku ${file} `))
-            process.exit(1)
+            console.log(chalk.red(`Nie ma eventu o nazwie ${event.name} w pliku ${file} `))
+
         }
 
         console.log(chalk.blue(`Zarejestrowano ${registeredEventsCount} event/ów)`))

@@ -23,7 +23,7 @@ module.exports = {
 
         ctx.font = "40px Consolas"
         ctx.fillStyle = "white"
-        ctx.fillText(msg.member.displayName, 275, 200)
+        ctx.fillText(msg.member.user.tag, 275, 200)
 
         ctx.font = "30px Unispace"
         ctx.fillStyle = "#118591"

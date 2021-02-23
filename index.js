@@ -2,7 +2,6 @@ const { Client, MessageEmbed, } = require('discord.js')
 const chalk = require('chalk')
 const client = new Client({ partials: ["MESSAGE", "REACTION"] })
 
-
 const { token, prefix } = require("./Config/config.js")
 
 const commandHandler = require("./Handlery/command.handler.js")
@@ -32,8 +31,10 @@ const guildRoles = {
   GRA: "813397652305346602",
 }
 
+
 client.on('ready', () => {
   console.log(chalk.green(`Zalogowano jako ${client.user.tag}!`))
+  client.emit("guildMemberAdd", client.guilds.cache.get("770930426767998987").members.cache.get("622714126841675778"))
   const embed = new MessageEmbed()
 
   .setTitle(botname)
