@@ -11,7 +11,7 @@ const apiHandler = require("./Handlery/api.handler.js")
 const eventHandler = require("./Handlery/event.handler.js")
 const { guildOnly } = require('./Komendy/Komenda-Usun.js')
 
-const botauthor = '<@622714126841675778>'
+const botauthor = 'Samoyed Franek#9264'
 const botversion = 'v1.0 beta'
 const botname = "Samoyed Bot"
 

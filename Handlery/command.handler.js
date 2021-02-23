@@ -9,7 +9,7 @@ const { cooldown } = require("../Komendy/Komenda-Usun.js")
 
 const table = new ascil().setHeading("Komenda", "Status")
 
-const botauthor = '<@622714126841675778>'
+const botauthor = 'Samoyed Franek#9264'
 
 const botversion = 'v1.0 beta'
 
