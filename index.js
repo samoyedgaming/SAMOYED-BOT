@@ -34,7 +34,15 @@ const guildRoles = {
 
 client.on('ready', () => {
   console.log(chalk.green(`Zalogowano jako ${client.user.tag}!`))
-  
+  const embed = new MessageEmbed()
+
+  .setTitle(botname)
+  .setColor(0xb65307)
+  .setDescription(`Zostałem poprawnie załadowany.`)
+  .addField("Autor", botauthor, true)
+  .addField("Wersja", botversion, true)
+  client.channels.cache.get("811635924701151302").send(embed);
+
   client.settings.forEach((config, guildid) =>{
     const { guilds } = client
   })
