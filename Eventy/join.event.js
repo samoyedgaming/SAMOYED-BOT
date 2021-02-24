@@ -1,12 +1,11 @@
-const { Client, MessageEmbed, } = require('discord.js')
-const chalk = require('chalk')
-const client = new Client({ partials: ["MESSAGE", "REACTION"] })
-const botauthor = 'Samoyed Franek#9264'
-const botversion = 'v1.0 beta'
-const botname = "Samoyed Bot"
+const { MessageEmbed } = require("discord.js")
+const logChannelId = "811629728032882699"
+const messageChannelId = "811629728032882699"
 
 module.exports = {
-    name: "guildMemberAdd",
-    run(member, msg) {
-    }
+  name: "guildMemberAdd",
+
+  run(member, guild) {
+
+  }  
 }

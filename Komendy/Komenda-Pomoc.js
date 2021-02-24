@@ -29,7 +29,7 @@ module.exports = {
         .addField(`${prefix}usun <liczba> | <liczba>`, usun)
         .addField(`${prefix}korona wszystkie | <kraj>`, korona)
         .addField(`${prefix}link`, link)
-        .addField(`${prefix}ile-mam-iq`, link)
+        .addField(`${prefix}ile-mam-iq`, iq)
         .addField(`${prefix}banuj <użytkownik> <powód>`, banuj)
         .addField(`${prefix}wyrzuc <użytkownik> <powód>`, wyrzuc)
         .addField("Autor", botauthor, true)
