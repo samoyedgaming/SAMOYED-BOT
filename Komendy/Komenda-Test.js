@@ -8,8 +8,6 @@ module.exports = {
     guildOnly: true,
 
     async run(msg, args) {
-        const level1 = "16"
-
         const canvas = Canvas.createCanvas(1100, 500)
         const ctx = canvas.getContext("2d")
 
