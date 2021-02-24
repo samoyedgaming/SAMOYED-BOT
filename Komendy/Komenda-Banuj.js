@@ -49,7 +49,7 @@ module.exports = {
         
             .setTitle(botname)
             .setColor(0xb65307)
-            .setDescription("Masz za niską role do używania tej komendy albo użytkownik którego chcesz wyrzucić ma za wysoką role.")
+            .setDescription("Masz za niską role do używania tej komendy albo użytkownik którego chcesz zbanować ma za wysoką role.")
             .addField("Autor", botauthor, true)
             .addField("Wersja", botversion, true)
         
