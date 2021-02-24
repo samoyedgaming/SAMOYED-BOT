@@ -71,6 +71,18 @@ module.exports = (client) => {
 
         return channel.send(embed)
         }
+        if (cmd.ownerOnly) {
+          if (author.id !== owner)
+
+          const embed = new MessageEmbed()
+          .setTitle(botname)
+          .setColor(0xb65307)
+          .setDescription(`Ta komenda jest dostępna tylko dla właściciela`)
+          .addField("Autor", botauthor, true)
+          .addField("Wersja", botversion, true)
+
+      return channel.send(embed)
+        }
 
 
 
