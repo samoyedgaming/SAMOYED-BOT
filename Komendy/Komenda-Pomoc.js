@@ -11,6 +11,7 @@ const link = ("Wysyła permamenty link do tego serwera.")
 const wyrzuc = ("Wyrzuca danego użytkownika.")
 const banuj = ("Banuje danego użytkownika.")
 const iq = ("Wyświetla ile masz iq.")
+const str = ("Wysyła moją stronę internetową.")
 
 
 module.exports = {
@@ -29,6 +30,7 @@ module.exports = {
         .addField(`${prefix}usun <liczba> | <liczba>`, usun)
         .addField(`${prefix}korona wszystkie | <kraj>`, korona)
         .addField(`${prefix}link`, link)
+        .addField(`${prefix}strona`, str)
         .addField(`${prefix}ile-mam-iq`, iq)
         .addField(`${prefix}banuj <użytkownik> <powód>`, banuj)
         .addField(`${prefix}wyrzuc <użytkownik> <powód>`, wyrzuc)
