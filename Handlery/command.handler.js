@@ -9,8 +9,6 @@ const { cooldown } = require("../Komendy/Komenda-Usun.js")
 
 const table = new ascil().setHeading("Komenda", "Status")
 
-const handleSchematic = require("./schematic.handler.js")
-
 const botauthor = 'Samoyed Franek#9264'
 
 const botversion = 'v1.0 beta'
@@ -49,13 +47,6 @@ module.exports = (client) => {
         if (author.bot) {
           return
         }  
-        client.on ("messageUpdate", (oldMessage, newMessage) => {
-          const { author } = newMessage
-
-          if (msg.channel.id === "814181288479031324" && author.id !== owner) {
-          return handleSchematic(msg)
-          }
-      })
 
       // Ignoruje wiadomości bez prefixu
         if (!msg.content.startsWith(prefix)) return
