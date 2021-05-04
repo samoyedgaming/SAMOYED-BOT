@@ -23,7 +23,7 @@ settingsHandler(client)
 apiHandler(client)
 eventHandler(client)
 
-const rulesMessageId = "813075657353330718"
+const rulesMessageId = "776427387248181258"
 const guildRoles = {
   SAMOYED: "770932698554171412",
   PLEC: "813398860705431603",
