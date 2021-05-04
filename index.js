@@ -296,34 +296,6 @@ client.on("messageReactionAdd", async (reaction, user) => {
       }
       }
     })
-        client.on("messageReactionAdd", async (reaction, user) => {
-  if (reaction.message.channel.id === "815260189250682912") {
-    if (reaction.emoji.name === "🇸"){
-      await reaction.message.guild.members.cache.get(user.id).roles.add("813002593274036235")
-    }
-    }
-  })
-  client.on("messageReactionRemove", async (reaction, user) => {
-    if (reaction.message.channel.id === "815260189250682912") {
-      if (reaction.emoji.name === "🇸"){
-        await reaction.message.guild.members.cache.get(user.id).roles.remove("813002593274036235")
-      }
-      }
-    })
-        client.on("messageReactionAdd", async (reaction, user) => {
-  if (reaction.message.channel.id === "815260189250682912") {
-    if (reaction.emoji.name === "🇪"){
-      await reaction.message.guild.members.cache.get(user.id).roles.add("813002366302289942")
-    }
-    }
-  })
-  client.on("messageReactionRemove", async (reaction, user) => {
-    if (reaction.message.channel.id === "815260189250682912") {
-      if (reaction.emoji.name === "🇪"){
-        await reaction.message.guild.members.cache.get(user.id).roles.remove("813002366302289942")
-      }
-      }
-    })
             client.on("messageReactionAdd", async (reaction, user) => {
   if (reaction.message.channel.id === "815260189250682912") {
     if (reaction.emoji.name === "🇬"){
@@ -340,20 +312,6 @@ client.on("messageReactionAdd", async (reaction, user) => {
     })
             client.on("messageReactionAdd", async (reaction, user) => {
   if (reaction.message.channel.id === "815260189250682912") {
-    if (reaction.emoji.name === "🇴"){
-      await reaction.message.guild.members.cache.get(user.id).roles.add("813112292875042836")
-    }
-    }
-  })
-  client.on("messageReactionRemove", async (reaction, user) => {
-    if (reaction.message.channel.id === "815260189250682912") {
-      if (reaction.emoji.name === "🇴"){
-        await reaction.message.guild.members.cache.get(user.id).roles.remove("813112292875042836")
-      }
-      }
-    })
-            client.on("messageReactionAdd", async (reaction, user) => {
-  if (reaction.message.channel.id === "815260189250682912") {
     if (reaction.emoji.name === "🇺"){
       await reaction.message.guild.members.cache.get(user.id).roles.add("813114080511787039")
     }
@@ -363,34 +321,6 @@ client.on("messageReactionAdd", async (reaction, user) => {
     if (reaction.message.channel.id === "815260189250682912") {
       if (reaction.emoji.name === "🇺"){
         await reaction.message.guild.members.cache.get(user.id).roles.remove("813114080511787039")
-      }
-      }
-    })
-            client.on("messageReactionAdd", async (reaction, user) => {
-  if (reaction.message.channel.id === "815260189250682912") {
-    if (reaction.emoji.name === "🇧"){
-      await reaction.message.guild.members.cache.get(user.id).roles.add("813114081396391987")
-    }
-    }
-  })
-  client.on("messageReactionRemove", async (reaction, user) => {
-    if (reaction.message.channel.id === "815260189250682912") {
-      if (reaction.emoji.name === "🇧"){
-        await reaction.message.guild.members.cache.get(user.id).roles.remove("813114081396391987")
-      }
-      }
-    })
-            client.on("messageReactionAdd", async (reaction, user) => {
-  if (reaction.message.channel.id === "815260189250682912") {
-    if (reaction.emoji.name === "🇨"){
-      await reaction.message.guild.members.cache.get(user.id).roles.add("813114081871003719")
-    }
-    }
-  })
-  client.on("messageReactionRemove", async (reaction, user) => {
-    if (reaction.message.channel.id === "815260189250682912") {
-      if (reaction.emoji.name === "🇨"){
-        await reaction.message.guild.members.cache.get(user.id).roles.remove("813114081871003719")
       }
       }
     })
