@@ -18,56 +18,11 @@ async run(msg, reaction, channel) {
         
         .setTitle(botname)
         .setColor(0xb65307)
-        .setDescription("Wybierz Płeć.")
+        .setDescription("Regulamin")
         .addField("Chłopak", "- 👦")
-        .addField("Dziewczyna", "- 👧")
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true)
 
         let msgEmbed = await msg.channel.send(embed)
         msgEmbed.react("👦").then(() => msgEmbed.react("👧"))
-
-        const embed1 = new MessageEmbed()
-        
-        .setTitle(botname)
-        .setColor(0xb65307)
-        .setDescription("Wybierz Platformę.")
-        .addField("Pc", "- 🖥️")
-        .addField("PlayStation", "- 🎮")
-        .addField("Xbox", "- 🕹️")
-        .addField("Nintendo", "- ⌨️")
-        .addField("Autor", botauthor, true)
-        .addField("Wersja", botversion, true)
-
-        let msgEmbed1 = await msg.channel.send(embed1)
-        msgEmbed1.react("🖥️")
-        .then(() => msgEmbed1.react("🎮")
-        .then(() => msgEmbed1.react("🕹️")
-        .then(() => msgEmbed1.react("⌨️"))))
-
-        const embed2 = new MessageEmbed()
-        
-        .setTitle(botname)
-        .setColor(0xb65307)
-        .setDescription("Wybierz Gry")
-        .addField("Fortnite", "- :regional_indicator_f:")
-        .addField("Roblox", "- :regional_indicator_r:")
-        .addField("Minecraft", "- :regional_indicator_m:")
-        .addField("Rocket Leauge", "- :regional_indicator_l:")
-        .addField("Grand Theft Auto 5", "- :regional_indicator_g:")
-        .addField("Osu!", "- :regional_indicator_u:")
-        .addField("Counter Strike", "- :regional_indicator_z:")
-        .addField("Autor", botauthor, true)
-        .addField("Wersja", botversion, true)
-
-        let msgEmbed2 = await msg.channel.send(embed2)
-        msgEmbed2.react("🇫")
-        .then(() => msgEmbed2.react('🇷'))
-        .then(() => msgEmbed2.react('🇲'))
-        .then(() => msgEmbed2.react('🇱'))
-        .then(() => msgEmbed2.react('🇬'))
-        .then(() => msgEmbed2.react('🇺'))
-        .then(() => msgEmbed2.react('🇿'))
-        
-}
-}
+}}
