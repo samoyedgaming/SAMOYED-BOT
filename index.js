@@ -50,16 +50,17 @@ const guildRoles = {
 client.on('ready', () => {
   console.log(chalk.green(`Zalogowano jako ${client.user.tag}!`))
   client.emit("guildMemberAdd", client.guilds.cache.get("770930426767998987").members.cache.get("622714126841675778"))
-  const embed = new MessageEmbed()
+  const embed1 = new MessageEmbed()
 
   .setTitle(botname)
   .setColor(0xb65307)
   .setDescription(`Zostałem poprawnie załadowany.`)
   .addField("Autor", botauthor, true)
   .addField("Wersja", botversion, true)
-  client.channels.cache.get("811635924701151302").send(embed);
+  client.channels.cache.get("811635924701151302").send({ embeds: [embed1] });
 
   client.settings.forEach((config, guildid) =>{
+  
     const { guilds } = client
   })
 })
