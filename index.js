@@ -57,7 +57,7 @@ client.on('ready', () => {
   .setDescription(`Zostałem poprawnie załadowany.`)
   .addField("Autor", botauthor, true)
   .addField("Wersja", botversion, true)
-  client.channels.cache.get("811635924701151302").send({ embeds: [embed1] });
+  client.channels.cache.get("811635924701151302").send({ embeds: [embed] });
 
   client.settings.forEach((config, guildid) =>{
   
