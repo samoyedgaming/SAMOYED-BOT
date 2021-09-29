@@ -1,6 +1,6 @@
 const dotenv = require('dotenv').config()
 const { Client } = require('discord.js')
-const client = new Client({ partials: ["MESSAGE", "REACTION"] })
+const client = new Client({ intents: [] })
 const { Permissions: { FLAGS }, MessageEmbed } = require("discord.js")
 
 module.exports = {

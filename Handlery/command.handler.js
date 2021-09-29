@@ -1,4 +1,4 @@
-const { Collection, MessageEmbed } = require("discord.js")
+const { Client, Collection, MessageEmbed } = require("discord.js")
 
 const { readdirSync } = require("fs")
 

@@ -3,7 +3,6 @@ const botversion = 'v1.0 beta'
 const botname = "Samoyed Bot"
 
 const { Client, ReactionCollector } = require('discord.js')
-const client = new Client({ partials: ["MESSAGE", "REACTION"] })
 const { Permissions: { FLAGS }, MessageEmbed } = require("discord.js")
 
 module.exports = {
