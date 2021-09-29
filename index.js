@@ -50,7 +50,7 @@ const guildRoles = {
 client.on('ready', () => {
   console.log(chalk.green(`Zalogowano jako ${client.user.tag}!`))
   client.emit("guildMemberAdd", client.guilds.cache.get("770930426767998987").members.cache.get("622714126841675778"))
-  const embed1 = new MessageEmbed()
+  const embed = new MessageEmbed()
 
   .setTitle(botname)
   .setColor(0xb65307)
