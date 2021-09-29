@@ -27,7 +27,7 @@
     "@m7rlin/js-helpers": "github:m7rlin/js-helpers",
     "@mapbox/node-pre-gyp": "github:mapbox/node-pre-gyp",
     "ascii-table": "^0.0.9",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "canvas": "^2.6.1",
     "chalk": "^1.1.3",
     "discord": "^0.8.2",
