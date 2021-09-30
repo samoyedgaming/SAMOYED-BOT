@@ -67,7 +67,7 @@ module.exports = (client) => {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      return channel.send(embed);
+      return channel.send({ embeds: [embed] });
     }
 
     if (cmd.ownerOnly) {
@@ -79,7 +79,7 @@ module.exports = (client) => {
           .addField("Autor", botauthor, true)
           .addField("Wersja", botversion, true);
 
-        return channel.send(embed);
+        return channel.send({ embeds: [embed] });
       }
     }
 
@@ -93,7 +93,7 @@ module.exports = (client) => {
           .addField("Autor", botauthor, true)
           .addField("Wersja", botversion, true);
 
-        return channel.send(embed);
+        return channel.send({ embeds: [embed] });
       }
     }
 
@@ -108,7 +108,7 @@ module.exports = (client) => {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      return channel.send(embed);
+      return channel.send({ embeds: [embed] });
     }
     // Cool down
     if (!cooldowns.has(cmdName)) {
@@ -135,7 +135,7 @@ module.exports = (client) => {
           .addField("Autor", botauthor, true)
           .addField("Wersja", botversion, true);
 
-        return channel.send(embed);
+        return channel.send({ embeds: [embed] });
       }
     }
 
@@ -153,7 +153,7 @@ module.exports = (client) => {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      channel.send(embed);
+      channel.send({ embeds: [embed] });
     }
   });
 };

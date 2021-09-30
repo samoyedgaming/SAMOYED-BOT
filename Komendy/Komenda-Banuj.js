@@ -29,7 +29,7 @@ module.exports = {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      return channel.send(embed);
+      return channel.send({ embeds: [embed] });
     }
 
     if (userToBan.id === author.id) {
@@ -41,7 +41,7 @@ module.exports = {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      return channel.send(embed);
+      return channel.send({ embeds: [embed] });
     }
     const memberToBan = guild.members.cache.get(userToBan.id);
 
@@ -56,7 +56,7 @@ module.exports = {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      return channel.send(embed);
+      return channel.send({ embeds: [embed] });
     }
 
     const banOptions = {
@@ -76,7 +76,7 @@ module.exports = {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      msg.channel.send(embed);
+      msg.channel.send({ embeds: [embed] });
     });
   },
 };

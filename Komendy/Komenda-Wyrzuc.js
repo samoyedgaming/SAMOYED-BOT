@@ -29,7 +29,7 @@ module.exports = {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      return channel.send(embed);
+      return channel.send({ embeds: [embed] });
     }
 
     if (userToKick.id === author.id) {
@@ -41,7 +41,7 @@ module.exports = {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      return channel.send(embed);
+      return channel.send({ embeds: [embed] });
     }
     const memberToKick = guild.members.cache.get(userToKick.id);
 
@@ -56,7 +56,7 @@ module.exports = {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      return channel.send(embed);
+      return channel.send({ embeds: [embed] });
     }
     memberToKick.kick(reasonArg).then((res) => {
       const embed = new MessageEmbed()
@@ -71,7 +71,7 @@ module.exports = {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      msg.channel.send(embed);
+      msg.channel.send({ embeds: [embed] });
     });
   },
 };

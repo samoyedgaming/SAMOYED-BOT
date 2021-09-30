@@ -46,6 +46,6 @@ module.exports = {
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
 
-    msg.channel.send(embed);
+    msg.channel.send({ embeds: [embed] });
   },
 };

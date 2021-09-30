@@ -42,7 +42,7 @@ module.exports = {
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
 
-    let msgEmbed1 = await msg.channel.send(embed1);
+    let msgEmbed1 = await msg.channel.send({ embeds: [embed1] });
     msgEmbed1
       .react("🖥️")
       .then(() =>
@@ -66,7 +66,7 @@ module.exports = {
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
 
-    let msgEmbed2 = await msg.channel.send(embed2);
+    let msgEmbed2 = await msg.channel.send({ embeds: [embed2] });
     msgEmbed2
       .react("🇫")
       .then(() => msgEmbed2.react("🇷"))

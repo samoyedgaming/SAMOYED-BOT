@@ -28,7 +28,7 @@ module.exports = {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      return channel.send(embed);
+      return channel.send({ embeds: [embed] });
     }
 
     if (amount < 2 || amount >= 101) {
@@ -42,7 +42,7 @@ module.exports = {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      return channel.send(embed);
+      return channel.send({ embeds: [embed] });
     }
 
     channel.bulkDelete(amount);
@@ -54,6 +54,6 @@ module.exports = {
       .setDescription(`Usunąłem ${amount} wiadomości.`)
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
-    channel.send(embed);
+    channel.send({ embeds: [embed] });
   },
 };

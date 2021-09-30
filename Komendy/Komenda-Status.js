@@ -40,7 +40,7 @@ module.exports = {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      return msg.channel.send(embed);
+      return msg.channel.send({ embeds: [embed] });
     }
 
     if (activityType === "CLEAR") activityName = "";

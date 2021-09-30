@@ -37,7 +37,7 @@ module.exports = {
         .addField(`💚Wyzdrowiało:`, recovered)
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
-      return channel.send(embed);
+      return channel.send({ embeds: [embed] });
     }
 
     const data = await axios
@@ -56,7 +56,7 @@ module.exports = {
         .setDescription(`Kraj \`${countryName}\` nie został znaleziony`)
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
-      return channel.send(embed);
+      return channel.send({ embeds: [embed] });
     }
     const { cases, todayCases, deaths, todayDeaths, recovered, critical } =
       country[0];
@@ -71,6 +71,6 @@ module.exports = {
       .addField(`💚Wyzdrowiało:`, recovered)
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
-    channel.send(embed);
+    channel.send({ embeds: [embed] });
   },
 };
