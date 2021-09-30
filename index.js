@@ -1,4 +1,5 @@
 const { Client, Intents ,MessageEmbed, } = require('discord.js')
+const Canvas = require("canvas")
 const chalk = require('chalk')
 const client = new Client({ intents: [
 Intents.FLAGS.GUILDS,
