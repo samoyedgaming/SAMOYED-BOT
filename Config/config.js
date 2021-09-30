@@ -8,7 +8,7 @@ const {
 
 module.exports = {
   token: process.env.TOKEN,
-  prefix: "/",
+  prefix: ".",
   owner: "622714126841675778",
   corona_api: "https://disease.sh/v3/covid-19",
 };
