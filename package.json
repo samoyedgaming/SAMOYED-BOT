@@ -22,6 +22,9 @@
   "bugs": {
     "url": "https://github.com/Franek53421/BOT-DISCORD/issues"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "homepage": "https://github.com/Franek53421/BOT-DISCORD#readme",
   "dependencies": {
     "@discordjs/voice": "^0.6.0",
@@ -38,6 +41,7 @@
     "install": "^0.13.0",
     "js-helpers": "^1.0.0",
     "js-yaml": "^4.1.0",
+    "node": "16.6.1",
     "node-pre-gyp": "^0.17.0",
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.13",
