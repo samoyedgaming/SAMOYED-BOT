@@ -357,7 +357,8 @@ client.on("messageReactionAdd", async (reaction, user) => {
     })
 client.login(token)
 
-
 client.on("debug", () => {})
 client.on("warn", () => {})
 client.on("error", () => {})
+
+console.log(process.version)
