@@ -1,73 +1,79 @@
-const botauthor = 'Samoyed Franek#9264'
-const botversion = 'v1.0 beta'
-const botname = "Samoyed Bot"
+const botauthor = "Samoyed Franek#9264";
+const botversion = "v1.0 beta";
+const botname = "Samoyed Bot";
 
-const { Client, ReactionCollector } = require('discord.js')
-const { Permissions: { FLAGS }, MessageEmbed } = require("discord.js")
+const { Client, ReactionCollector } = require("discord.js");
+const {
+  Permissions: { FLAGS },
+  MessageEmbed,
+} = require("discord.js");
 
 module.exports = {
-    name: "rola",
-    description: "Wysyła link do serwera",
-    usage: " ",
-    guildOnly: true,
-    aliases: ["l"],
+  name: "rola",
+  description: "Wysyła link do serwera",
+  usage: " ",
+  guildOnly: true,
+  aliases: ["l"],
 
-async run(msg, reaction, channel) {
-        const embed = new MessageEmbed()
-        
-        .setTitle(botname)
-        .setColor(0xb65307)
-        .setDescription("Wybierz Płeć.")
-        .setDescription("Regulamin")
-        .addField("Chłopak", "- 👦")
-        .addField("Dziewczyna", "- 👧")
-        .addField("Autor", botauthor, true)
-        .addField("Wersja", botversion, true)
+  async run(msg, reaction, channel) {
+    const embed = new MessageEmbed()
 
-        let msgEmbed = await msg.channel.send(embed)
-        msgEmbed.react("👦").then(() => msgEmbed.react("👧"))
+      .setTitle(botname)
+      .setColor(0xb65307)
+      .setDescription("Wybierz Płeć.")
+      .setDescription("Regulamin")
+      .addField("Chłopak", "- 👦")
+      .addField("Dziewczyna", "- 👧")
+      .addField("Autor", botauthor, true)
+      .addField("Wersja", botversion, true);
 
-        const embed1 = new MessageEmbed()
-        
-        .setTitle(botname)
-        .setColor(0xb65307)
-        .setDescription("Wybierz Platformę.")
-        .addField("Pc", "- 🖥️")
-        .addField("PlayStation", "- 🎮")
-        .addField("Xbox", "- 🕹️")
-        .addField("Nintendo", "- ⌨️")
-        .addField("Autor", botauthor, true)
-        .addField("Wersja", botversion, true)
+    let msgEmbed = await msg.channel.send(embed);
+    msgEmbed.react("👦").then(() => msgEmbed.react("👧"));
 
-        let msgEmbed1 = await msg.channel.send(embed1)
-        msgEmbed1.react("🖥️")
-        .then(() => msgEmbed1.react("🎮")
-        .then(() => msgEmbed1.react("🕹️")
-        .then(() => msgEmbed1.react("⌨️"))))
+    const embed1 = new MessageEmbed()
 
-        const embed2 = new MessageEmbed()
-        
-        .setTitle(botname)
-        .setColor(0xb65307)
-        .setDescription("Wybierz Gry")
-        .addField("Fortnite", "- :regional_indicator_f:")
-        .addField("Roblox", "- :regional_indicator_r:")
-        .addField("Minecraft", "- :regional_indicator_m:")
-        .addField("Rocket Leauge", "- :regional_indicator_l:")
-        .addField("Grand Theft Auto 5", "- :regional_indicator_g:")
-        .addField("Osu!", "- :regional_indicator_u:")
-        .addField("Counter Strike", "- :regional_indicator_z:")
-        .addField("Autor", botauthor, true)
-        .addField("Wersja", botversion, true)
+      .setTitle(botname)
+      .setColor(0xb65307)
+      .setDescription("Wybierz Platformę.")
+      .addField("Pc", "- 🖥️")
+      .addField("PlayStation", "- 🎮")
+      .addField("Xbox", "- 🕹️")
+      .addField("Nintendo", "- ⌨️")
+      .addField("Autor", botauthor, true)
+      .addField("Wersja", botversion, true);
 
-        let msgEmbed2 = await msg.channel.send(embed2)
-        msgEmbed2.react("🇫")
-        .then(() => msgEmbed2.react('🇷'))
-        .then(() => msgEmbed2.react('🇲'))
-        .then(() => msgEmbed2.react('🇱'))
-        .then(() => msgEmbed2.react('🇬'))
-        .then(() => msgEmbed2.react('🇺'))
-        .then(() => msgEmbed2.react('🇿'))
-        
-}
-}
+    let msgEmbed1 = await msg.channel.send(embed1);
+    msgEmbed1
+      .react("🖥️")
+      .then(() =>
+        msgEmbed1
+          .react("🎮")
+          .then(() => msgEmbed1.react("🕹️").then(() => msgEmbed1.react("⌨️")))
+      );
+
+    const embed2 = new MessageEmbed()
+
+      .setTitle(botname)
+      .setColor(0xb65307)
+      .setDescription("Wybierz Gry")
+      .addField("Fortnite", "- :regional_indicator_f:")
+      .addField("Roblox", "- :regional_indicator_r:")
+      .addField("Minecraft", "- :regional_indicator_m:")
+      .addField("Rocket Leauge", "- :regional_indicator_l:")
+      .addField("Grand Theft Auto 5", "- :regional_indicator_g:")
+      .addField("Osu!", "- :regional_indicator_u:")
+      .addField("Counter Strike", "- :regional_indicator_z:")
+      .addField("Autor", botauthor, true)
+      .addField("Wersja", botversion, true);
+
+    let msgEmbed2 = await msg.channel.send(embed2);
+    msgEmbed2
+      .react("🇫")
+      .then(() => msgEmbed2.react("🇷"))
+      .then(() => msgEmbed2.react("🇲"))
+      .then(() => msgEmbed2.react("🇱"))
+      .then(() => msgEmbed2.react("🇬"))
+      .then(() => msgEmbed2.react("🇺"))
+      .then(() => msgEmbed2.react("🇿"));
+  },
+};
