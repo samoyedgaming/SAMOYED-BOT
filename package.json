@@ -1,7 +1,7 @@
 {
   "name": "samoyedbot",
   "version": "1.0.0",
-  "description": "Bot Franka Z Jastarnii",
+  "description": "Bot Franka",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
