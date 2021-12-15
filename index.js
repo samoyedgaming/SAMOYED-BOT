@@ -41,13 +41,26 @@ settingsHandler(client)
 apiHandler(client)
 eventHandler(client)
 
-const rulesMessageId = "839825788002107402"
+const rulesMessageId = "839826980236820510"
 
 const guildRoles = {
   SAMOYED: "770932698554171412",
   PLEC: "813398860705431603",
   PLATFORMA: "813398318893367306",
   GRA: "813397652305346602",
+  CH:"813003866916257832",
+  DZ:"813110297900220446",
+  PC:"813110301649797130",
+  PS:"813110303150702612",
+  XB:"813110303855607829",
+  N:"813110304661176382",
+  F:"813001869491437609",
+  R:"813110306019868722",
+  M:"812999538754846733",
+  RL:"813112473980502086",
+  GTA:"813112291847176192",
+  O:"813114080511787039",
+  CS:"813114083200466965",
 };
 
 client.on("ready", () => {
@@ -97,7 +110,7 @@ client.on("messageReactionRemove", async (reaction, user) => {
       member.roles.remove(guildRoles.SAMOYED);
     }
   }
-});
+})
 client.on("messageReactionAdd", async (reaction, user) => {
   if (reaction.partial) await reaction.fetch();
 
@@ -184,7 +197,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
     if (reaction.emoji.name === "👦") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.add("813003866916257832");
+        .roles.add(guildRoles.CH);
     }
   }
 });
@@ -193,7 +206,7 @@ client.on("messageReactionRemove", async (reaction, user) => {
     if (reaction.emoji.name === "👦") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.remove("813003866916257832");
+        .roles.remove(guildRoles.CH);
     }
   }
 });
@@ -202,7 +215,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
     if (reaction.emoji.name === "👧") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.add("813110297900220446");
+        .roles.add(guildRoles.DZ);
     }
   }
 });
@@ -211,7 +224,7 @@ client.on("messageReactionRemove", async (reaction, user) => {
     if (reaction.emoji.name === "👧") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.remove("813110297900220446");
+        .roles.remove(guildRoles.DZ);
     }
   }
 });
@@ -220,7 +233,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
     if (reaction.emoji.name === "🖥️") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.add("813110301649797130");
+        .roles.add(guildRoles.PC);
     }
   }
 });
@@ -229,7 +242,7 @@ client.on("messageReactionRemove", async (reaction, user) => {
     if (reaction.emoji.name === "🖥️") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.remove("813110301649797130");
+        .roles.remove(guildRoles.PC);
     }
   }
 });
@@ -238,7 +251,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
     if (reaction.emoji.name === "🎮") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.add("813110303150702612");
+        .roles.add(guildRoles.PS);
     }
   }
 });
@@ -247,7 +260,7 @@ client.on("messageReactionRemove", async (reaction, user) => {
     if (reaction.emoji.name === "🎮") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.remove("813110303150702612");
+        .roles.remove(guildRoles.PS);
     }
   }
 });
@@ -256,7 +269,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
     if (reaction.emoji.name === "🕹️") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.add("813110303855607829");
+        .roles.add(guildRoles.XB);
     }
   }
 });
@@ -265,7 +278,7 @@ client.on("messageReactionRemove", async (reaction, user) => {
     if (reaction.emoji.name === "🕹️") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.remove("813110303855607829");
+        .roles.remove(guildRoles.XB);
     }
   }
 });
@@ -274,7 +287,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
     if (reaction.emoji.name === "⌨️") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.add("813110304661176382");
+        .roles.add(guildRoles.N);
     }
   }
 });
@@ -283,7 +296,7 @@ client.on("messageReactionRemove", async (reaction, user) => {
     if (reaction.emoji.name === "⌨️") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.remove("813110304661176382");
+        .roles.remove(guildRoles.N);
     }
   }
 });
@@ -292,7 +305,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
     if (reaction.emoji.name === "🇫") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.add("813001869491437609");
+        .roles.add(guildRoles.F);
     }
   }
 });
@@ -301,7 +314,7 @@ client.on("messageReactionRemove", async (reaction, user) => {
     if (reaction.emoji.name === "🇫") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.remove("813001869491437609");
+        .roles.remove(guildRoles.F);
     }
   }
 });
@@ -310,7 +323,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
     if (reaction.emoji.name === "🇷") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.add("813110306019868722");
+        .roles.add(guildRoles.R);
     }
   }
 });
@@ -319,7 +332,7 @@ client.on("messageReactionRemove", async (reaction, user) => {
     if (reaction.emoji.name === "🇷") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.remove("813110306019868722");
+        .roles.remove(guildRoles.R);
     }
   }
 });
@@ -328,7 +341,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
     if (reaction.emoji.name === "🇲") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.add("812999538754846733");
+        .roles.add(guildRoles.M);
     }
   }
 });
@@ -337,7 +350,7 @@ client.on("messageReactionRemove", async (reaction, user) => {
     if (reaction.emoji.name === "🇲") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.remove("812999538754846733");
+        .roles.remove(guildRoles.M);
     }
   }
 });
@@ -346,7 +359,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
     if (reaction.emoji.name === "🇱") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.add("813112473980502086");
+        .roles.add(guildRoles.RL);
     }
   }
 });
@@ -355,7 +368,7 @@ client.on("messageReactionRemove", async (reaction, user) => {
     if (reaction.emoji.name === "🇱") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.remove("813112473980502086");
+        .roles.remove(guildRoles.RL);
     }
   }
 });
@@ -364,7 +377,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
     if (reaction.emoji.name === "🇬") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.add("813112291847176192");
+        .roles.add(guildRoles.GTA);
     }
   }
 });
@@ -373,7 +386,7 @@ client.on("messageReactionRemove", async (reaction, user) => {
     if (reaction.emoji.name === "🇬") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.remove("813112291847176192");
+        .roles.remove(guildRoles.GTA);
     }
   }
 });
@@ -382,7 +395,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
     if (reaction.emoji.name === "🇺") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.add("813114080511787039");
+        .roles.add(guildRoles.O);
     }
   }
 });
@@ -391,7 +404,7 @@ client.on("messageReactionRemove", async (reaction, user) => {
     if (reaction.emoji.name === "🇺") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.remove("813114080511787039");
+        .roles.remove(guildRoles.O);
     }
   }
 });
@@ -400,7 +413,7 @@ client.on("messageReactionAdd", async (reaction, user) => {
     if (reaction.emoji.name === "🇿") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.add("813114083200466965");
+        .roles.add(guildRoles.CS);
     }
   }
 });
@@ -409,7 +422,7 @@ client.on("messageReactionRemove", async (reaction, user) => {
     if (reaction.emoji.name === "🇿") {
       await reaction.message.guild.members.cache
         .get(user.id)
-        .roles.remove("813114083200466965");
+        .roles.remove(guildRoles.CS);
     }
   }
 });
