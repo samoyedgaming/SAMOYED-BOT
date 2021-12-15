@@ -1,8 +1,14 @@
 const dotenv = require("dotenv").config();
-const { Client } = require("discord.js");
-const client = new Client({ intents: [] });
 const {
-  Permissions: { FLAGS },
+  Client
+} = require("discord.js");
+const client = new Client({
+  intents: []
+});
+const {
+  Permissions: {
+    FLAGS
+  },
   MessageEmbed,
 } = require("discord.js");
 

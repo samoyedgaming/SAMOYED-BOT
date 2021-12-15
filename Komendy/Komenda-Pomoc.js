@@ -1,8 +1,12 @@
-const { prefix } = require("../Config/config");
+const {
+  prefix
+} = require("../Config/config");
 const botauthor = "Samoyed Franek#9264";
 const botversion = "v1.0 beta";
 const botname = "Samoyed Bot";
-const { MessageEmbed } = require("discord.js");
+const {
+  MessageEmbed
+} = require("discord.js");
 const info = "Wyświetla dane bota.";
 const pomoc = "Wyświetla wszystkie komendy.";
 const usun = "Usuwa podaną liczbę wiadomości od 2 do 100.";
@@ -16,8 +20,7 @@ const str = "Wysyła moją stronę internetową.";
 
 module.exports = {
   name: "pomoc",
-  description:
-    "Wyswietla informacje o wszytskich komendach lub o danej komendzie.",
+  description: "Wyswietla informacje o wszytskich komendach lub o danej komendzie.",
   usage: "<Nazwa Komendy>",
 
   run(msg, args) {
@@ -38,6 +41,8 @@ module.exports = {
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
 
-    msg.channel.send({ embeds: [embed] });
+    msg.channel.send({
+      embeds: [embed]
+    });
   },
 };

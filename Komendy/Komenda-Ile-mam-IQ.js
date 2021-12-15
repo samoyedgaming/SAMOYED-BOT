@@ -1,4 +1,6 @@
-const { MessageEmbed } = require("discord.js");
+const {
+  MessageEmbed
+} = require("discord.js");
 
 module.exports = {
   name: "ile-mam-iq",
@@ -8,7 +10,9 @@ module.exports = {
   run(msg, args) {
     const random = Math.floor(Math.random() * 501);
 
-    const { channel } = msg;
+    const {
+      channel
+    } = msg;
     const botauthor = "Samoyed Franek#9264";
     const botversion = "v1.0 beta";
     const botname = "Samoyed Bot";
@@ -22,6 +26,8 @@ module.exports = {
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
 
-    channel.send({ embeds: [embed] });
+    channel.send({
+      embeds: [embed]
+    });
   },
 };

@@ -1,11 +1,21 @@
-const { Collection, MessageEmbed } = require("discord.js");
+const {
+  Collection,
+  MessageEmbed
+} = require("discord.js");
 
-const { readdirSync } = require("fs");
+const {
+  readdirSync
+} = require("fs");
 
-const { prefix, owner } = require(__dirname + "/../Config/config.js");
+const {
+  prefix,
+  owner
+} = require(__dirname + "/../Config/config.js");
 
 const ascil = require("ascii-table");
-const { cooldown } = require("../Komendy/Komenda-Usun.js");
+const {
+  cooldown
+} = require("../Komendy/Komenda-Usun.js");
 
 const table = new ascil().setHeading("Komenda", "Status");
 
@@ -38,7 +48,11 @@ module.exports = (client) => {
   console.log(table.toString());
 
   client.on("message", async (msg) => {
-    const { author, guild, channel } = msg;
+    const {
+      author,
+      guild,
+      channel
+    } = msg;
 
     // Sprawdza czy to bot czy człowiek i czy pisze na dm czy na serwie
     if (author.bot) {
@@ -67,7 +81,9 @@ module.exports = (client) => {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      return channel.send({ embeds: [embed] });
+      return channel.send({
+        embeds: [embed]
+      });
     }
 
     if (cmd.ownerOnly) {
@@ -79,7 +95,9 @@ module.exports = (client) => {
           .addField("Autor", botauthor, true)
           .addField("Wersja", botversion, true);
 
-        return channel.send({ embeds: [embed] });
+        return channel.send({
+          embeds: [embed]
+        });
       }
     }
 
@@ -93,7 +111,9 @@ module.exports = (client) => {
           .addField("Autor", botauthor, true)
           .addField("Wersja", botversion, true);
 
-        return channel.send({ embeds: [embed] });
+        return channel.send({
+          embeds: [embed]
+        });
       }
     }
 
@@ -108,7 +128,9 @@ module.exports = (client) => {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      return channel.send({ embeds: [embed] });
+      return channel.send({
+        embeds: [embed]
+      });
     }
     // Cool down
     if (!cooldowns.has(cmdName)) {
@@ -135,7 +157,9 @@ module.exports = (client) => {
           .addField("Autor", botauthor, true)
           .addField("Wersja", botversion, true);
 
-        return channel.send({ embeds: [embed] });
+        return channel.send({
+          embeds: [embed]
+        });
       }
     }
 
@@ -153,7 +177,9 @@ module.exports = (client) => {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      channel.send({ embeds: [embed] });
+      channel.send({
+        embeds: [embed]
+      });
     }
   });
 };

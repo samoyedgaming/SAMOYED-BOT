@@ -1,4 +1,8 @@
-const { Client, Intents, MessageEmbed } = require("discord.js");
+const {
+  Client,
+  Intents,
+  MessageEmbed
+} = require("discord.js");
 const Canvas = require("canvas");
 const chalk = require("chalk");
 const client = new Client({
@@ -20,13 +24,18 @@ const client = new Client({
   ],
 });
 
-const { token, prefix } = require("./Config/config.js")
+const {
+  token,
+  prefix
+} = require("./Config/config.js")
 
 const commandHandler = require("./Handlery/command.handler.js")
 const settingsHandler = require("./Handlery/settings.handler.js")
 const apiHandler = require("./Handlery/api.handler.js")
 const eventHandler = require("./Handlery/event.handler.js")
-const { guildOnly } = require('./Komendy/Komenda-Usun.js')
+const {
+  guildOnly
+} = require('./Komendy/Komenda-Usun.js')
 
 const botauthor = 'Samoyed Franek#9264'
 const botversion = 'v1.0 beta'
@@ -48,19 +57,19 @@ const guildRoles = {
   PLEC: "813398860705431603",
   PLATFORMA: "813398318893367306",
   GRA: "813397652305346602",
-  CH:"813003866916257832",
-  DZ:"813110297900220446",
-  PC:"813110301649797130",
-  PS:"813110303150702612",
-  XB:"813110303855607829",
-  N:"813110304661176382",
-  F:"813001869491437609",
-  R:"813110306019868722",
-  M:"812999538754846733",
-  RL:"813112473980502086",
-  GTA:"813112291847176192",
-  O:"813114080511787039",
-  CS:"813114083200466965",
+  CH: "813003866916257832",
+  DZ: "813110297900220446",
+  PC: "813110301649797130",
+  PS: "813110303150702612",
+  XB: "813110303855607829",
+  N: "813110304661176382",
+  F: "813001869491437609",
+  R: "813110306019868722",
+  M: "812999538754846733",
+  RL: "813112473980502086",
+  GTA: "813112291847176192",
+  O: "813114080511787039",
+  CS: "813114083200466965",
 };
 
 client.on("ready", () => {
@@ -68,8 +77,8 @@ client.on("ready", () => {
   client.emit(
     "guildMemberAdd",
     client.guilds.cache
-      .get("770930426767998987")
-      .members.cache.get("622714126841675778")
+    .get("770930426767998987")
+    .members.cache.get("622714126841675778")
   );
   const embed = new MessageEmbed()
 
@@ -78,16 +87,22 @@ client.on("ready", () => {
     .setDescription(`Zostałem poprawnie załadowany.`)
     .addField("Autor", botauthor, true)
     .addField("Wersja", botversion, true);
-  client.channels.cache.get("811635924701151302").send({ embeds: [embed] });
+  client.channels.cache.get("811635924701151302").send({
+    embeds: [embed]
+  });
 
   client.settings.forEach((config, guildid) => {
-    const { guilds } = client;
+    const {
+      guilds
+    } = client;
   });
 });
 client.on("messageReactionAdd", async (reaction, user) => {
   if (reaction.partial) await reaction.fetch();
 
-  const { message } = reaction;
+  const {
+    message
+  } = reaction;
   //zmienić rulesmessage id
   if (message.id === rulesMessageId) {
     const member = message.channel.guild.members.cache.get(user.id);
@@ -101,7 +116,9 @@ client.on("messageReactionAdd", async (reaction, user) => {
 client.on("messageReactionRemove", async (reaction, user) => {
   if (reaction.partial) await reaction.fetch();
 
-  const { message } = reaction;
+  const {
+    message
+  } = reaction;
   //zmienić rulesmessage id
   if (message.id === rulesMessageId) {
     const member = message.channel.guild.members.cache.get(user.id);
@@ -114,7 +131,9 @@ client.on("messageReactionRemove", async (reaction, user) => {
 client.on("messageReactionAdd", async (reaction, user) => {
   if (reaction.partial) await reaction.fetch();
 
-  const { message } = reaction;
+  const {
+    message
+  } = reaction;
   //zmienić rulesmessage id
   if (message.id === rulesMessageId) {
     const member = message.channel.guild.members.cache.get(user.id);
@@ -128,7 +147,9 @@ client.on("messageReactionAdd", async (reaction, user) => {
 client.on("messageReactionRemove", async (reaction, user) => {
   if (reaction.partial) await reaction.fetch();
 
-  const { message } = reaction;
+  const {
+    message
+  } = reaction;
   //zmienić rulesmessage id
   if (message.id === rulesMessageId) {
     const member = message.channel.guild.members.cache.get(user.id);
@@ -141,7 +162,9 @@ client.on("messageReactionRemove", async (reaction, user) => {
 client.on("messageReactionAdd", async (reaction, user) => {
   if (reaction.partial) await reaction.fetch();
 
-  const { message } = reaction;
+  const {
+    message
+  } = reaction;
   //zmienić rulesmessage id
   if (message.id === rulesMessageId) {
     const member = message.channel.guild.members.cache.get(user.id);
@@ -155,7 +178,9 @@ client.on("messageReactionAdd", async (reaction, user) => {
 client.on("messageReactionRemove", async (reaction, user) => {
   if (reaction.partial) await reaction.fetch();
 
-  const { message } = reaction;
+  const {
+    message
+  } = reaction;
   //zmienić rulesmessage id
   if (message.id === rulesMessageId) {
     const member = message.channel.guild.members.cache.get(user.id);
@@ -168,7 +193,9 @@ client.on("messageReactionRemove", async (reaction, user) => {
 client.on("messageReactionAdd", async (reaction, user) => {
   if (reaction.partial) await reaction.fetch();
 
-  const { message } = reaction;
+  const {
+    message
+  } = reaction;
   //zmienić rulesmessage id
   if (message.id === rulesMessageId) {
     const member = message.channel.guild.members.cache.get(user.id);
@@ -182,7 +209,9 @@ client.on("messageReactionAdd", async (reaction, user) => {
 client.on("messageReactionRemove", async (reaction, user) => {
   if (reaction.partial) await reaction.fetch();
 
-  const { message } = reaction;
+  const {
+    message
+  } = reaction;
   //zmienić rulesmessage id
   if (message.id === rulesMessageId) {
     const member = message.channel.guild.members.cache.get(user.id);

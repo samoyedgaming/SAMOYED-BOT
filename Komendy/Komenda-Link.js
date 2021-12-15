@@ -3,7 +3,9 @@ const botversion = "v1.0 beta";
 const botname = "Samoyed Bot";
 
 const {
-  Permissions: { FLAGS },
+  Permissions: {
+    FLAGS
+  },
   MessageEmbed,
 } = require("discord.js");
 
@@ -26,6 +28,8 @@ module.exports = {
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
 
-    msg.channel.send({ embeds: [embed] });
+    msg.channel.send({
+      embeds: [embed]
+    });
   },
 };

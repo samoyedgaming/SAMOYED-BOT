@@ -1,8 +1,12 @@
-const { prefix } = require("../Config/config");
+const {
+  prefix
+} = require("../Config/config");
 const botauthor = "Samoyed Franek#9264";
 const botversion = "v1.0 beta";
 const botname = "Samoyed Bot";
-const { MessageEmbed } = require("discord.js");
+const {
+  MessageEmbed
+} = require("discord.js");
 const activities = [
   "PLAYING",
   "STREAMING",
@@ -23,8 +27,7 @@ const status = `Zmienia status bota np. W grze Lubie Placki. Dostępne aktywnoś
 
 module.exports = {
   name: "pomoc-wlasciciel",
-  description:
-    "Wyswietla informacje o wszytskich komendach lub o danej komendzie.",
+  description: "Wyswietla informacje o wszytskich komendach lub o danej komendzie.",
   usage: "<Nazwa Komendy>",
   ownerOnly: true,
 
@@ -46,6 +49,8 @@ module.exports = {
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
 
-    msg.channel.send({ embeds: [embed] });
+    msg.channel.send({
+      embeds: [embed]
+    });
   },
 };

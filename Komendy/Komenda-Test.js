@@ -1,6 +1,8 @@
 const Canvas = require("canvas");
 const chalk = require("chalk");
-const { MessageAttachment } = require("discord.js");
+const {
+  MessageAttachment
+} = require("discord.js");
 
 module.exports = {
   name: "test",
@@ -36,7 +38,9 @@ module.exports = {
     ctx.clip();
 
     const avatar = await Canvas.loadImage(
-      msg.member.user.displayAvatarURL({ format: `jpg` })
+      msg.member.user.displayAvatarURL({
+        format: `jpg`
+      })
     );
 
     ctx.drawImage(avatar, 445, 130, 250, 250);

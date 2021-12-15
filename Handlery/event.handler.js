@@ -1,8 +1,13 @@
 module.exports = (client) => {
-  const { readdirSync, existsSync } = require("fs");
+  const {
+    readdirSync,
+    existsSync
+  } = require("fs");
   const chalk = require("chalk");
   const {
-    Constants: { Events },
+    Constants: {
+      Events
+    },
   } = require("discord.js");
 
   const serverEvents = Object.values(Events);
@@ -33,7 +38,7 @@ module.exports = (client) => {
     const event = require(__dirname + `/../Eventy/${file}`);
 
     if (!event.run) {
-      console.log(chalk.red`Event '${file}' brakuje: run()`);
+      console.log(chalk.red `Event '${file}' brakuje: run()`);
     } else if (typeof event.run !== "function") {
       console.log(`Event ${file} potrzebuje funkcji 'run'`);
     }

@@ -2,9 +2,14 @@ const botauthor = "Samoyed Franek#9264";
 const botversion = "v1.0 beta";
 const botname = "Samoyed Bot";
 
-const { Client, ReactionCollector } = require("discord.js");
 const {
-  Permissions: { FLAGS },
+  Client,
+  ReactionCollector
+} = require("discord.js");
+const {
+  Permissions: {
+    FLAGS
+  },
   MessageEmbed,
 } = require("discord.js");
 
@@ -27,7 +32,9 @@ module.exports = {
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
 
-    let msgEmbed = await msg.channel.send({ embeds: [embed] });
+    let msgEmbed = await msg.channel.send({
+      embeds: [embed]
+    });
     msgEmbed.react("👦").then(() => msgEmbed.react("👧"));
 
     const embed1 = new MessageEmbed()
@@ -42,13 +49,15 @@ module.exports = {
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
 
-    let msgEmbed1 = await msg.channel.send({ embeds: [embed1] });
+    let msgEmbed1 = await msg.channel.send({
+      embeds: [embed1]
+    });
     msgEmbed1
       .react("🖥️")
       .then(() =>
         msgEmbed1
-          .react("🎮")
-          .then(() => msgEmbed1.react("🕹️").then(() => msgEmbed1.react("⌨️")))
+        .react("🎮")
+        .then(() => msgEmbed1.react("🕹️").then(() => msgEmbed1.react("⌨️")))
       );
 
     const embed2 = new MessageEmbed()
@@ -66,7 +75,9 @@ module.exports = {
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
 
-    let msgEmbed2 = await msg.channel.send({ embeds: [embed2] });
+    let msgEmbed2 = await msg.channel.send({
+      embeds: [embed2]
+    });
     msgEmbed2
       .react("🇫")
       .then(() => msgEmbed2.react("🇷"))
