@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const { Client, Intents, MessageEmbed } = require("discord.js");
 const Canvas = require("canvas");
 const chalk = require("chalk");
@@ -40,6 +41,34 @@ apiHandler(client);
 eventHandler(client);
 
 const rulesMessageId = "839826980236820510";
+=======
+const { Client, MessageEmbed, } = require('discord.js')
+const chalk = require('chalk')
+const client = new Client({ partials: ["MESSAGE", "REACTION"] })
+
+const { token, prefix } = require("./Config/config.js")
+
+const commandHandler = require("./Handlery/command.handler.js")
+const settingsHandler = require("./Handlery/settings.handler.js")
+const apiHandler = require("./Handlery/api.handler.js")
+const eventHandler = require("./Handlery/event.handler.js")
+const { guildOnly } = require('./Komendy/Komenda-Usun.js')
+
+const botauthor = 'Samoyed Franek#9264'
+const botversion = 'v1.0 beta'
+const botname = "Samoyed Bot"
+
+
+
+const log = console.log
+
+commandHandler(client)
+settingsHandler(client)
+apiHandler(client)
+eventHandler(client)
+
+const rulesMessageId = "839825788002107402"
+>>>>>>> parent of f5a1dbd (master)
 const guildRoles = {
   SAMOYED: "770932698554171412",
   PLEC: "813398860705431603",

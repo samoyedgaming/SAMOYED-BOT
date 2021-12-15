@@ -27,7 +27,7 @@ module.exports = {
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
 
-    let msgEmbed = await msg.channel.send(embed);
+    let msgEmbed = await msg.channel.send({ embeds: [embed] });
     msgEmbed.react("👦").then(() => msgEmbed.react("👧"));
 
     const embed1 = new MessageEmbed()
