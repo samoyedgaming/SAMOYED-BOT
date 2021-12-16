@@ -67,6 +67,9 @@ module.exports = {
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
     channel.send({
-      embeds: [embed]}).then(msg=>msg.delete({timeout:"2000"}))
+      embeds: [embed]
+    }).then(msg => msg.delete({
+      timeout: "2000"
+    }))
   },
 };
