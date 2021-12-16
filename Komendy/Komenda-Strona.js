@@ -14,7 +14,7 @@ module.exports = {
   description: "Wysyła strone serwera",
   usage: " ",
   guildOnly: true,
-  aliases: [""],
+  aliases: ["strona"],
   userPermissions: [FLAGS.SEND_MESSAGES],
 
   run(msg) {
