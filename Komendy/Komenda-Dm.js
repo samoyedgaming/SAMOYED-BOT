@@ -1,4 +1,4 @@
-const {
+const {Client,
   MessageEmbed
 } = require("discord.js");
 
