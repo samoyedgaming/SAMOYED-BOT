@@ -3,7 +3,7 @@ const {
 } = require("discord.js");
 
 module.exports = {
-  name: "info",
+  name: "dm",
   description: "Wyświetla dane bota",
   guildOnly: true,
 
