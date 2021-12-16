@@ -1,7 +1,7 @@
 const {Client,
   MessageEmbed
 } = require("discord.js");
-
+const client = new Client()
 module.exports = {
   name: "dm",
   description: "Wyświetla dane bota",
