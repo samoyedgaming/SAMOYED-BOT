@@ -69,7 +69,7 @@ module.exports = {
     channel.send({
       embeds: [embed]
     }).then(msg => msg.delete({
-      timeout: "2000"
+      timeout: "10000"
     }))
   },
 };
