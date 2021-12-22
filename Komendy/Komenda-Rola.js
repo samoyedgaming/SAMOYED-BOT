@@ -35,7 +35,6 @@ module.exports = {
     let msgEmbed = await msg.channel.send({
       embeds: [embed]
     });
-    msgEmbed.react("👦").then(() => msgEmbed.react("👧"));
 
     const embed1 = new MessageEmbed()
 
@@ -52,13 +51,6 @@ module.exports = {
     let msgEmbed1 = await msg.channel.send({
       embeds: [embed1]
     });
-    msgEmbed1
-      .react("🖥️")
-      .then(() =>
-        msgEmbed1
-        .react("🎮")
-        .then(() => msgEmbed1.react("🕹️").then(() => msgEmbed1.react("⌨️")))
-      );
 
     const embed2 = new MessageEmbed()
 
@@ -78,13 +70,5 @@ module.exports = {
     let msgEmbed2 = await msg.channel.send({
       embeds: [embed2]
     });
-    msgEmbed2
-      .react("🇫")
-      .then(() => msgEmbed2.react("🇷"))
-      .then(() => msgEmbed2.react("🇲"))
-      .then(() => msgEmbed2.react("🇱"))
-      .then(() => msgEmbed2.react("🇬"))
-      .then(() => msgEmbed2.react("🇺"))
-      .then(() => msgEmbed2.react("🇿"));
   },
 };
