@@ -26,6 +26,14 @@ const client = new Client({
   ],
 });
 
+
+const rr = new ReactionRole(client, [
+  { messageId: "920987139120967712", reaction: "👍", roleId: "920985535571435552" }, // Basic usage
+  { messageId: "920987139120967712", reaction: "👍", roleId: "920985538687803442" }, // Multiple reactions per message!
+  { messageId: "920987139120967712", reaction: "👍", roleId: "920985541355393104" }, // Custom emoji by ID
+  { messageId: "920987139120967712", reaction: "👍", roleId: "9209855458558853222" }, // Custom emoji by emoji name
+]);
+
 const {
   token,
   prefix
@@ -100,12 +108,6 @@ client.on("ready", () => {
   });
 });
 
-const rr = new ReactionRole(client, [
-  { messageId: "920987139120967712", reaction: "👍", roleId: "920985535571435552" }, // Basic usage
-  { messageId: "920987139120967712", reaction: "👍", roleId: "920985538687803442" }, // Multiple reactions per message!
-  { messageId: "920987139120967712", reaction: "👍", roleId: "920985541355393104" }, // Custom emoji by ID
-  { messageId: "920987139120967712", reaction: "👍", roleId: "9209855458558853222" }, // Custom emoji by emoji name
-]);
 
 
 client.login(token);
