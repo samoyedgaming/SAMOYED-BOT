@@ -40,11 +40,7 @@ module.exports = {
       .addField(`${prefix}info`, info)
       .addField(`${prefix}pomoc`, pomoc)
       .addField(`${prefix}usun <liczba> | <liczba>`, usun)
-      .addField(`${prefix}korona wszystkie | <kraj>`, korona)
       .addField(`${prefix}link`, link)
-      .addField(`${prefix}banuj <użytkownik> <powód>`, banuj)
-      .addField(`${prefix}wyrzuc <użytkownik> <powód>`, wyrzuc)
-      .addField(`${prefix}status <nazwa aktywności> <tekst>`, status)
 
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);

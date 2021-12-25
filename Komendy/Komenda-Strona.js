@@ -23,7 +23,7 @@ module.exports = {
       .setTitle(botname)
       .setColor(0xb65307)
       .setDescription(
-        "Moja własna strona internetowa: https://samoyedfranek.github.io/site/home.html."
+        "Moja własna strona internetowa: https://franek.ga."
       )
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);

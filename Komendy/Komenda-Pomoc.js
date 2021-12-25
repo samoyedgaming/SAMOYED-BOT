@@ -32,12 +32,9 @@ module.exports = {
       .addField(`${prefix}info`, info)
       .addField(`${prefix}pomoc`, pomoc)
       .addField(`${prefix}usun <liczba> | <liczba>`, usun)
-      .addField(`${prefix}korona wszystkie | <kraj>`, korona)
       .addField(`${prefix}link`, link)
       .addField(`${prefix}strona`, str)
       .addField(`${prefix}ile-mam-iq`, iq)
-      .addField(`${prefix}banuj <użytkownik> <powód>`, banuj)
-      .addField(`${prefix}wyrzuc <użytkownik> <powód>`, wyrzuc)
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
 
