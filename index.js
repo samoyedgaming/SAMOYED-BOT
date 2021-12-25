@@ -1,4 +1,6 @@
-const { default: ReactionRole } = require("discordjs-reaction-role");
+const {
+  default: ReactionRole
+} = require("discordjs-reaction-role");
 const {
   Client,
   Intents,
@@ -27,11 +29,26 @@ const client = new Client({
 });
 
 
-const rr = new ReactionRole(client, [
-  { messageId: "920987139120967712", reaction: "👍", roleId: "920985535571435552" }, // Basic usage
-  { messageId: "920987139120967712", reaction: "👍", roleId: "920985538687803442" }, // Multiple reactions per message!
-  { messageId: "920987139120967712", reaction: "👍", roleId: "920985541355393104" }, // Custom emoji by ID
-  { messageId: "920987139120967712", reaction: "👍", roleId: "9209855458558853222" }, // Custom emoji by emoji name
+const rr = new ReactionRole(client, [{
+    messageId: "920987139120967712",
+    reaction: "👍",
+    roleId: "920985535571435552"
+  }, // Basic usage
+  {
+    messageId: "920987139120967712",
+    reaction: "👍",
+    roleId: "920985538687803442"
+  }, // Multiple reactions per message!
+  {
+    messageId: "920987139120967712",
+    reaction: "👍",
+    roleId: "920985541355393104"
+  }, // Custom emoji by ID
+  {
+    messageId: "920987139120967712",
+    reaction: "👍",
+    roleId: "9209855458558853222"
+  }, // Custom emoji by emoji name
 ]);
 
 const {
@@ -78,18 +95,253 @@ const guildRoles = {
   M: "920985548238233620",
   RL: "920985549014175744",
   GTA: "920985549509111879",
-  O: "920985550863892490",
+  SC: "924378347562237952",
   CS: "920985551442681867",
 };
 
 client.on("ready", () => {
   console.log(chalk.green(`Zalogowano jako ${client.user.tag}!`));
-  client.emit(
-    "guildMemberAdd",
-    client.guilds.cache
-    .get("770930426767998987")
-    .members.cache.get("622714126841675778")
-  );
+  //wiadomosc pierwsza
+  client.channels.cache.get("920985565682360320").messages.fetch("924398092009218048").then(msg => {
+    let ifilter = i => !i.user.bot;
+
+    const collector = msg.createMessageComponentCollector({
+      filter: ifilter
+    })
+
+    //wiadomosc pierwsza
+
+    collector.on("collect", async i => {
+      if (i.customId === "reg") {
+        if (!i.member.roles.cache.has("920985535571435552")) {
+          await i.member.roles.add("920985535571435552")
+        } else {
+          await i.member.roles.remove("920985535571435552")
+        }
+      };
+      if (i.customId === "reg") {
+        if (!i.member.roles.cache.has("920985538687803442")) {
+          await i.member.roles.add("920985538687803442")
+        } else {
+          await i.member.roles.remove("920985538687803442")
+        }
+      };
+      if (i.customId === "reg") {
+        if (!i.member.roles.cache.has("920985541355393104")) {
+          await i.member.roles.add("920985541355393104")
+        } else {
+          await i.member.roles.remove("920985541355393104")
+        }
+      };
+      if (i.customId === "reg") {
+        if (!i.member.roles.cache.has("920985545855885322")) {
+          await i.member.roles.add("920985545855885322")
+          i.reply({
+            content: "Zaakceptowano regulamin",
+            ephemeral: true
+          })
+        } else {
+          await i.member.roles.remove("920985545855885322")
+          i.reply({
+            content: "Anulowano regulamin",
+            ephemeral: true
+          })
+        }
+      };
+    })
+  })
+
+  //----------------------------------------------
+  client.channels.cache.get("920985572745555969").messages.fetch("924380751879892992").then(msg => {
+    let ifilter = i => !i.user.bot;
+
+    const collector = msg.createMessageComponentCollector({
+      filter: ifilter
+    })
+
+    //wiadomosc pierwsza
+
+    collector.on("collect", async i => {
+      if (i.customId === "ch") {
+        if (!i.member.roles.cache.has("920985539656691722")) {
+          await i.member.roles.add("920985539656691722")
+          i.reply({
+            content: "Otrzymano rolę <@&920985539656691722>",
+            ephemeral: true
+          })
+        } else {
+          await i.member.roles.remove("920985539656691722")
+          i.reply({
+            content: "Usunięto rolę <@&920985539656691722>",
+            ephemeral: true
+          })
+        }
+      }
+      if (i.customId === "dz") {
+        if (!i.member.roles.cache.has("920985540386521129")) {
+          await i.member.roles.add("920985540386521129")
+          i.reply({
+            content: "Otrzymano rolę <@&920985540386521129>",
+            ephemeral: true
+          })
+        } else {
+          await i.member.roles.remove("920985540386521129")
+          i.reply({
+            content: "Usunięto rolę <@&920985540386521129>",
+            ephemeral: true
+          })
+        }
+      }
+    })
+  })
+
+  //wiadomosc druga
+
+  client.channels.cache.get("920985572745555969").messages.fetch("924380753033318470").then(msg => {
+    let ifilter = i => !i.user.bot;
+
+    const collector = msg.createMessageComponentCollector({
+      filter: ifilter
+    })
+
+    collector.on("collect", async i => {
+      if (i.customId === "pc") {
+        if (!i.member.roles.cache.has("920985542106161162")) {
+          await i.member.roles.add("920985542106161162")
+          i.reply({
+            content: "Otrzymano rolę <@&920985542106161162>",
+            ephemeral: true
+          })
+        } else {
+          await i.member.roles.remove("920985542106161162")
+          i.reply({
+            content: "Usunięto rolę <@&920985542106161162>",
+            ephemeral: true
+          })
+        }
+      }
+      if (i.customId === "ps") {
+        if (!i.member.roles.cache.has("920985542643023903")) {
+          await i.member.roles.add("920985542643023903")
+          i.reply({
+            content: "Otrzymano rolę <@&920985542643023903>",
+            ephemeral: true
+          })
+        } else {
+          await i.member.roles.remove("920985542643023903")
+          i.reply({
+            content: "Usunięto rolę <@&920985542643023903>",
+            ephemeral: true
+          })
+        }
+      }
+      if (i.customId === "xb") {
+        if (!i.member.roles.cache.has("920985543750344734")) {
+          await i.member.roles.add("920985543750344734")
+          i.reply({
+            content: "Otrzymano rolę <@&920985543750344734>",
+            ephemeral: true
+          })
+        } else {
+          await i.member.roles.remove("920985543750344734")
+          i.reply({
+            content: "Usunięto rolę <@&920985543750344734>",
+            ephemeral: true
+          })
+        }
+      }
+      if (i.customId === "n") {
+        if (!i.member.roles.cache.has("920985544811483166")) {
+          await i.member.roles.add("920985544811483166")
+          i.reply({
+            content: "Otrzymano rolę <@&920985544811483166>",
+            ephemeral: true
+          })
+        } else {
+          await i.member.roles.remove("920985544811483166")
+          i.reply({
+            content: "Usunięto rolę <@&920985544811483166>",
+            ephemeral: true
+          })
+        }
+      }
+    })
+  })
+
+  //wiadomosc trzecia
+
+  client.channels.cache.get("920985572745555969").messages.fetch("924380754128015400").then(msg => {
+    let ifilter = i => !i.user.bot;
+
+    const collector = msg.createMessageComponentCollector({
+      filter: ifilter
+    })
+
+    collector.on("collect", async i => {
+
+      if (i.customId === "s") {
+        if (!i.member.roles.cache.has("924378347562237952")) {
+          await i.member.roles.add("924378347562237952")
+          i.reply({
+            content: "Otrzymano rolę <@&924378347562237952>",
+            ephemeral: true
+          })
+        } else {
+          await i.member.roles.remove("924378347562237952")
+          i.reply({
+            content: "Usunięto rolę <@&924378347562237952>",
+            ephemeral: true
+          })
+        }
+      }
+      if (i.customId === "m") {
+        if (!i.member.roles.cache.has("920985548238233620")) {
+          await i.member.roles.add("920985548238233620")
+          i.reply({
+            content: "Otrzymano rolę <@&920985548238233620>",
+            ephemeral: true
+          })
+        } else {
+          await i.member.roles.remove("920985548238233620")
+          i.reply({
+            content: "Usunięto rolę <@&920985548238233620>",
+            ephemeral: true
+          })
+        }
+      }
+      if (i.customId === "gta") {
+        if (!i.member.roles.cache.has("920985549509111879")) {
+          await i.member.roles.add("920985549509111879")
+          i.reply({
+            content: "Otrzymano rolę <@&920985549509111879>",
+            ephemeral: true
+          })
+        } else {
+          await i.member.roles.remove("920985549509111879")
+          i.reply({
+            content: "Usunięto rolę <@&920985549509111879>",
+            ephemeral: true
+          })
+        }
+      }
+      if (i.customId === "cs") {
+        if (!i.member.roles.cache.has("920985551442681867")) {
+          await i.member.roles.add("920985551442681867")
+          i.reply({
+            content: "Otrzymano rolę <@&920985551442681867>",
+            ephemeral: true
+          })
+        } else {
+          await i.member.roles.remove("920985551442681867")
+          i.reply({
+            content: "Usunięto rolę <@&920985551442681867>",
+            ephemeral: true
+          })
+        }
+      }
+    })
+  })
+
   const embed = new MessageEmbed()
 
     .setTitle(botname)

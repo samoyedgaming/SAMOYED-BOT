@@ -41,7 +41,7 @@ module.exports = {
       });
     }
 
-    if (amount < 2 || amount >= 101) {
+    if (amount < 2 || amount >= 1001) {
       const embed = new MessageEmbed()
 
         .setTitle(botname)
