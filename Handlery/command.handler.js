@@ -167,8 +167,8 @@ module.exports = (client) => {
     setTimeout(() => timestamps.delete(msg.author.id), cooldownAmount);
     try {
       cmd.run(msg, args);
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      console.log(err);
 
       const embed = new MessageEmbed()
         .setTitle(botname)
