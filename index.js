@@ -82,7 +82,6 @@ const slashcommandsFiles = fs.readdirSync(`./Komendy/Slash-Komendy`).filter(file
 
 for (const file of slashcommandsFiles) {
   const slash = require(`./Komendy/Slash-Komendy/${file}`)
-  console.log(`Slash komendy - ${file}`)
   client.slashcommands.set(slash.data.name, slash)
 }
 
