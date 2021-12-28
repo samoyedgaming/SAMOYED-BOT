@@ -49,7 +49,7 @@ module.exports = (client) => {
   const slashcommandfiles = readdirSync(__dirname + "/../Komendy/Slash-Komendy").filter((file) =>
   file.startsWith("Komenda-Slash")
 );
-
+table.addRow("------------Slash------------","-----------------------------")
 for (const file of slashcommandfiles) {
   const command = require(__dirname + `/../Komendy/Slash-Komendy/${file}`);
 

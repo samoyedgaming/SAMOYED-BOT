@@ -14,14 +14,15 @@ const Discord = require("discord.js")
 const botauthor = "Samoyed Franek#9264";
 const botversion = "v1.0 beta";
 const botname = "Samoyed Bot";
+
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("usun")
     .setDescription("Usuwa daną ilość wiadomości na kanale")
     .addNumberOption(option => option.setName('liczba').setDescription('Wpisz liczbę').setRequired(true)),
 
-  async run(client, interaction, msg, args, channel) {
-
+  async run(client, interaction) {
+    const channel = interaction.channel 
     const amount = interaction.options.getNumber('liczba');
 
     if (!Number.isInteger(amount)) {
@@ -38,7 +39,7 @@ module.exports = {
       });
     }
 
-    if (amount < 2 || amount >= 1001) {
+    if (amount < 2 || amount >= 101) {
       const embed = new MessageEmbed()
 
         .setTitle(botname)
@@ -54,7 +55,7 @@ module.exports = {
       });
     }
 
-    msg.channel.bulkDelete(amount);
+    channel.bulkDelete(amount);
 
     const embed = new MessageEmbed()
 
@@ -65,8 +66,6 @@ module.exports = {
       .addField("Wersja", botversion, true);
     interaction.reply({
       embeds: [embed]
-    }).then(msg => msg.delete({
-      timeout: "10000"
-    }))
+    })
   },
 };
