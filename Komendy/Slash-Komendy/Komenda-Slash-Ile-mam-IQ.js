@@ -1,18 +1,19 @@
 const {
+  SlashCommandBuilder
+} = require('@discordjs/builders');
+const {
   MessageEmbed
-} = require("discord.js");
+} = require("discord.js")
+const Discord = require("discord.js")
 
 module.exports = {
-  name: "ile-mam-iq",
-  description: "Wyświetla ile masz iq",
-  guildOnly: true,
+  data: new SlashCommandBuilder()
+    .setName("ile-mam-iq")
+    .setDescription("Wyświetla ile masz iq"),
 
-  run(msg, args) {
+  async run(client, interaction, msg) {
     const random = Math.floor(Math.random() * 501);
 
-    const {
-      channel
-    } = msg;
     const botauthor = "Samoyed Franek#9264";
     const botversion = "v1.0 beta";
     const botname = "Samoyed Bot";
@@ -26,8 +27,9 @@ module.exports = {
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
 
-    channel.send({
-      embeds: [embed]
-    });
+
+      interaction.reply({
+        embeds: [embed]
+    })
   },
 };

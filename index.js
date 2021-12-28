@@ -37,7 +37,7 @@ const apiHandler = require("./Handlery/api.handler.js")
 const eventHandler = require("./Handlery/event.handler.js")
 const {
   guildOnly
-} = require('./Komendy/Komenda-Usun.js');
+} = require("./Komendy/Slash-Komendy/Komenda-Slash-Usun.js");
 const {
   DiscordAPIError
 } = require("@discordjs/rest");

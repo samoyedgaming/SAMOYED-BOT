@@ -3,21 +3,19 @@ const botversion = "v1.0 beta";
 const botname = "Samoyed Bot";
 
 const {
-  Permissions: {
-    FLAGS
-  },
   MessageEmbed,
 } = require("discord.js");
+const {
+  SlashCommandBuilder
+} = require('@discordjs/builders');
+const Discord = require("discord.js")
 
 module.exports = {
-  name: "link",
-  description: "Wysyła link do serwera",
-  usage: " ",
-  guildOnly: true,
-  aliases: ["l"],
-  userPermissions: [FLAGS.SEND_MESSAGES],
+  data: new SlashCommandBuilder()
+    .setName("link")
+    .setDescription("Wysyła link do serwera"),
 
-  run(msg) {
+  async run(client, interaction, msg) {
     const embed = new MessageEmbed()
 
       .setTitle(botname)
@@ -28,7 +26,7 @@ module.exports = {
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
 
-    msg.channel.send({
+    interaction.reply({
       embeds: [embed]
     });
   },

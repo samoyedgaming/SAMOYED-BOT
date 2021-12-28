@@ -1,6 +1,3 @@
-const {
-  prefix
-} = require("../Config/config");
 const botauthor = "Samoyed Franek#9264";
 const botversion = "v1.0 beta";
 const botname = "Samoyed Bot";
@@ -17,28 +14,32 @@ const wyrzuc = "Wyrzuca danego użytkownika.";
 const banuj = "Banuje danego użytkownika.";
 const iq = "Wyświetla ile masz iq.";
 const str = "Wysyła moją stronę internetową.";
+const {
+  SlashCommandBuilder
+} = require('@discordjs/builders');
+const Discord = require("discord.js")
 
 module.exports = {
-  name: "pomoc",
-  description: "Wyswietla informacje o wszytskich komendach lub o danej komendzie.",
-  usage: "<Nazwa Komendy>",
+  data: new SlashCommandBuilder()
+    .setName("pomoc")
+    .setDescription("Wyswietla informacje o wszytskich komendach lub o danej komendzie."),
 
-  run(msg, args) {
+  async run(client, interaction, msg, args) {
     const embed = new MessageEmbed()
 
       .setTitle(botname)
       .setColor(0xb65307)
       .setDescription("Oto Lista komend:")
-      .addField(`${prefix}info`, info)
-      .addField(`${prefix}pomoc`, pomoc)
-      .addField(`${prefix}usun <liczba> | <liczba>`, usun)
-      .addField(`${prefix}link`, link)
-      .addField(`${prefix}strona`, str)
-      .addField(`${prefix}ile-mam-iq`, iq)
+      .addField(`/info`, info)
+      .addField(`/pomoc`, pomoc)
+      .addField(`/usun <liczba> | <liczba>`, usun)
+      .addField(`/link`, link)
+      .addField(`/strona`, str)
+      .addField(`/ile-mam-iq`, iq)
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
 
-    msg.channel.send({
+    interaction.reply({
       embeds: [embed]
     });
   },

@@ -2,30 +2,27 @@ const {
   Permissions: {
     FLAGS
   },
+  Interaction,
 } = require("discord.js");
-
+const {
+  SlashCommandBuilder
+} = require('@discordjs/builders');
 const {
   MessageEmbed
-} = require("discord.js");
+} = require("discord.js")
+const Discord = require("discord.js")
 const botauthor = "Samoyed Franek#9264";
 const botversion = "v1.0 beta";
 const botname = "Samoyed Bot";
 module.exports = {
-  name: "usun",
-  description: "Usuwa daną ilość wiadomości na kanale",
-  usage: "<Liczba>",
-  guildOnly: true,
-  aliases: ["u"],
-  userPermissions: [FLAGS.MANAGE_MESSAGES],
+  data: new SlashCommandBuilder()
+    .setName("usun")
+    .setDescription("Usuwa daną ilość wiadomości na kanale")
+    .addNumberOption(option => option.setName('liczba').setDescription('Wpisz liczbę').setRequired(true)),
 
-  run(msg, args) {
-    const {
-      channel,
-      guild,
-      member
-    } = msg;
+  async run(client, interaction, msg, args, channel) {
 
-    const amount = parseInt(args[0]);
+    const amount = interaction.options.getNumber('liczba');
 
     if (!Number.isInteger(amount)) {
       const embed = new MessageEmbed()
@@ -36,7 +33,7 @@ module.exports = {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      return channel.send({
+      return interaction.reply({
         embeds: [embed]
       });
     }
@@ -52,12 +49,12 @@ module.exports = {
         .addField("Autor", botauthor, true)
         .addField("Wersja", botversion, true);
 
-      return channel.send({
+      return interaction.reply({
         embeds: [embed]
       });
     }
 
-    channel.bulkDelete(amount);
+    msg.channel.bulkDelete(amount);
 
     const embed = new MessageEmbed()
 
@@ -66,7 +63,7 @@ module.exports = {
       .setDescription(`Usunąłem ${amount} wiadomości.`)
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
-    channel.send({
+    interaction.reply({
       embeds: [embed]
     }).then(msg => msg.delete({
       timeout: "10000"

@@ -1,16 +1,17 @@
 const {
   MessageEmbed
 } = require("discord.js");
+const {
+  SlashCommandBuilder
+} = require('@discordjs/builders');
+const Discord = require("discord.js")
 
 module.exports = {
-  name: "info",
-  description: "Wyświetla dane bota",
-  guildOnly: true,
+  data: new SlashCommandBuilder()
+    .setName("info")
+    .setDescription("Wyświetla dane bota"),
 
-  run(msg) {
-    const {
-      channel
-    } = msg;
+  async run(client, interaction) {
     const botauthor = "Samoyed Franek#9264";
     const botversion = "v1.0 beta";
     const botname = "Samoyed Bot";
@@ -24,7 +25,7 @@ module.exports = {
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
 
-    channel.send({
+    interaction.reply({
       embeds: [embed]
     });
   },

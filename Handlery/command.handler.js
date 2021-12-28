@@ -15,7 +15,7 @@ const {
 const ascil = require("ascii-table");
 const {
   cooldown
-} = require("../Komendy/Komenda-Usun.js");
+} = require("../Komendy/Slash-Komendy/Komenda-Slash-Usun.js");
 
 const table = new ascil().setHeading("Komenda", "Status");
 
