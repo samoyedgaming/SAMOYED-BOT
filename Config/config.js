@@ -11,10 +11,12 @@ const {
   },
   MessageEmbed,
 } = require("discord.js");
+const { guildOnly } = require("../Komendy/Komenda-Link");
 
 module.exports = {
   token: process.env.TOKEN,
   prefix: ".",
   owner: "622714126841675778",
-  corona_api: "https://disease.sh/v3/covid-19",
+  clientID: "805872253282811946",
+  guild: "770930426767998987",
 };

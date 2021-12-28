@@ -1,10 +1,9 @@
-const {
-  default: ReactionRole
-} = require("discordjs-reaction-role");
+const fs = require('fs')
 const {
   Client,
   Intents,
   MessageEmbed,
+  Collection,
 } = require("discord.js");
 const Canvas = require("canvas");
 const chalk = require("chalk");
@@ -27,30 +26,6 @@ const client = new Client({
     Intents.FLAGS.DIRECT_MESSAGE_TYPING,
   ],
 });
-
-
-const rr = new ReactionRole(client, [{
-    messageId: "920987139120967712",
-    reaction: "👍",
-    roleId: "920985535571435552"
-  }, // Basic usage
-  {
-    messageId: "920987139120967712",
-    reaction: "👍",
-    roleId: "920985538687803442"
-  }, // Multiple reactions per message!
-  {
-    messageId: "920987139120967712",
-    reaction: "👍",
-    roleId: "920985541355393104"
-  }, // Custom emoji by ID
-  {
-    messageId: "920987139120967712",
-    reaction: "👍",
-    roleId: "9209855458558853222"
-  }, // Custom emoji by emoji name
-]);
-
 const {
   token,
   prefix
@@ -62,7 +37,10 @@ const apiHandler = require("./Handlery/api.handler.js")
 const eventHandler = require("./Handlery/event.handler.js")
 const {
   guildOnly
-} = require('./Komendy/Komenda-Usun.js')
+} = require('./Komendy/Komenda-Usun.js');
+const {
+  DiscordAPIError
+} = require("@discordjs/rest");
 
 const botauthor = 'Samoyed Franek#9264'
 const botversion = 'v1.0 beta'
@@ -98,6 +76,29 @@ const guildRoles = {
   SC: "924378347562237952",
   CS: "920985551442681867",
 };
+
+client.slashcommands = new Collection();
+const slashcommandsFiles = fs.readdirSync(`./Komendy/Slash-Komendy`).filter(file => file.startsWith("Komenda-Slash"))
+
+for (const file of slashcommandsFiles) {
+  const slash = require(`./Komendy/Slash-Komendy/${file}`)
+  console.log(`Slash komendy - ${file}`)
+  client.slashcommands.set(slash.data.name, slash)
+}
+
+client.on("interactionCreate", async (interaction) => {
+  if (!interaction.isCommand()) return;
+
+  const slashcmds = client.slashcommands.get(interaction.commandName)
+
+  if (!slashcmds) return;
+
+  try {
+    await slashcmds.run(client, interaction)
+  } catch (e) {
+    console.error(e)
+  }
+})
 
 client.on("ready", () => {
   console.log(chalk.green(`Zalogowano jako ${client.user.tag}!`));

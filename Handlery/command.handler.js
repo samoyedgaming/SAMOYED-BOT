@@ -45,7 +45,23 @@ module.exports = (client) => {
       continue;
     }
   }
-  console.log(table.toString());
+
+  const slashcommandfiles = readdirSync(__dirname + "/../Komendy/Slash-Komendy").filter((file) =>
+  file.startsWith("Komenda-Slash")
+);
+
+for (const file of slashcommandfiles) {
+  const command = require(__dirname + `/../Komendy/Slash-Komendy/${file}`);
+
+  if (command.name) {
+    client.commands.set(command.name, command);
+    table.addRow(file, "✅");
+  } else {
+    table.addRow(file, "❌  -> Brakująca 'Nazwa'!");
+    continue;
+  }
+}
+console.log(table.toString());
 
   client.on("message", async (msg) => {
     const {
