@@ -63,7 +63,7 @@ for (const file of slashcommandfiles) {
 }
 console.log(table.toString());
 
-  client.on("message", async (msg) => {
+  client.on("messageCreate", async (msg) => {
     const {
       author,
       guild,
