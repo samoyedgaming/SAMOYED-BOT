@@ -4,6 +4,7 @@ const {
   Intents,
   MessageEmbed,
   Collection,
+  MessageAttachment,
 } = require("discord.js");
 const Canvas = require("canvas");
 const chalk = require("chalk");
@@ -99,11 +100,59 @@ client.on("interactionCreate", async (interaction) => {
   }
 })
 
+client.on("guildMemberAdd", async (member) => {
+  const Discord = require("discord.js")
+  const Canvas = require('canvas');
+  const canvas = Canvas.createCanvas(1100, 500);
+  const ctx = canvas.getContext('2d');
+  const background = await Canvas.loadImage("./Pliki/card.png")
+  const avatar = await Canvas.loadImage(member.user.displayAvatarURL({
+    format: "jpg",
+    size: 1024,
+    dynamic: true
+  }));
+  ctx.drawImage(avatar, 25, 25, 200, 200);
+  ctx.drawImage(background, 0, 0, 1100, 500);
+  const attachment = new Discord.MessageAttachment(
+    canvas.toBuffer(), '1.png')
+  member.guild.channels.cache.get("920985574729469962").send('ss', attachment)
+
+    .catch((err) => console.log(err));
+});
+
+client.on("guildMemberRemove", (member) => {
+  const embed = new MessageEmbed()
+    .setAuthor(`${member.user.tag} opuścił/a nasz serwer!`, member.user.avatarURL())
+    .setDescription("Przykro nam z tego powodu")
+    .setColor("FF0000");
+  member.guild.channels.cache.get("920985577506078730").send({
+      embeds: [embed]
+    })
+
+    .catch((err) => console.log(err));
+});
+
 client.on("ready", () => {
   console.log(chalk.green(`Zalogowano jako ${client.user.tag}!`));
   //wiadomosc pierwsza
   client.channels.cache.get("920985565682360320").messages.fetch("924398092009218048").then(msg => {
     let ifilter = i => !i.user.bot;
+
+    const {
+      getChannelVideos
+    } = require("yt-channel-info")
+    const db = require("megadb")
+    const yt = new db.crearDB("yt")
+    setInterval(async function () {
+      const videos = await getChannelVideos("UCm85GFqdoywjqZOKrWSQwJg", 0)
+      const ultimoVideo = videos.items[0]
+      const titulo = await yt.obtener("UCm85GFqdoywjqZOKrWSQwJg")
+      if (titulo === ultimoVideo.title) return;
+      if (titulo !== ultimoVideo.title) {
+        yt.establecer("UCm85GFqdoywjqZOKrWSQwJg", ultimoVideo.title)
+        client.channels.cache.get("920985571063635979").send(`${ultimoVideo.author} wstawił nowy film: **${ultimoVideo.title}**\nhttps://www.youtube.com/watch?v=${ultimoVideo.videoId}`)
+      }
+    }, 120000)
 
     const collector = msg.createMessageComponentCollector({
       filter: ifilter

@@ -13,7 +13,7 @@ module.exports = {
 
     async run(client, interaction) {
         interaction.reply({
-            content: `Pong! **${client.ws.ping}ms**`,
+            content: `Wyemitowałem dołączenie na serwer`,
             ephemeral: true
         })
     }
