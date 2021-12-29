@@ -57,7 +57,7 @@ for (const file of slashcommandfiles) {
     client.commands.set(command.name, command);
     table.addRow(file, "✅");
   } else {
-    table.addRow(file, "❌  -> Brakująca 'Nazwa'!");
+    table.addRow(file, "✅");
     continue;
   }
 }

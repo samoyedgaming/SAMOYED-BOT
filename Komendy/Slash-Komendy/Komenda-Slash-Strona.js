@@ -8,16 +8,17 @@ const {
   },
   MessageEmbed,
 } = require("discord.js");
+const {
+  SlashCommandBuilder
+} = require('@discordjs/builders');
+const Discord = require("discord.js")
 
 module.exports = {
-  name: "strona",
-  description: "Wysyła strone serwera",
-  usage: " ",
-  guildOnly: true,
-  aliases: ["strona"],
-  userPermissions: [FLAGS.SEND_MESSAGES],
+  data: new SlashCommandBuilder()
+    .setName("strona")
+    .setDescription("Wysyła strone serwera"),
 
-  run(msg) {
+    async run(client, interaction) {
     const embed = new MessageEmbed()
 
       .setTitle(botname)
@@ -28,8 +29,9 @@ module.exports = {
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
 
-    msg.channel.send({
-      embeds: [embed]
+    interaction.reply({
+      embeds: [embed],
+      ephemeral: true
     });
   },
 };

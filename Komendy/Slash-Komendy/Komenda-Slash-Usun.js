@@ -16,6 +16,7 @@ const botversion = "v1.0 beta";
 const botname = "Samoyed Bot";
 
 module.exports = {
+  userPermissions: [FLAGS.MANAGE_MESSAGES],
   data: new SlashCommandBuilder()
     .setName("usun")
     .setDescription("Usuwa daną ilość wiadomości na kanale")
