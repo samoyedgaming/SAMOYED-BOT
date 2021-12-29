@@ -106,16 +106,37 @@ client.on("guildMemberAdd", async (member) => {
   const canvas = Canvas.createCanvas(1100, 500);
   const ctx = canvas.getContext('2d');
   const background = await Canvas.loadImage("./Pliki/card.png")
+  ctx.drawImage(background, 0, 0, 1100, 500);
+
+  ctx.font = '32px Sans Not-Rotated'
+  ctx.fillStyle = "white";
+  ctx.textAlign = "center";
+  ctx.fillText(`Użytkownik #${member.guild.memberCount}`, 550, 450)
+
+  ctx.font = '38px Sans Not-Rotated'
+  ctx.fillStyle = "white";
+  ctx.textAlign = "center";
+  ctx.fillText(`Witaj na serwerze ${member.user.tag}`, 550, 400)
+
+  ctx.beginPath()
+  ctx.arc(550, 200, 150, 0, 2 * Math.PI);
+  ctx.strokeStyle="#23272a";
+  ctx.lineWidth = 15;
+  ctx.closePath();
+  ctx.clip();
+
   const avatar = await Canvas.loadImage(member.user.displayAvatarURL({
     format: "jpg",
     size: 1024,
     dynamic: true
   }));
-  ctx.drawImage(avatar, 25, 25, 200, 200);
-  ctx.drawImage(background, 0, 0, 1100, 500);
+  ctx.drawImage(avatar, 400, 50, 300, 300);
   const attachment = new Discord.MessageAttachment(
-    canvas.toBuffer(), '1.png')
-  member.guild.channels.cache.get("920985574729469962").send('ss', attachment)
+    canvas.toBuffer())
+  member.guild.channels.cache.get("920985574729469962").send({
+      content: `Witaj <@${member.user.id}> na serwerze\n :dog:**Samoyed Gaming**:dog:`,
+      files: [attachment]
+    })
 
     .catch((err) => console.log(err));
 });
@@ -123,7 +144,7 @@ client.on("guildMemberAdd", async (member) => {
 client.on("guildMemberRemove", (member) => {
   const embed = new MessageEmbed()
     .setAuthor(`${member.user.tag} opuścił/a nasz serwer!`, member.user.avatarURL())
-    .setDescription("Przykro nam z tego powodu")
+    .setDescription("Przykro nam z tego powodu <:cry:925797239652220929>")
     .setColor("FF0000");
   member.guild.channels.cache.get("920985577506078730").send({
       embeds: [embed]
@@ -131,33 +152,18 @@ client.on("guildMemberRemove", (member) => {
 
     .catch((err) => console.log(err));
 });
-
 client.on("ready", () => {
   console.log(chalk.green(`Zalogowano jako ${client.user.tag}!`));
   //wiadomosc pierwsza
+  client.user.setActivity("Programuje 24/7", {
+    type: "STREAMING",
+    url: "https://www.twitch.tv/samoyedfranek"
+  });
   client.channels.cache.get("920985565682360320").messages.fetch("924398092009218048").then(msg => {
     let ifilter = i => !i.user.bot;
-
-    const {
-      getChannelVideos
-    } = require("yt-channel-info")
-    const db = require("megadb")
-    const yt = new db.crearDB("yt")
-    setInterval(async function () {
-      const videos = await getChannelVideos("UCm85GFqdoywjqZOKrWSQwJg", 0)
-      const ultimoVideo = videos.items[0]
-      const titulo = await yt.obtener("UCm85GFqdoywjqZOKrWSQwJg")
-      if (titulo === ultimoVideo.title) return;
-      if (titulo !== ultimoVideo.title) {
-        yt.establecer("UCm85GFqdoywjqZOKrWSQwJg", ultimoVideo.title)
-        client.channels.cache.get("920985571063635979").send(`${ultimoVideo.author} wstawił nowy film: **${ultimoVideo.title}**\nhttps://www.youtube.com/watch?v=${ultimoVideo.videoId}`)
-      }
-    }, 120000)
-
     const collector = msg.createMessageComponentCollector({
       filter: ifilter
     })
-
     //wiadomosc pierwsza
 
     collector.on("collect", async i => {
