@@ -27,7 +27,8 @@ module.exports = {
       .addField("Wersja", botversion, true);
 
     interaction.reply({
-      embeds: [embed]
+      embeds: [embed],
+      ephemeral: true
     });
   },
 };

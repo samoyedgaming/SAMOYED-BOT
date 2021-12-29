@@ -29,7 +29,8 @@ module.exports = {
 
 
       interaction.reply({
-        embeds: [embed]
+        embeds: [embed],
+        ephemeral: true
     })
   },
 };

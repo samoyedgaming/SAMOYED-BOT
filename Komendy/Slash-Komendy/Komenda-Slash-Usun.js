@@ -35,7 +35,8 @@ module.exports = {
         .addField("Wersja", botversion, true);
 
       return interaction.reply({
-        embeds: [embed]
+        embeds: [embed],
+        ephemeral: true
       });
     }
 
@@ -51,7 +52,8 @@ module.exports = {
         .addField("Wersja", botversion, true);
 
       return interaction.reply({
-        embeds: [embed]
+        embeds: [embed],
+        ephemeral: true
       });
     }
 
@@ -65,7 +67,8 @@ module.exports = {
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
     interaction.reply({
-      embeds: [embed]
+      embeds: [embed],
+      ephemeral: true
     })
   },
 };

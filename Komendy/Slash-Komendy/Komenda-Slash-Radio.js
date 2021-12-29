@@ -13,7 +13,8 @@ module.exports = {
 
     async run(client, interaction) {
         interaction.reply({
-            content: `Pong! **${client.ws.ping}ms**`
+            content: `Pong! **${client.ws.ping}ms**`,
+            ephemeral: true
         })
     }
 }
