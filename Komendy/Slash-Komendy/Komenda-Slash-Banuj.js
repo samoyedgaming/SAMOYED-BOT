@@ -27,7 +27,7 @@ module.exports = {
     const member = await interaction.guild.members.fetch(user.id)
 
     const embed = new MessageEmbed()
-      .setAuthor(`${user.tag} został poprawnie wyrzucony!`, user.avatarURL())
+      .setAuthor(`${user.tag} został poprawnie zbanowany!`, user.avatarURL())
       .setDescription(`**Powód: **${powod}`)
       .setFooter(interaction.user.tag, interaction.user.displayAvatarURL({
         dynamic: true
