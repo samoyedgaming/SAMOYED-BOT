@@ -5,6 +5,8 @@ const {
   MessageEmbed,
   Collection,
   MessageAttachment,
+  MessageActionRow,
+  MessageButton
 } = require("discord.js");
 const Canvas = require("canvas");
 const chalk = require("chalk");
@@ -42,6 +44,7 @@ const {
 const {
   DiscordAPIError
 } = require("@discordjs/rest");
+const INTERACTION_CREATE = require('discord.js/src/client/websocket/handlers/INTERACTION_CREATE');
 
 const botauthor = 'Samoyed Franek#9264'
 const botversion = 'v1.0 beta'
@@ -87,6 +90,95 @@ for (const file of slashcommandsFiles) {
 }
 
 client.on("interactionCreate", async (interaction) => {
+  if (interaction.isButton()) {
+    if (interaction.customId === "ticket") {
+      const everyone = interaction.guild.roles.cache.find(r => r.id === "922834801008979968")
+      interaction.guild.channels.create(`Ticket-${interaction.user.username}`, {
+        type: "GUILD_TEXT",
+        parent: "926160870550171670",
+        permissionsOverwrites: [{
+            id: interaction.user.id,
+            allow: ["VIEW_CHANNEL", "SEND_MESSAGES"]
+          },
+          {
+            id: everyone,
+            deny: ["VIEW_CHANNEL", "SEND_MESSAGES"]
+          }
+        ]
+      }).then(c => {    
+        const third = new MessageActionRow()
+        .addComponents(
+          new MessageButton()
+          .setCustomId('close')
+          .setEmoji("❌")
+          .setStyle('DANGER'),
+        )
+        const embed = new MessageEmbed()
+        .setTitle(`Ticket został stworzony przez:\n ${interaction.user.username}`)
+        .setDescription(`Proszę opisać swój problem w innym przypadku użytkownik zostanie wyciszony na 1 dzień`)
+        .setColor("RANDOM")
+
+        c.send({
+          content: "@everyone",
+          embeds: [embed],
+          components: [third]
+        })
+      })
+
+      if (!client.channels.cache.find(c => c.name === `Ticket-${interaction.user.username}`)){
+        interaction.reply({
+        content: `<@${interaction.user.id}>, pomyślnie utworzony ticket`,
+        ephemeral: true
+      })
+      } else {
+        interaction.reply({
+          content: `<@${interaction.user.id}>, stowrzyłeś już ticket!`,
+          ephemeral: true
+        })
+      }
+    }
+  }
+  if (interaction.isButton()) {
+    if (interaction.customId === "ticket") {
+      const everyone = interaction.guild.roles.cache.find(r => r.id === "922834801008979968")
+      interaction.guild.channels.create(`Ticket-${interaction.user.username}`, {
+        type: "GUILD_TEXT",
+        parent: "926160870550171670",
+        permissionsOverwrites: [{
+            id: interaction.user.id,
+            allow: ["VIEW_CHANNEL", "SEND_MESSAGES"]
+          },
+          {
+            id: everyone,
+            deny: ["VIEW_CHANNEL", "SEND_MESSAGES"]
+          }
+        ]
+      }).then(c => {    
+        const third = new MessageActionRow()
+        .addComponents(
+          new MessageButton()
+          .setCustomId('close')
+          .setEmoji("❌")
+          .setStyle('DANGER'),
+        )
+        const embed = new MessageEmbed()
+        .setTitle(`Ticket został stworzony przez:\n ${interaction.user.username}`)
+        .setDescription(`Proszę opisać swój problem w innym przypadku użytkownik zostanie wyciszony na 1 dzień`)
+        .setColor("RANDOM")
+
+        c.send({
+          content: "@everyone",
+          embeds: [embed],
+          components: [third]
+        })
+      })
+
+      interaction.reply({
+        content: `<@${interaction.user.id}>, pomyślnie utworzony ticket`,
+        ephemeral: true
+      })
+    }
+  }
   if (!interaction.isCommand()) return;
 
   const slashcmds = client.slashcommands.get(interaction.commandName)
@@ -120,7 +212,7 @@ client.on("guildMemberAdd", async (member) => {
 
   ctx.beginPath()
   ctx.arc(550, 200, 150, 0, 2 * Math.PI);
-  ctx.strokeStyle="#23272a";
+  ctx.strokeStyle = "#23272a";
   ctx.lineWidth = 15;
   ctx.closePath();
   ctx.clip();
