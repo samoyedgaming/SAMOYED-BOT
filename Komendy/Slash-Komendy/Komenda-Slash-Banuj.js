@@ -12,23 +12,30 @@ const Discord = require("discord.js")
 
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName("testv2")
-    .setDescription("Wysyła link do serwera"),
+    .setName("banuj")
+    .setDescription("Banuje daną osobę z serwera")
+    .addUserOption(option => option.setName('użytkownik').setDescription("Wybierasz osobę którą chcesz zbanować.").setRequired(true))
+    .addStringOption(option => option.setName("powód").setDescription("Podajesz powód bana").setRequired(true)),
+  async run(client, interaction) {
 
-  async run(client, interaction, msg) {
+    const powod = interaction.options.getString("powód")
+    const user = interaction.options.getUser("użytkownik")
+
+    let permissions = interaction.member.permissions.has("MODERATE_MEMBERS")
+    if (!permissions) return interaction.reply("Nie masz permisji do użycia tej komendy!")
+
+    const member = await interaction.guild.members.fetch(user.id)
+
     const embed = new MessageEmbed()
+      .setAuthor(`${user.tag} został poprawnie wyrzucony!`, user.avatarURL())
+      .setDescription(`**Powód: **${powod}`)
+      .setFooter(interaction.user.tag, interaction.user.displayAvatarURL({
+        dynamic: true
+      }))
+      .setTimestamp()
 
-      .setTitle(botname)
-      .setColor(0xb65307)
-      .setDescription(
-        "LINK NIGDY NIE WYGAŚNIE:   --->  https://dsc.gg/samoyedgaming <--- ZAPRASZAMY WSZYSTKICH! :heart:"
-      )
-      .addField("Autor", botauthor, true)
-      .addField("Wersja", botversion, true);
-
-    interaction.reply({
-      embeds: [embed],
-      ephemeral: true
-    });
-  },
-};
+    if (member.ban()) return interaction.reply({
+      embeds: [embed]
+    })
+  }
+}

@@ -14,7 +14,7 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName("odcisz")
     .setDescription("Odcisza daną osobę")
-    .addUserOption(option => option.setName('użytkownik').setDescription("Wybierasz osobę którą chcesz wyciszyć.").setRequired(true)),
+    .addUserOption(option => option.setName('użytkownik').setDescription("Wybierasz osobę którą chcesz odciszyć").setRequired(true)),
   async run(client, interaction) {
 
     const user = interaction.options.getUser("użytkownik")

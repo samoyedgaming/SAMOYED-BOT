@@ -14,8 +14,8 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName("wyrzuc")
     .setDescription("Wyrzuca daną osobę z serwera")
-    .addUserOption(option => option.setName('użytkownik').setDescription("Wybierasz osobę którą chcesz wyciszyć.").setRequired(true))
-    .addStringOption(option => option.setName("powód").setDescription("Podajesz powód wyciszenia").setRequired(true)),
+    .addUserOption(option => option.setName('użytkownik').setDescription("Wybierasz osobę którą chcesz wyrzucic").setRequired(true))
+    .addStringOption(option => option.setName("powód").setDescription("Podajesz powód wyrzucenia").setRequired(true)),
   async run(client, interaction) {
 
     const powod = interaction.options.getString("powód")
