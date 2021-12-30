@@ -21,7 +21,7 @@ module.exports = {
       .setTitle(botname)
       .setColor(0xb65307)
       .setDescription(
-        "LINK NIGDY NIE WYGAŚNIE:   --->  https://dsc.gg/samoyedgaming <--- ZAPRASZAMY WSZYSTKICH! :heart:"
+        "LINK NIGDY NIE WYGAŚNIE:   --->  https://samoyedgaming.ga <--- ZAPRASZAMY WSZYSTKICH! :heart:"
       )
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
