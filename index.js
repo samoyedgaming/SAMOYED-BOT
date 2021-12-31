@@ -267,11 +267,7 @@ client.on("ready", () => {
   const resource = createAudioResource("https://rs102-krk.rmfstream.pl/rmf_maxxx");
 
   connection.subscribe(audioPlayer);
-  if (audioPlayer.play(resource)) {
-    member.guild.channels.cache.get("920985587081687110").send({
-      content: "Działam"
-    })
-  }
+  audioPlayer.play(resource);
 });
 client.on("ready", () => {
   console.log(chalk.green(`Zalogowano jako ${client.user.tag}!`));
