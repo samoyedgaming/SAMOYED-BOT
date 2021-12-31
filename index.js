@@ -93,7 +93,7 @@ mongoose.connect(mongoDB, {
 })
 
 client.on("messageDelete", async (message) => {
-  const snipe = require("./Schematy/MongoDB-Schemat.js")
+  const snipe = require("./Schematy/snipeSchema.js")
 
   let data = await snipe.findOne({
     channelId: message.channel.id
@@ -118,7 +118,7 @@ client.on("messageDelete", async (message) => {
     author: message.author.tag,
     time: Math.floor(Date.now() / 1000)
   })
-  
+
 })
 
 client.slashcommands = new Collection();

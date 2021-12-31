@@ -5,28 +5,40 @@ const {
     MessageEmbed
 } = require("discord.js")
 const Discord = require("discord.js")
-const voice = require("@discordjs/voice")
 
-const player = voice.createAudioPlayer()
-const resource = voice.createAudioResource("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-16.mp3")
+
+//const player = voice.createAudioPlayer()
+
 
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("radio")
         .setDescription("Odpowie Pong"),
 
-    async run(client, interaction) {
+    async run(client, interaction, message) {
+        const voice = require("@discordjs/voice")
+        const currGuild = message.member.guild;
+        const VC = message.member.voice.channel;
+     
+        const resource = voice.createAudioResource('https://live.splex.xyz:8000/radio.mp3');
+
+        const currentguild = await client.guilds.fetch(currGuild.id);
         const connection = voice.joinVoiceChannel({
-            channelId: interaction.member.voice.channel.id,
-            guildId: interaction.guild.id,
-            adapterCreator: interaction.guild.voiceAdapterCreator,
-          })
-          
-          player.play(resource)
-          connection.subscribe(player)
+            channelId: VC.id,
+            guildId: currGuild.id,
+            adapterCreator: currentguild.voiceAdapterCreator
+        });
+        const audioplayer = voice.createAudioPlayer();
+        connection.subscribe(audioplayer);
+        audioplayer.play(resource);
+        connection.on('stateChange', (oldState, newState) => {
+        //console.log(`Connection transitioned from ${oldState.status} to ${newState.status}`);
+        });
+        audioplayer.on('stateChange', (oldState, newState) => {
+        //console.log(`Audio player transitioned from ${oldState.status} to ${newState.status}`);
+        });
         interaction.reply({
-            content: `Wyemitowałem dołączenie na serwer`,
-            ephemeral: true
+            content: 'Im working'
         })
     }
 }
