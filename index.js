@@ -13,22 +13,7 @@ const Canvas = require("canvas");
 const chalk = require("chalk");
 const client = new Client({
   partials: ["MESSAGE", "REACTION"],
-  intents: [
-    Intents.FLAGS.GUILDS,
-    Intents.FLAGS.GUILD_MEMBERS,
-    Intents.FLAGS.GUILD_BANS,
-    Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS,
-    Intents.FLAGS.GUILD_INTEGRATIONS,
-    Intents.FLAGS.GUILD_WEBHOOKS,
-    Intents.FLAGS.GUILD_INVITES,
-    Intents.FLAGS.GUILD_PRESENCES,
-    Intents.FLAGS.GUILD_MESSAGES,
-    Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
-    Intents.FLAGS.GUILD_MESSAGE_TYPING,
-    Intents.FLAGS.DIRECT_MESSAGES,
-    Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
-    Intents.FLAGS.DIRECT_MESSAGE_TYPING,
-  ],
+  intents: Object.keys(Intents.FLAGS)
 });
 const {
   token,
@@ -258,6 +243,35 @@ client.on("guildMemberRemove", (member) => {
     })
 
     .catch((err) => console.log(err));
+});
+client.on("ready", () => {
+  const {
+    joinVoiceChannel,
+    createAudioPlayer,
+    VoiceConnectionStatus,
+    getVoiceConnection,
+    createAudioResource,
+    entersState,
+    AudioPlayerStatus
+  } = require('@discordjs/voice');
+
+  const channel = client.channels.cache.get('926599261368492033');
+  const connection = joinVoiceChannel({
+    channelId: channel.id,
+    guildId: channel.guild.id,
+    adapterCreator: channel.guild.voiceAdapterCreator,
+  });
+
+  const audioPlayer = createAudioPlayer();
+
+  const resource = createAudioResource("https://rs102-krk.rmfstream.pl/rmf_maxxx");
+
+  connection.subscribe(audioPlayer);
+  if (audioPlayer.play(resource)) {
+    member.guild.channels.cache.get("920985587081687110").send({
+      content: "Działam"
+    })
+  }
 });
 client.on("ready", () => {
   console.log(chalk.green(`Zalogowano jako ${client.user.tag}!`));
