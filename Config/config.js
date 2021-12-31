@@ -19,4 +19,5 @@ module.exports = {
   owner: "622714126841675778",
   clientID: "805872253282811946",
   guild: "770930426767998987",
+  mongoDB: process.env.MONGO
 };

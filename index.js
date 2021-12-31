@@ -32,7 +32,8 @@ const client = new Client({
 });
 const {
   token,
-  prefix
+  prefix,
+  mongoDB
 } = require("./Config/config.js")
 
 const commandHandler = require("./Handlery/command.handler.js")
@@ -82,7 +83,7 @@ const guildRoles = {
   CS: "920985551442681867",
 };
 
-mongoose.connect("mongodb+srv://SamoyedFranek:franek54321@samoyedbot.kxwjn.mongodb.net/SmydDB?retryWrites=true&w=majority", {
+mongoose.connect(mongoDB, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
