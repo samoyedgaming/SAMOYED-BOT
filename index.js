@@ -91,6 +91,35 @@ mongoose.connect("mongodb+srv://SamoyedFranek:franek54321@samoyedbot.kxwjn.mongo
   console.log("Wykryto błąd przy łączeniu z serwerem MongoDB")
 })
 
+client.on("messageDelete", async (message) => {
+  const snipe = require("./Schematy/MongoDB-Schemat.js")
+
+  let data = await snipe.findOne({
+    channelId: message.channel.id
+  })
+
+  if (!data) {
+
+    let newdata = snipe({
+      channelId: message.channel.id,
+      message: message.content,
+      author: message.author.tag,
+      time: Math.floor(Date.now() / 1000)
+    })
+
+    return await newdata.save()
+
+  }
+
+  await snipe.findOneAndUpdate({
+    channelId: message.channel.id,
+    message: message.content,
+    author: message.author.tag,
+    time: Math.floor(Date.now() / 1000)
+  })
+  
+})
+
 client.slashcommands = new Collection();
 const slashcommandsFiles = fs.readdirSync(`./Komendy/Slash-Komendy`).filter(file => file.startsWith("Komenda-Slash"))
 

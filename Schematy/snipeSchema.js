@@ -1,5 +1,6 @@
 const {
-    Schema
+    Schema,
+    model
 } = require("mongoose")
 
 const snipe = new Schema({
@@ -23,3 +24,5 @@ const snipe = new Schema({
         required: true
     }
 })
+
+module.exports = model("snipeSchema", snipe)
