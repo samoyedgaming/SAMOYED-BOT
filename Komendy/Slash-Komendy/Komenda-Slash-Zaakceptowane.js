@@ -30,6 +30,7 @@ module.exports = {
     interaction.reply({
       content: "Poprawnie wysłano wiadomość"
     })
+    member.roles.add('924649374577999902')
     member.guild.channels.cache.get("922834801008979968").send({
       content: `<@${member.user.id}>`,
       embeds: [embed]

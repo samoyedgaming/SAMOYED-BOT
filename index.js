@@ -8,6 +8,7 @@ const {
   MessageActionRow,
   MessageButton
 } = require("discord.js");
+const mongoose = require('mongoose')
 const Canvas = require("canvas");
 const chalk = require("chalk");
 const client = new Client({
@@ -81,6 +82,15 @@ const guildRoles = {
   CS: "920985551442681867",
 };
 
+mongoose.connect("mongodb+srv://SamoyedFranek:franek54321@samoyedbot.kxwjn.mongodb.net/SmydDB?retryWrites=true&w=majority", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}).then(() => {
+  console.log("Polączono z serwerem MongoDB")
+}).catch(() => {
+  console.log("Wykryto błąd przy łączeniu z serwerem MongoDB")
+})
+
 client.slashcommands = new Collection();
 const slashcommandsFiles = fs.readdirSync(`./Komendy/Slash-Komendy`).filter(file => file.startsWith("Komenda-Slash"))
 
@@ -109,7 +119,7 @@ client.on("interactionCreate", async (interaction) => {
         }).then(c => {
           var channel1 = interaction.guild.channels.cache.find(
             (channel) => channel.name === `ticket-${interaction.user.id}`
-           );
+          );
           const third = new MessageActionRow()
             .addComponents(
               new MessageButton()
@@ -131,7 +141,7 @@ client.on("interactionCreate", async (interaction) => {
             content: `<@${interaction.user.id}>, pomyślnie utworzono ticket\n <#${channel1.id}>`,
             ephemeral: true
           })
-          
+
         })
       } else {
         interaction.reply({
