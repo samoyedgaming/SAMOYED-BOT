@@ -17,6 +17,7 @@ const {
 } = require("discord.js");
 
 module.exports = {
+  userPermissions: [FLAGS.MANAGE_MESSAGES],
   name: "rola",
   description: "Wysyła link do serwera",
   usage: " ",

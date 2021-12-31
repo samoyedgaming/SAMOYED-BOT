@@ -17,12 +17,14 @@ const {
 } = require("discord.js");
 
 module.exports = {
+  userPermissions: [FLAGS.MANAGE_MESSAGES],
   name: "regulamin",
   description: "",
   usage: " ",
   guildOnly: true,
 
   async run(msg, reaction, channel) {
+    
     const embed = new MessageEmbed()
 
       .setTitle(botname)

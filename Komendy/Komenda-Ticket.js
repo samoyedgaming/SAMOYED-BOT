@@ -2,9 +2,15 @@ const {
     MessageButton,
     MessageActionRow,
     MessageEmbed
-} = require("discord.js");
 
+} = require("discord.js");
+const {
+    Permissions: {
+        FLAGS
+    }
+} = require("discord.js");
 module.exports = {
+    userPermissions: [FLAGS.MANAGE_MESSAGES],
     name: "ticket",
     description: "Tworzy ticket",
 

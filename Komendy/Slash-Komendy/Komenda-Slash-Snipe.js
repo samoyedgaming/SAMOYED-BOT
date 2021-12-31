@@ -17,6 +17,8 @@ module.exports = {
     const botversion = "v1.0 beta";
     const botname = "Samoyed Bot";
     const botdescription = "Jestem Botem który zastępuje większość botów.";
+    let permissions = interaction.member.permissions.has("MODERATE_MEMBERS")
+    if (!permissions) return interaction.reply("Nie masz permisji do użycia tej komendy!")
     let data = await snipe.findOne({ channelId: interaction.channel.id })
 
     if(!data){

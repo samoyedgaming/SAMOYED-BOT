@@ -16,13 +16,14 @@ const botversion = "v1.0 beta";
 const botname = "Samoyed Bot";
 
 module.exports = {
-  userPermissions: [FLAGS.MANAGE_MESSAGES],
   data: new SlashCommandBuilder()
     .setName("usun")
     .setDescription("Usuwa daną ilość wiadomości na kanale")
     .addNumberOption(option => option.setName('liczba').setDescription('Wpisz liczbę').setRequired(true)),
 
   async run(client, interaction) {
+    let permissions = interaction.member.permissions.has("MODERATE_MEMBERS")
+    if (!permissions) return interaction.reply("Nie masz permisji do użycia tej komendy!")
     const channel = interaction.channel 
     const amount = interaction.options.getNumber('liczba');
 
