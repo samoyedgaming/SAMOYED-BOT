@@ -166,19 +166,6 @@ client.on("interactionCreate", async (interaction) => {
       }
     }
   }
-  if (interaction.isButton()) {
-    if (interaction.customId === "close") {
-      interaction.reply({
-        content: `<@${interaction.user.id}>, zamknął ticketa`,
-      }).then(s => {
-        if (interaction.client.channels.cache.find(c => c.name === `ticket-${interaction.user.id}`)) {
-          setTimeout(function () {
-            interaction.channel.delete()
-          }, 5000);
-        }
-      })
-    }
-  }
   if (!interaction.isCommand()) return;
 
   const slashcmds = client.slashcommands.get(interaction.commandName)
