@@ -1,9 +1,201 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="dlaCiebietv.pl" tvg-country="PL" tvg-language="Polish" tvg-logo="https://i.imgur.com/N318K6a.jpg" group-title="",dlaCiebie.tv (1080p) [Not 24/7]
-http://94.246.128.53:1935/tv/dlaCiebieTv/playlist.m3u8
-#EXTINF:-1 tvg-id="Echo24.tv" tvg-country="PL" tvg-language="Polish" tvg-logo="https://i.imgur.com/a5DX4nh.jpg" group-title="",Echo24 (720p) [Not 24/7]
-https://live-insysgo.cf.insyscd.net/echo24.720.smil/manifest.mpd
-#EXTINF:-1 tvg-id="TVP1.pl" tvg-country="PL" tvg-language="Polish" tvg-logo="https://www.sms.cz/kategorie/televize/bmp/loga/velka/TVP1.png" group-title="",TVP 1 (720p) [Offline]
-http://207.110.52.61:8080/s/hls/5/9584/tvp1_276/1/1/index.m3u8
-#EXTINF:-1 tvg-id="TVP3Gdansk.pl" tvg-country="PL" tvg-language="Polish" tvg-logo="https://i.imgur.com/wGZCj7G.jpg" group-title="",TVP 3 Gdańsk (404p)
-http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpgdansk
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Dokument HD
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11223?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP FHD
+http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271767.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP FHD
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11224?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP FHD PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25002?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP HD
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11225?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP HD
+http://103.194.169.171:8282/PL:TVP_HD_S2/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP HISTORIA
+http://s1.showplustv.com:1997/iptvtree2021/adAXCXhWuH9Mj515sda/52955?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP HISTORIA
+http://103.194.169.171:8282/PL:TVP_HISTORIA/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Historia
+http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271768.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Historia
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11226?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Historia PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24916?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP INFO
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11227?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP INFO FHD
+http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271769.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP INFO HD
+http://sbr.siber.vip:2086/siber4603/mDeqbRJ26dNJ/14186?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP INFO HD
+http://s1.showplustv.com:1997/iptvtree2021/adAXCXhWuH9Mj515sda/52957?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP INFO HD
+http://103.194.169.171:8282/PL:TVP_INFO_S2/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP INFO HD
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11229?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Info FHD
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11228?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Info FHD PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24950?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Info HD
+http://ky-tv.cc:80/toyota18/toyota18/219157.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP KULTURA
+http://103.194.169.171:8282/PL:TVP_KULTURA_S2/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Kultura
+http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271770.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Kultura
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11230?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Kultura PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24989?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP POLONIA
+http://s1.showplustv.com:1997/iptvtree2021/adAXCXhWuH9Mj515sda/53043?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP POLONIA
+http://103.194.169.171:8282/PL:TVP_POLONIA/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP POLONIA 1
+http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271771.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Polonia
+http://watchbiptv.co:80/KbXAMQ5B/5639176/25007?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Polonia
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11231?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Polonia PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25004?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP ROZRYWKA
+http://s1.showplustv.com:1997/iptvtree2021/adAXCXhWuH9Mj515sda/52954?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP ROZRYWKA
+http://103.194.169.171:8282/PL:TVP_ROZKRYWKA/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Rozrywka
+http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271772.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Rozrywka
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11233?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Rozrywka PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24938?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP SERIAL HD
+http://sbr.siber.vip:2086/siber4603/mDeqbRJ26dNJ/14187?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP SERIALE
+http://s1.showplustv.com:1997/iptvtree2021/adAXCXhWuH9Mj515sda/52979?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP SERIALE
+http://103.194.169.171:8282/PL:TVP_SERIALE_S2/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Sport",TVP SPORT HD
+http://s1.showplustv.com:1997/iptvtree2021/adAXCXhWuH9Mj515sda/52953?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Sport",TVP SPORT HD
+http://probox.mio4ever.eu:7575/m1roxbr0x012/gs7z2Ghs51x8q/21145?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Seriale
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11234?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Seriale FHD
+http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271773.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Sport",TVP Sport
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11235?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Sport",TVP Sport FHD
+http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271774.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Sport",TVP Sport HD
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11236?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVR
+http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271952.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVR PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25063?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVS
+http://ky-tv.cc:80/toyota18/toyota18/219163.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVS
+http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271953.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVS
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11237?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVS (HD)
+http://103.194.169.171:8282/PL:TVS/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVS PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25005?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVT
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11238?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVT Zgorzelec PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25027?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TeenNick FHD
+http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271881.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Tele 5
+http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271933.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Tele 5 PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25085?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TeleTOON+ HD
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11159?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TeleToon
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11158?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TeleToon+ FHD
+http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271934.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TeleToon+ FHD PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24965?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TeleToon+ PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24966?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Teletoon+
+http://103.194.169.171:8282/PL:TELETOON/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="https://i.imgur.com/tgLWe9o.jpg" group-title="Undefined",Telewizja Kujawy
+http://stream.tvkujawy.pl:8080/live/broadcast.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="https://i.imgur.com/ImFmWk5.png" group-title="Undefined",Telewizja Republika
+https://ec08.luz1.cache.orange.pl/jupiter/o2-cl7/live/tvrepublika/live-tvrepublika-1700k.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="https://i.imgur.com/ImFmWk5.png" group-title="Undefined",Telewizja Republika
+https://ec08.luz1.cache.orange.pl/jupiter/o2-cl7/live/tvrepublika/live.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="https://i.imgur.com/GdbkqCM.png" group-title="Undefined",Telewizja Toruń
+http://217.173.176.107:1935/live/ngrp:tvk.stream_mobile/chunks.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="https://i.imgur.com/GdbkqCM.png" group-title="Undefined",Telewizja Toruń
+http://217.173.176.107:1935/live/ngrp:tvk.stream_all/master.m3u8?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TheBlaze TV PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24917?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Trace Urban Muzik HD PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24942?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Travel Channel
+http://103.194.169.171:8282/PL:TRAVEL_CHANEL/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Travel Channel FHD
+http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271938.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Travel Channel FHD
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11167?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Travel Channel FHD PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24918?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Travel Channel HD
+http://s1.showplustv.com:1997/iptvtree2021/adAXCXhWuH9Mj515sda/53053?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Travel Channel HD
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11168?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",UNIVERSAL HD
+http://s1.showplustv.com:1997/iptvtree2021/adAXCXhWuH9Mj515sda/53045?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",UNIVERSAL HD
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/17817?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VH1
+http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271954.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VH1
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11239?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VH1 PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24940?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VIVA POLSKA
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/17789?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 202 PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25028?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 204 PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25029?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 205
+http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271957.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 205
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11240?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 205 PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25030?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 206
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11241?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 206 PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25031?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 207
+http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271959.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 207
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11242?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 207 PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25032?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 208
+http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271960.ts?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 208
+http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11243?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 208 PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25033?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 212 PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25034?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Music",VOX Music TV PL
+http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24939?checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Viasat Explorer FHD (local)
+http://103.194.169.171:8282/PL:POLSAT_VIASAT_EXPLORE/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Viasat History
+http://103.194.169.171:8282/PL:VIASAT_HISTORY/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
+#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Viasat Polsat Nature
+http://103.194.169.171:8282/POLSAT_VIASAT_NATURE/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
