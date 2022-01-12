@@ -1,201 +1,193 @@
 #EXTM3U
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Dokument HD
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11223?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP FHD
-http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271767.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP FHD
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11224?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP FHD PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25002?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP HD
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11225?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP HD
-http://103.194.169.171:8282/PL:TVP_HD_S2/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP HISTORIA
-http://s1.showplustv.com:1997/iptvtree2021/adAXCXhWuH9Mj515sda/52955?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP HISTORIA
-http://103.194.169.171:8282/PL:TVP_HISTORIA/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Historia
-http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271768.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Historia
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11226?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Historia PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24916?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP INFO
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11227?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP INFO FHD
-http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271769.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP INFO HD
-http://sbr.siber.vip:2086/siber4603/mDeqbRJ26dNJ/14186?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP INFO HD
-http://s1.showplustv.com:1997/iptvtree2021/adAXCXhWuH9Mj515sda/52957?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP INFO HD
-http://103.194.169.171:8282/PL:TVP_INFO_S2/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP INFO HD
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11229?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Info FHD
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11228?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Info FHD PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24950?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Info HD
-http://ky-tv.cc:80/toyota18/toyota18/219157.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP KULTURA
-http://103.194.169.171:8282/PL:TVP_KULTURA_S2/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Kultura
-http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271770.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Kultura
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11230?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Kultura PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24989?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP POLONIA
-http://s1.showplustv.com:1997/iptvtree2021/adAXCXhWuH9Mj515sda/53043?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP POLONIA
-http://103.194.169.171:8282/PL:TVP_POLONIA/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP POLONIA 1
-http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271771.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Polonia
-http://watchbiptv.co:80/KbXAMQ5B/5639176/25007?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Polonia
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11231?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Polonia PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25004?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP ROZRYWKA
-http://s1.showplustv.com:1997/iptvtree2021/adAXCXhWuH9Mj515sda/52954?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP ROZRYWKA
-http://103.194.169.171:8282/PL:TVP_ROZKRYWKA/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Rozrywka
-http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271772.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Rozrywka
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11233?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Rozrywka PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24938?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP SERIAL HD
-http://sbr.siber.vip:2086/siber4603/mDeqbRJ26dNJ/14187?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP SERIALE
-http://s1.showplustv.com:1997/iptvtree2021/adAXCXhWuH9Mj515sda/52979?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP SERIALE
-http://103.194.169.171:8282/PL:TVP_SERIALE_S2/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Sport",TVP SPORT HD
-http://s1.showplustv.com:1997/iptvtree2021/adAXCXhWuH9Mj515sda/52953?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Sport",TVP SPORT HD
-http://probox.mio4ever.eu:7575/m1roxbr0x012/gs7z2Ghs51x8q/21145?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Seriale
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11234?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVP Seriale FHD
-http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271773.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Sport",TVP Sport
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11235?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Sport",TVP Sport FHD
-http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271774.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Sport",TVP Sport HD
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11236?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVR
-http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271952.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVR PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25063?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVS
-http://ky-tv.cc:80/toyota18/toyota18/219163.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVS
-http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271953.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVS
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11237?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVS (HD)
-http://103.194.169.171:8282/PL:TVS/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVS PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25005?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVT
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11238?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TVT Zgorzelec PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25027?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TeenNick FHD
-http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271881.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Tele 5
-http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271933.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Tele 5 PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25085?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TeleTOON+ HD
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11159?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TeleToon
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11158?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TeleToon+ FHD
-http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271934.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TeleToon+ FHD PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24965?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TeleToon+ PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24966?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Teletoon+
-http://103.194.169.171:8282/PL:TELETOON/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="https://i.imgur.com/tgLWe9o.jpg" group-title="Undefined",Telewizja Kujawy
-http://stream.tvkujawy.pl:8080/live/broadcast.m3u8?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="https://i.imgur.com/ImFmWk5.png" group-title="Undefined",Telewizja Republika
-https://ec08.luz1.cache.orange.pl/jupiter/o2-cl7/live/tvrepublika/live-tvrepublika-1700k.m3u8?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="https://i.imgur.com/ImFmWk5.png" group-title="Undefined",Telewizja Republika
-https://ec08.luz1.cache.orange.pl/jupiter/o2-cl7/live/tvrepublika/live.m3u8?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="https://i.imgur.com/GdbkqCM.png" group-title="Undefined",Telewizja Toruń
-http://217.173.176.107:1935/live/ngrp:tvk.stream_mobile/chunks.m3u8?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="https://i.imgur.com/GdbkqCM.png" group-title="Undefined",Telewizja Toruń
-http://217.173.176.107:1935/live/ngrp:tvk.stream_all/master.m3u8?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",TheBlaze TV PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24917?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Trace Urban Muzik HD PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24942?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Travel Channel
-http://103.194.169.171:8282/PL:TRAVEL_CHANEL/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Travel Channel FHD
-http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271938.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Travel Channel FHD
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11167?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Travel Channel FHD PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24918?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Travel Channel HD
-http://s1.showplustv.com:1997/iptvtree2021/adAXCXhWuH9Mj515sda/53053?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Travel Channel HD
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11168?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",UNIVERSAL HD
-http://s1.showplustv.com:1997/iptvtree2021/adAXCXhWuH9Mj515sda/53045?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",UNIVERSAL HD
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/17817?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VH1
-http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271954.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VH1
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11239?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VH1 PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24940?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VIVA POLSKA
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/17789?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 202 PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25028?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 204 PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25029?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 205
-http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271957.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 205
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11240?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 205 PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25030?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 206
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11241?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 206 PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25031?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 207
-http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271959.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 207
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11242?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 207 PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25032?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 208
-http://s2.servers.darkside-iptv.co:8080/p7kunuyx2R59/R0PzQ4N85nqV/271960.ts?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 208
-http://dragoniptv.iptf.me:8080/nrwin/a4DWkrhWKzYU/11243?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 208 PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25033?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",VOD 212 PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/25034?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Music",VOX Music TV PL
-http://bestiptv.smartv.me:8000/bestlivetv/dz9GjtPaYw/24939?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Viasat Explorer FHD (local)
-http://103.194.169.171:8282/PL:POLSAT_VIASAT_EXPLORE/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Viasat History
-http://103.194.169.171:8282/PL:VIASAT_HISTORY/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
-#EXTINF:0 tvg-country="PL" tvg-logo="" group-title="Undefined",Viasat Polsat Nature
-http://103.194.169.171:8282/POLSAT_VIASAT_NATURE/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c&checkedby:iptvcat.net
+#EXTINF:0 tvg-id="WP.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/WP.png" group-title="Popularne",WP HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=158
+#EXTINF:0 tvg-id="TVP1.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/TVP%201%20HD.png" group-title="Popularne",TVP 1 HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=3
+#EXTINF:0 tvg-id="TVP2.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/TVP%202%20HD.png" group-title="Popularne",TVP 2 HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=5
+#EXTINF:0 tvg-id="Polsat.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Polsat%20HD.png" group-title="Popularne",Polsat
+plugin://plugin.video.pilot.wp?action=PLAY&channel=9
+#EXTINF:0 tvg-id="TVN.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/TVN%20HD.png" group-title="Popularne",TVN
+plugin://plugin.video.pilot.wp?action=PLAY&channel=14
+#EXTINF:0 tvg-id="TV4.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/TV4%20HD.png" group-title="Popularne",TV 4
+plugin://plugin.video.pilot.wp?action=PLAY&channel=11
+#EXTINF:0 tvg-id="TVPuls.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/TV%20Puls%20HD.png" group-title="Popularne",TV Puls
+plugin://plugin.video.pilot.wp?action=PLAY&channel=12
+#EXTINF:0 tvg-id="4fun.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/4Fun.TV.png" group-title="Muzyczne",4Fun.TV
+plugin://plugin.video.pilot.wp?action=PLAY&channel=21
+#EXTINF:0 tvg-id="4FunDance.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/4Fun%20Dance.png" group-title="Muzyczne",4Fun Dance
+plugin://plugin.video.pilot.wp?action=PLAY&channel=50
+#EXTINF:0 tvg-id="4FunGoldHits.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/4Fun%20Gold%20Hits.png" group-title="Muzyczne",4Fun Gold
+plugin://plugin.video.pilot.wp?action=PLAY&channel=22
+#EXTINF:0 tvg-id="TVP3Warszawa.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/TVP%203%20Warszawa.png" group-title="Popularne",TVP 3 Warszawa
+plugin://plugin.video.pilot.wp?action=PLAY&channel=57
+#EXTINF:0 tvg-id="TVP3Gdańsk.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/TVP%203%20Gdansk.png" group-title="Popularne",TVP 3 Gdansk
+plugin://plugin.video.pilot.wp?action=PLAY&channel=187
+#EXTINF:0 tvg-id="Fox.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/FOX%20HD.png" group-title="Rozrywkowe",FOX HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=189
+#EXTINF:0 tvg-id="FoxComedy.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/FOX%20Comedy%20HD.png" group-title="Rozrywkowe",FOX Comedy HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=191
+#EXTINF:0 tvg-id="NationalGeographic.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/National%20Geographic%20HD.png" group-title="Dokumentalne",National Geographic HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=190
+#EXTINF:0 tvg-id="NatGeoWildHD.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Nat%20Geo%20Wild%20HD.png" group-title="Dokumentalne",National Geographic Wild HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=192
+#EXTINF:0 tvg-id="NatGeoPeople.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Nat%20Geo%20People%20HD.png" group-title="Dokumentalne",Nat Geo People HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=193
+#EXTINF:0 tvg-id="ElevenSports1.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Eleven%20Sports%201%20HD.png" group-title="Sportowe",Eleven Sports 1 HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=156
+#EXTINF:0 tvg-id="ElevenSports2.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Eleven%20Sports%202%20HD.png" group-title="Sportowe",Eleven Sports 2 HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=157
+#EXTINF:0 tvg-id="ElevenSports3.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Eleven%20Sports%203%20HD.png" group-title="Sportowe",Eleven Sports 3 HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=164
+#EXTINF:0 tvg-id="ElevenSports4.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Eleven%20Sports%204%20HD.png" group-title="Sportowe",Eleven Sports 4 HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=181
+#EXTINF:0 tvg-id="Paramount.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Paramount%20Channel%20HD.png" group-title="Filmowe",Paramount Channel HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=126
+#EXTINF:0 tvg-id="ComedyCentral.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Comedy%20Central%20HD.png" group-title="Rozrywkowe",Comedy Central HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=124
+#EXTINF:0 tvg-id="ComedyCentral.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Comedy%20Central%20HD.png" group-title="Rozrywkowe",Comedy Central
+plugin://plugin.video.pilot.wp?action=PLAY&channel=125
+#EXTINF:0 tvg-id="AXN.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/AXN%20HD.png" group-title="Rozrywkowe",AXN HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=68
+#EXTINF:0 tvg-id="AXNSpinHD.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/AXN%20Spin%20HD.png" group-title="Rozrywkowe",AXN Spin HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=102
+#EXTINF:0 tvg-id="AXNWhite.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/AXN%20White.png" group-title="Rozrywkowe",AXN White
+plugin://plugin.video.pilot.wp?action=PLAY&channel=91
+#EXTINF:0 tvg-id="AXNBlack.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/AXN%20Black.png" group-title="Rozrywkowe",AXN Black
+plugin://plugin.video.pilot.wp?action=PLAY&channel=92
+#EXTINF:0 tvg-id="SundanceChannel.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Sundance%20TV%20HD.png" group-title="Filmowe",Sundance TV HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=36
+#EXTINF:0 tvg-id="KinoTV.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Kino%20TV.png" group-title="Filmowe",Kino TV HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=31
+#EXTINF:0 tvg-id="FilmboxArthouse.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Filmbox%20Arthouse.png" group-title="Filmowe",Filmbox Arthouse HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=144
+#EXTINF:0 tvg-id="FilmboxPremium.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Filmbox%20Premium%20HD.png" group-title="Filmowe",Filmbox Premium HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=26
+#EXTINF:0 tvg-id="FilmboxAction.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Filmbox%20Action.png" group-title="Filmowe",Filmbox Action
+plugin://plugin.video.pilot.wp?action=PLAY&channel=28
+#EXTINF:0 tvg-id="FilmboxExtra.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Filmbox%20Extra.png" group-title="Filmowe",Filmbox Extra HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=34
+#EXTINF:0 tvg-id="FilmboxFamily.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Filmbox%20Family.png" group-title="Filmowe",Filmbox Family
+plugin://plugin.video.pilot.wp?action=PLAY&channel=27
+#EXTINF:0 tvg-id="StopklatkaTV.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Stopklatka%20TV.png" group-title="Filmowe",Stopklatka TV HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=48
+#EXTINF:0 tvg-id="KinoPolska.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Kino%20Polska%20HD.png" group-title="Filmowe",Kino Polska
+plugin://plugin.video.pilot.wp?action=PLAY&channel=29
+#EXTINF:0 tvg-id="TCM.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/TNT%20HD.png" group-title="Filmowe",TNT HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=208
+#EXTINF:0 tvg-id="EPICDramaHD.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Epic%20Drama%20HD.png" group-title="Rozrywkowe",Epic Drama HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=206
+#EXTINF:0 tvg-id="ZoomTV.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Zoom%20TV.png" group-title="Popularne",Zoom TV HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=166
+#EXTINF:0 tvg-id="Travel.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Travel%20Channel%20HD.png" group-title="Rozrywkowe",Travel Channel HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=182
+#EXTINF:0 tvg-id="BBCEarth.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/BBC%20Earth%20HD.png" group-title="Dokumentalne",BBC Earth HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=95
+#EXTINF:0 tvg-id="BBCBrit.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/BBC%20Brit%20HD.png" group-title="Dokumentalne",BBC Brit HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=62
+#EXTINF:0 tvg-id="BBCHD.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/BBC%20First.png" group-title="Rozrywkowe",BBC First
+plugin://plugin.video.pilot.wp?action=PLAY&channel=85
+#EXTINF:0 tvg-id="ViasatNature.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Polsat%20Viasat%20Nature%20HD.png" group-title="Dokumentalne",Polsat Viasat Nature HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=42
+#EXTINF:0 tvg-id="ViasatHistory.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Polsat%20Viasat%20History%20HD.png" group-title="Dokumentalne",Polsat Viasat History HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=40
+#EXTINF:0 tvg-id="ViasatExplorer.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Polsat%20Viasat%20Explore%20HD.png" group-title="Dokumentalne",Polsat Viasat Explore HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=41
+#EXTINF:0 tvg-id="DocuBox.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Docubox%20HD.png" group-title="Dokumentalne",DocuBox HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=103
+#EXTINF:0 tvg-id="Adventure.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Adventure%20HD.png" group-title="Rozrywkowe",Adventure HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=87
+#EXTINF:0 tvg-id="E-Sport.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/E-Sport%20HD.png" group-title="Sportowe",E-Sport HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=183
+#EXTINF:0,tvg-logo="https://polishteam.ru/FTP/kim/Loga/Gametoon%20HD.png" group-title="Sportowe",Gametoon HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=205
+#EXTINF:0 tvg-id="CartoonNetwork.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Cartoon%20Network%20HD.png" group-title="Dla Dzieci",Cartoon Network HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=207
+#EXTINF:0 tvg-id="Boomerang.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Boomerang%20HD.png" group-title="Dla Dzieci",Boomerang HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=209
+#EXTINF:0 tvg-id="NickPolska.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Nickelodeon.png" group-title="Dla Dzieci",Nickelodeon
+plugin://plugin.video.pilot.wp?action=PLAY&channel=86
+#EXTINF:0 tvg-id="NickJr.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Nick%20Jr..png" group-title="Dla Dzieci",Nick Jr
+plugin://plugin.video.pilot.wp?action=PLAY&channel=65
+#EXTINF:0 tvg-id="NickelodeonHD.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Nicktoons%20HD.png" group-title="Dla Dzieci",Nicktoons HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=143
+#EXTINF:0 tvg-id="CBeebies.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/BBC%20CBeebies.png" group-title="Dla Dzieci",BBC CBeebies
+plugin://plugin.video.pilot.wp?action=PLAY&channel=79
+#EXTINF:0 tvg-id="InvestigationDiscovery.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/ID%20HD.png" group-title="Dokumentalne",ID HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=123
+#EXTINF:0 tvg-id="DuckTV.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Duck%20TV.png" group-title="Dla Dzieci",Duck TV
+plugin://plugin.video.pilot.wp?action=PLAY&channel=37
+#EXTINF:0 tvg-id="DaVinciLearning.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Da%20Vinci%20Learning.png" group-title="Dokumentalne",Da Vinci Learning HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=38
+#EXTINF:-1 tvg-logo="https://polishteam.ru/FTP/kim/Loga/English%20Club%20TV%20HD.png" group-title="Dokumentalne",English Club HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=39
+#EXTINF:0 tvg-id="MTV.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/MTV%20Polska%20HD.png" group-title="Muzyczne",MTV Polska HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=94
+#EXTINF:0 tvg-id="VH1Classic.eu" tvg-logo="https://polishteam.ru/FTP/kim/Loga/VH1%20Classic%20HD.png" group-title="Muzyczne",VH1 Classic
+plugin://plugin.video.pilot.wp?action=PLAY&channel=130
+#EXTINF:0 tvg-id="MTVNHD.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/MTV%20Live%20HD.png" group-title="Muzyczne",MTV Live HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=127
+#EXTINF:0 tvg-id="MTVMusicPolska.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/MTV%20Music.png" group-title="Muzyczne",MTV Music
+plugin://plugin.video.pilot.wp?action=PLAY&channel=132
+#EXTINF:0 tvg-id="VH1European.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/VH1.png" group-title="Muzyczne",VH1
+plugin://plugin.video.pilot.wp?action=PLAY&channel=151
+#EXTINF:0 tvg-id="KinoPolskaMuzyka.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Kino%20Polska%20Muzyka.png" group-title="Muzyczne",Kino Polska Muzyka
+plugin://plugin.video.pilot.wp?action=PLAY&channel=43
+#EXTINF:0 tvg-id="StarsTV.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Stars%20TV.png" group-title="Muzyczne",Stars TV HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=24
+#EXTINF:0 tvg-id="Power TV" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Power%20TV.png" group-title="Muzyczne",Power TV HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=90
+#EXTINF:0 tvg-id="NutaTV.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Nuta%20TV.png" group-title="Muzyczne",Nuta TV
+plugin://plugin.video.pilot.wp?action=PLAY&channel=122
+#EXTINF:0 tvg-logo="https://polishteam.ru/FTP/kim/Loga/Music%20Box%20HD.png" group-title="Muzyczne",Music Box UA HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=188
+#EXTINF:0 tvg-logo="https://polishteam.ru/FTP/kim/Loga/Stingray%20Classica%20HD.png" group-title="Muzyczne",Stingray Classica HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=136
+#EXTINF:0 tvg-logo="https://polishteam.ru/FTP/kim/Loga/Stingray%20DJAZZ%20HD.png" group-title="Muzyczne",Stingray DJAZZ.tv HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=135
+#EXTINF:0 tvg-logo="https://polishteam.ru/FTP/kim/Loga/JAZZ%20HD.png" group-title="Muzyczne",Jazz HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=213
+#EXTINF:0 tvg-logo="https://polishteam.ru/FTP/kim/Loga/Fashion%20TV.png" group-title="Muzyczne",Fashion TV HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=58
+#EXTINF:0 tvg-id="BBCLifestyle.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/BBC%20Lifestyle%20HD.png" group-title="Dokumentalne",BBC Lifestyle HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=78
+#EXTINF:0 tvg-id="FightKlub.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/FightKlub%20HD.png" group-title="Sportowe",FightKlub HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=30
+#EXTINF:0 tvg-id="SportKlub.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Sport%20Klub%20HD.png" group-title="Sportowe",Sport Klub HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=25
+#EXTINF:0 tvg-id="FightBox.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/FightBox%20HD.png" group-title="Sportowe",FightBox HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=32
+#EXTINF:0 tvg-id="Motowizja.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Motowizja%20HD.png" group-title="Sportowe",Motowizja HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=46
+#EXTINF:0 tvg-logo="https://polishteam.ru/FTP/kim/Loga/CNN%20Network.png" group-title="Informacyjne",CNN Network
+plugin://plugin.video.pilot.wp?action=PLAY&channel=210
+#EXTINF:0 tvg-logo="https://polishteam.ru/FTP/kim/Loga/France%2024%20English%20HD.png" group-title="Informacyjne",France 24 HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=18
+#EXTINF:0 tvg-logo="https://polishteam.ru/FTP/kim/Loga/France%2024%20English%20HD.png" group-title="Informacyjne",France 24 English HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=17
+#EXTINF:0 tvg-id="TO!TV.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/TOTV.png" group-title="Muzyczne",TOTV
+plugin://plugin.video.pilot.wp?action=PLAY&channel=172
+#EXTINF:0 tvg-id="wPolsce.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/wPolsce.pl.png" group-title="Informacyjne",wPolsce.pl
+plugin://plugin.video.pilot.wp?action=PLAY&channel=174
+#EXTINF:0 tvg-id="LoveTV.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/LOVE%20HD.png" group-title="Rozrywkowe",LOVE TV HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=45
+#EXTINF:0 tvg-id="TVS.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/TVS.png" group-title="Popularne",TVS
+plugin://plugin.video.pilot.wp?action=PLAY&channel=51
+#EXTINF:0 tvg-id="TVR.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/TVR.png" group-title="Popularne",TVR HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=52
+#EXTINF:0 tvg-id="TVtrwam.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/TV%20Trwam.png" group-title="Popularne",TV Trwam
+plugin://plugin.video.pilot.wp?action=PLAY&channel=10
+#EXTINF:0 tvg-id="RedCarpetTV.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Red%20Carpet%20TV.png" group-title="Rozrywkowe",Red Carpet TV HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=138
+#EXTINF:0 tvg-id="RedCarpetTV.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/EzoTV.png" group-title="Rozrywkowe",EzoTV
+plugin://plugin.video.pilot.wp?action=PLAY&channel=149
+#EXTINF:0 tvg-id="Twoja.TV.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Twoja%20TV%20HD.png" group-title="Regionalne",Twoja TV HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=150
+#EXTINF:0 tvg-id="TVrepublika.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/TV%20Republika.png" group-title="Informacyjne",TV Republika HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=112
+#EXTINF:0 tvg-id="Polonia1.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Polonia%201.png" group-title="Popularne",Polonia 1
+plugin://plugin.video.pilot.wp?action=PLAY&channel=211
+#EXTINF:0 tvg-id="Tele5.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/Tele%205.png" group-title="Popularne",Tele 5 HD
+plugin://plugin.video.pilot.wp?action=PLAY&channel=212
+#EXTINF:0 tvg-id="TBNpolska.pl" tvg-logo="https://polishteam.ru/FTP/kim/Loga/TBN%20Polska.png" group-title="Rozrywkowe",TBN Polska
+plugin://plugin.video.pilot.wp?action=PLAY&channel=204
