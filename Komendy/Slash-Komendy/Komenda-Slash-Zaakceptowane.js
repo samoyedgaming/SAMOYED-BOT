@@ -14,6 +14,7 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName("zaakceptowane")
     .setDescription("Akceptuje podanie")
+    .addRoleOption(option => option.setName("rola").setDescription("Podajesz rolę").setRequired(true))
     .addUserOption(option => option.setName('użytkownik').setDescription("Wybierasz osobę").setRequired(true)),
   async run(client, interaction) {
 
@@ -23,14 +24,14 @@ module.exports = {
     if (!permissions) return interaction.reply("Nie masz permisji do użycia tej komendy!")
 
     const member = await interaction.guild.members.fetch(user.id)
-
+    const role = interaction.options.getRole('rola');
     const embed = new MessageEmbed()
       .setImage("https://cdn.discordapp.com/attachments/734117810220826654/785141883558166569/4bbmolX.png")
 
     interaction.reply({
       content: "Poprawnie wysłano wiadomość"
     })
-    member.roles.add('924649374577999902')
+    member.roles.add(role.id)
     member.guild.channels.cache.get("922834801008979968").send({
       content: `<@${member.user.id}>`,
       embeds: [embed]
