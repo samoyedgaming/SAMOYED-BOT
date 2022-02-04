@@ -10,22 +10,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Franek53421/BOT-DISCORD.git"
+    "url": "git+https://github.com/samoyedgaming/SAMOYED-BOT.git"
   },
   "keywords": [
     "discord",
     "discord-bot",
     "discord-js"
   ],
-  "author": "Franek Hądzlik",
+  "author": "Samoyed Rranek",
   "license": "MIT",
   "engines": {
     "node": "^16.10.0"
   },
   "bugs": {
-    "url": "https://github.com/Franek53421/BOT-DISCORD/issues"
+    "url": "https://github.com/samoyedgaming/SAMOYED-BOT/issues"
   },
-  "homepage": "https://github.com/Franek53421/BOT-DISCORD#readme",
+  "homepage": "https://github.com/samoyedgaming/SAMOYED-BOT#readme",
   "dependencies": {
     "@discordjs/opus": "^0.7.0",
     "@discordjs/rest": "^0.2.0-canary.0",
