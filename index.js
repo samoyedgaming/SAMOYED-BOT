@@ -481,8 +481,8 @@ const distube = new DisTube(client, {
 })
 const status = (queue) => `Volume: \`${queue.volume}%\` | Loop: \`${queue.repeatMode ? queue.repeatMode === 2 ? "All Queue" : "This Song" : "Off"}\` | Autoplay: \`${queue.autoplay ? "On" : "Off"}\` | Filter: \`${queue.filters.join(", ") || "Off"}\``
 // DisTube event listeners
-distube
-  .on("playSong", (queue, song) => {
+
+distube.on("playSong", (queue, song) => {
     const embed = new MessageEmbed()
       .setAuthor({
         name: "Teraz gramy",
@@ -505,7 +505,7 @@ distube
       embeds: [embed]
     })
   })
-  .on("skipSong", (queue, song) => {
+distube.on("skipSong", (queue, song) => {
     const embed = new MessageEmbed()
       .setAuthor({
         name: "Teraz gramy",
@@ -528,7 +528,7 @@ distube
       embeds: [embed]
     })
   })
-  .on("addSong", (queue, song) => {
+distube.on("addSong", (queue, song) => {
     const embed = new MessageEmbed()
       .setTitle(":ballot_box_with_check: | Dodano piosenke do kolejki")
       .setDescription(`\`${song.name}\` - \`${song.formattedDuration}\` - Zarzucona przez ${song.user}`)
@@ -538,35 +538,35 @@ distube
       embeds: [embed]
     })
   })
-  .on("error", (textChannel, e) => {
+distube.on("error", (textChannel, e) => {
     console.error(e)
     textChannel.send(`An error encountered: ${e}`)
   })
   // .on("finish", queue => queue.textChannel.send("***No more song in queue. Leaving the channel***"))
-  .on("finishSong", queue => {
+distube.on("finishSong", queue => {
     const embed = new MessageEmbed()
       .setDescription(`:white_check_mark: | Finished playing \`${queue.songs[0].name}\``)
     queue.textChannel.send({
       embeds: [embed]
     })
   })
-  .on("disconnect", queue => {
+distube.on("disconnect", queue => {
     const embed = new MessageEmbed()
       .setDescription(":x: | Odłączyłem sie od kanału")
     queue.textChannel.send({
       embeds: [embed]
     })
   })
-  .on("empty", queue => {
+distube.on("empty", queue => {
     const embed = new MessageEmbed()
       .setDescription(":x: | Kanał jest pusty. Wychodzę!")
     queue.textChannel.send({
       embeds: [embed]
     })
   })
-  .on("initQueue", (queue) => {
+distube.on("initQueue", (queue) => {
     queue.autoplay = false
-    queue.volume = 50
+    queue.volume = 100
   })
 
 client.login(token);
