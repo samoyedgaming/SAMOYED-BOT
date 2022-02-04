@@ -12,14 +12,14 @@ const status = (queue) => `Głośność: \`${queue.volume}%\` | Pętla: \`${queu
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("teraz-gramy")
-    .setDescription("Wyświetla co aktualnie puszczam"),
+    .setDescription("Wyświetla co aktualnie puszczam - Still in development"),
   async run(client, interaction) {
     const embed = new MessageEmbed()
 
       .setTitle(botname)
       .setColor(0xb65307)
       .setDescription(
-        "Musisz dołączyć na kanał głosowy!"
+        "Musisz dołączyć na kanał głosowy! - Still in development"
       )
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
@@ -28,7 +28,7 @@ module.exports = {
       .setTitle(botname)
       .setColor(0xb65307)
       .setDescription(
-        "Musisz być na tym samym kanale co ja!"
+        "Musisz być na tym samym kanale co ja! - Still in development"
       )
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
@@ -37,7 +37,7 @@ module.exports = {
       .setTitle(botname)
       .setColor(0xb65307)
       .setDescription(
-        "Aktualnie nic nie gram"
+        "Aktualnie nic nie gram! - Still in development"
       )
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
@@ -55,10 +55,10 @@ module.exports = {
     const queue = distube.getQueue(interaction)
     const voiceChannel = interaction.member.voice.channel
     if (!voiceChannel) {
-        return interaction.reply({ embeds: [embed], ephemeral: true })
+        return interaction.reply({ embeds: [embed] })
     }
     if (interaction.member.guild.me.voice.channelId !== interaction.member.voice.channelId) {
-        return interaction.reply({ embeds: [embed1], ephemeral: true })
+        return interaction.reply({ embeds: [embed1] })
     }
     if (!queue) {
       return interaction.reply({ embeds: [embed2] })

@@ -11,9 +11,8 @@ const {
 
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName("pusc")
-    .setDescription("Puszcza twoja piosenke")
-    .addStringOption(option => option.setName("tytul").setDescription("Tytuł piosenki").setRequired(true)),
+    .setName("przewin")
+    .setDescription("Puszcza nastepna piosenke"),
   async run(client, interaction) {
     const embed = new MessageEmbed()
 
@@ -42,8 +41,15 @@ module.exports = {
       )
       .addField("Autor", botauthor, true)
       .addField("Wersja", botversion, true);
+    const embed3 = new MessageEmbed()
 
-    const music = interaction.options.getString("tytul")
+      .setTitle(botname)
+      .setColor(0xb65307)
+      .setDescription(
+        "Aktualnie nic nie gram!"
+      )
+      .addField("Autor", botauthor, true)
+      .addField("Wersja", botversion, true);
     const {
       DisTube
     } = require("distube")
@@ -54,24 +60,24 @@ module.exports = {
       youtubeDL: false,
       plugins: [new YtDlpPlugin()],
     });
+    const queue = distube.getQueue(interaction)
     const voiceChannel = interaction.member.voice.channel
-    const queue = await distube.getQueue(interaction)
     if (!voiceChannel) {
-      return interaction.reply({
-        embeds: [embed]
-      })
+        return interaction.reply({ embeds: [embed]})
     }
-    if (queue) {
-      if (interaction.member.guild.me.voice.channelId !== interaction.member.voice.channelId) {
-        return interaction.reply({
-          embeds: [embed1]
-        })
-      }
+    if (!queue) {
+        return interaction.reply({ embeds: [embed3] })
     }
-    await interaction.reply({embeds: [embed2]})
-    distube.play(voiceChannel, music, {
-      textChannel: interaction.channel,
-      member: interaction.member
-    })
+    if (interaction.member.guild.me.voice.channelId !== interaction.member.voice.channelId) {
+        return interaction.reply({ embeds: [embed1]})
+    }
+    try {
+        await distube.skip(interaction)
+        await interaction.reply("***Pominięto***")
+        const message = await interaction.fetchReply()
+        await message.react("⏭")
+    } catch {
+        interaction.reply({ content: "Nie ma następnej piosenki"})
+    }
   }
 }

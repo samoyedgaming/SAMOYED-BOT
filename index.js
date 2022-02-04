@@ -465,7 +465,109 @@ client.on("ready", () => {
   });
 });
 
-
+const {
+  DisTube
+} = require("distube")
+const {
+  YtDlpPlugin
+} = require("@distube/yt-dlp");
+/* eslint new-cap: ["error", { "properties": false }] */
+const distube = new DisTube(client, {
+  leaveOnEmpty: true,
+  emptyCooldown: 30,
+  nsfw: true,
+  youtubeDL: false,
+  plugins: [new YtDlpPlugin()],
+})
+const status = (queue) => `Volume: \`${queue.volume}%\` | Loop: \`${queue.repeatMode ? queue.repeatMode === 2 ? "All Queue" : "This Song" : "Off"}\` | Autoplay: \`${queue.autoplay ? "On" : "Off"}\` | Filter: \`${queue.filters.join(", ") || "Off"}\``
+// DisTube event listeners
+distube
+  .on("playSong", (queue, song) => {
+    const embed = new MessageEmbed()
+      .setAuthor({
+        name: "Teraz gramy",
+        iconURL: "https://raw.githubusercontent.com/HELLSNAKES/Music-Slash-Bot/main/assets/music.gif"
+      })
+      .setDescription(`[${song.name}](${song.url})`)
+      .addField("**Wyświetlenia:**", song.views.toString(), true)
+      .addField("**Polubienia:**", song.likes.toString(), true)
+      .addField("**Długość:**", `${queue.formattedCurrentTime} / ${song.formattedDuration}`)
+      .addField("**Link**", `[Download This Song](${song.streamURL})`)
+      .addField("**Status**", status(queue).toString())
+      .setThumbnail(song.thumbnail)
+      .setColor("RANDOM")
+      .setFooter({
+        text: `Zarzucona przez: ${song.user.username}`,
+        iconURL: song.user.avatarURL()
+      })
+      .setTimestamp()
+    queue.textChannel.send({
+      embeds: [embed]
+    })
+  })
+  .on("skipSong", (queue, song) => {
+    const embed = new MessageEmbed()
+      .setAuthor({
+        name: "Teraz gramy",
+        iconURL: "https://raw.githubusercontent.com/HELLSNAKES/Music-Slash-Bot/main/assets/music.gif"
+      })
+      .setDescription(`[${song.name}](${song.url})`)
+      .addField("**Wyświetlenia:**", song.views.toString(), true)
+      .addField("**Polubienia:**", song.likes.toString(), true)
+      .addField("**Długość:**", `${queue.formattedCurrentTime} / ${song.formattedDuration}`)
+      .addField("**Link**", `[Download This Song](${song.streamURL})`)
+      .addField("**Status**", status(queue).toString())
+      .setThumbnail(song.thumbnail)
+      .setColor("RANDOM")
+      .setFooter({
+        text: `Zarzucona przez: ${song.user.username}`,
+        iconURL: song.user.avatarURL()
+      })
+      .setTimestamp()
+    queue.textChannel.send({
+      embeds: [embed]
+    })
+  })
+  .on("addSong", (queue, song) => {
+    const embed = new MessageEmbed()
+      .setTitle(":ballot_box_with_check: | Dodano piosenke do kolejki")
+      .setDescription(`\`${song.name}\` - \`${song.formattedDuration}\` - Zarzucona przez ${song.user}`)
+      .setColor("RANDOM")
+      .setTimestamp()
+    queue.textChannel.send({
+      embeds: [embed]
+    })
+  })
+  .on("error", (textChannel, e) => {
+    console.error(e)
+    textChannel.send(`An error encountered: ${e}`)
+  })
+  // .on("finish", queue => queue.textChannel.send("***No more song in queue. Leaving the channel***"))
+  .on("finishSong", queue => {
+    const embed = new MessageEmbed()
+      .setDescription(`:white_check_mark: | Finished playing \`${queue.songs[0].name}\``)
+    queue.textChannel.send({
+      embeds: [embed]
+    })
+  })
+  .on("disconnect", queue => {
+    const embed = new MessageEmbed()
+      .setDescription(":x: | Odłączyłem sie od kanału")
+    queue.textChannel.send({
+      embeds: [embed]
+    })
+  })
+  .on("empty", queue => {
+    const embed = new MessageEmbed()
+      .setDescription(":x: | Kanał jest pusty. Wychodzę!")
+    queue.textChannel.send({
+      embeds: [embed]
+    })
+  })
+  .on("initQueue", (queue) => {
+    queue.autoplay = false
+    queue.volume = 50
+  })
 
 client.login(token);
 
