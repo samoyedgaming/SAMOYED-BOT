@@ -479,7 +479,7 @@ const distube = new DisTube(client, {
   youtubeDL: false,
   plugins: [new YtDlpPlugin()],
 })
-const status = (queue) => `Volume: \`${queue.volume}%\` | Loop: \`${queue.repeatMode ? queue.repeatMode === 2 ? "All Queue" : "This Song" : "Off"}\` | Autoplay: \`${queue.autoplay ? "On" : "Off"}\` | Filter: \`${queue.filters.join(", ") || "Off"}\``
+const status = (queue) => `Głośność: \`${queue.volume}%\` | Pętla: \`${queue.repeatMode ? queue.repeatMode === 2 ? "Cała kolejka" : "Ta piosenka" : "Off"}\` | Autoplay: \`${queue.autoplay ? "On" : "Off"}\` | Filtr: \`${queue.filters.join(", ") || "Off"}\``
 // DisTube event listeners
 
 distube.on("playSong", (queue, song) => {
