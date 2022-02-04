@@ -30,6 +30,7 @@
     "@discordjs/opus": "^0.7.0",
     "@discordjs/rest": "^0.2.0-canary.0",
     "@discordjs/voice": "^0.6.0",
+    "@distube/yt-dlp": "^0.0.2",
     "@m7rlin/js-helpers": "github:m7rlin/js-helpers",
     "@mapbox/node-pre-gyp": "^1.0.7",
     "ascii-table": "^0.0.9",
@@ -40,7 +41,7 @@
     "discord-api-types": "^0.26.0",
     "discord.js": "^13.5.0",
     "discordjs-reaction-role": "^2.1.0",
-    "distube": "^3.0.4",
+    "distube": "^3.3.0",
     "dotenv": "^10.0.0",
     "ffmpeg": "^0.0.4",
     "ffmpeg-static": "^4.4.0",
@@ -58,8 +59,12 @@
     "opusscript": "^0.0.8",
     "tweetnacl": "^1.0.3",
     "ucfirst": "^1.0.0",
+    "youtube-dl-exec": "^2.0.2",
     "yt-channel-info": "^2.2.0",
     "yt-search": "^2.10.2",
-    "ytdl-core": "^4.9.2"
+    "ytdl-core": "^4.10.1",
+    "ytpl": "^2.2.3",
+    "ytsearch": "^1.0.4",
+    "ytsr": "^3.6.0"
   }
 }

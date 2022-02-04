@@ -76,36 +76,6 @@ mongoose.connect(mongoDB, {
 }).catch(() => {
   console.log("Wykryto błąd przy łączeniu z serwerem MongoDB")
 })
-
-client.on("messageDelete", async (message) => {
-  const snipe = require("./Schematy/snipeSchema.js")
-
-  let data = await snipe.findOne({
-    channelId: message.channel.id
-  })
-
-  if (!data) {
-
-    let newdata = snipe({
-      channelId: message.channel.id,
-      message: message.content,
-      author: message.author.tag,
-      time: Math.floor(Date.now() / 1000)
-    })
-
-    return await newdata.save()
-
-  }
-
-  await snipe.findOneAndUpdate({
-    channelId: message.channel.id,
-    message: message.content,
-    author: message.author.tag,
-    time: Math.floor(Date.now() / 1000)
-  })
-
-})
-
 client.slashcommands = new Collection();
 const slashcommandsFiles = fs.readdirSync(`./Komendy/Slash-Komendy`).filter(file => file.startsWith("Komenda-Slash"))
 
@@ -231,31 +201,7 @@ client.on("guildMemberRemove", (member) => {
 
     .catch((err) => console.log(err));
 });
-client.on("ready", () => {
-  const {
-    joinVoiceChannel,
-    createAudioPlayer,
-    VoiceConnectionStatus,
-    getVoiceConnection,
-    createAudioResource,
-    entersState,
-    AudioPlayerStatus
-  } = require('@discordjs/voice');
 
-  const channel = client.channels.cache.get('926599261368492033');
-  const connection = joinVoiceChannel({
-    channelId: channel.id,
-    guildId: channel.guild.id,
-    adapterCreator: channel.guild.voiceAdapterCreator,
-  });
-
-  const audioPlayer = createAudioPlayer();
-
-  const resource = createAudioResource("https://rs102-krk.rmfstream.pl/rmf_maxxx");
-
-  connection.subscribe(audioPlayer);
-  audioPlayer.play(resource);
-});
 client.on("ready", () => {
   console.log(chalk.green(`Zalogowano jako ${client.user.tag}!`));
   //wiadomosc pierwsza
