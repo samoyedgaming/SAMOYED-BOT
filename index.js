@@ -464,111 +464,68 @@ client.on("ready", () => {
     } = client;
   });
 });
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+const {
+  GiveawaysManager
+} = require('discord-giveaways');
+// Starts updating currents giveaways
+const manager = new GiveawaysManager(client, {
+  storage: './giveaways.json',
+  default: {
+    botsCanWin: false,
+    embedColor: '#FF0000',
+    embedColorEnd: '#000000',
+    reaction: '🎉'
+  }
+});
+// We now have a giveawaysManager property to access the manager everywhere!
+client.giveawaysManager = manager;
+client.on('interactionCreate', async interaction => {
+  if (!interaction.isCommand()) return;
 
-const {
-  DisTube
-} = require("distube")
-const {
-  YtDlpPlugin
-} = require("@distube/yt-dlp");
-/* eslint new-cap: ["error", { "properties": false }] */
-const distube = new DisTube(client, {
-  leaveOnEmpty: true,
-  emptyCooldown: 30,
-  nsfw: true,
-  youtubeDL: false,
-  plugins: [new YtDlpPlugin()],
+  if (interaction.commandName === 'giveway') {
+    if (interaction.options.getSubcommand() === 'start') {
+    const ms = require('ms');
+    const duration = interaction.options.getString('czas');
+    const winnerCount = interaction.options.getInteger('wygrani');
+    const prize = interaction.options.getString('nagroda');
+    client.giveawaysManager.start(interaction.channel, {
+        duration: ms(duration),
+        winnerCount,
+        prize
+    }).then((gData) => {
+        console.log(gData); // {...} (messageId, end date and more)
+    });
+    }
+  }
 })
-const status = (queue) => `Głośność: \`${queue.volume}%\` | Pętla: \`${queue.repeatMode ? queue.repeatMode === 2 ? "Cała kolejka" : "Ta piosenka" : "Off"}\` | Autoplay: \`${queue.autoplay ? "On" : "Off"}\` | Filtr: \`${queue.filters.join(", ") || "Off"}\``
-// DisTube event listeners
-
-distube.on("playSong", (queue, song) => {
-    const embed = new MessageEmbed()
-      .setAuthor({
-        name: "Teraz gramy",
-        iconURL: "https://raw.githubusercontent.com/HELLSNAKES/Music-Slash-Bot/main/assets/music.gif"
-      })
-      .setDescription(`[${song.name}](${song.url})`)
-      .addField("**Wyświetlenia:**", song.views.toString(), true)
-      .addField("**Polubienia:**", song.likes.toString(), true)
-      .addField("**Długość:**", `${queue.formattedCurrentTime} / ${song.formattedDuration}`)
-      .addField("**Link**", `[Download This Song](${song.streamURL})`)
-      .addField("**Status**", status(queue).toString())
-      .setThumbnail(song.thumbnail)
-      .setColor("RANDOM")
-      .setFooter({
-        text: `Zarzucona przez: ${song.user.username}`,
-        iconURL: song.user.avatarURL()
-      })
-      .setTimestamp()
-    queue.textChannel.send({
-      embeds: [embed]
-    })
-  })
-distube.on("skipSong", (queue, song) => {
-    const embed = new MessageEmbed()
-      .setAuthor({
-        name: "Teraz gramy",
-        iconURL: "https://raw.githubusercontent.com/HELLSNAKES/Music-Slash-Bot/main/assets/music.gif"
-      })
-      .setDescription(`[${song.name}](${song.url})`)
-      .addField("**Wyświetlenia:**", song.views.toString(), true)
-      .addField("**Polubienia:**", song.likes.toString(), true)
-      .addField("**Długość:**", `${queue.formattedCurrentTime} / ${song.formattedDuration}`)
-      .addField("**Link**", `[Download This Song](${song.streamURL})`)
-      .addField("**Status**", status(queue).toString())
-      .setThumbnail(song.thumbnail)
-      .setColor("RANDOM")
-      .setFooter({
-        text: `Zarzucona przez: ${song.user.username}`,
-        iconURL: song.user.avatarURL()
-      })
-      .setTimestamp()
-    queue.textChannel.send({
-      embeds: [embed]
-    })
-  })
-distube.on("addSong", (queue, song) => {
-    const embed = new MessageEmbed()
-      .setTitle(":ballot_box_with_check: | Dodano piosenke do kolejki")
-      .setDescription(`\`${song.name}\` - \`${song.formattedDuration}\` - Zarzucona przez ${song.user}`)
-      .setColor("RANDOM")
-      .setTimestamp()
-    queue.textChannel.send({
-      embeds: [embed]
-    })
-  })
-distube.on("error", (textChannel, e) => {
-    console.error(e)
-    textChannel.send(`An error encountered: ${e}`)
-  })
-  // .on("finish", queue => queue.textChannel.send("***No more song in queue. Leaving the channel***"))
-distube.on("finishSong", queue => {
-    const embed = new MessageEmbed()
-      .setDescription(`:white_check_mark: | Finished playing \`${queue.songs[0].name}\``)
-    queue.textChannel.send({
-      embeds: [embed]
-    })
-  })
-distube.on("disconnect", queue => {
-    const embed = new MessageEmbed()
-      .setDescription(":x: | Odłączyłem sie od kanału")
-    queue.textChannel.send({
-      embeds: [embed]
-    })
-  })
-distube.on("empty", queue => {
-    const embed = new MessageEmbed()
-      .setDescription(":x: | Kanał jest pusty. Wychodzę!")
-    queue.textChannel.send({
-      embeds: [embed]
-    })
-  })
-distube.on("initQueue", (queue) => {
-    queue.autoplay = false
-    queue.volume = 100
-  })
-
+client.on('interactionCreate', async interaction => {
+  if (!interaction.isCommand()) return;
+  if (interaction.commandName === 'giveway') {
+    if (interaction.options.getSubcommand() === 'reroll') {
+    const messageId = interaction.options.getString('it');
+    client.giveawaysManager.reroll(messageId).then(() => {
+        interaction.channel.send('Brawo! Przerolowano giveway!');
+    }).catch((err) => {
+        interaction.channel.send(`Wystąpił problem.\n\`${err}\``);
+    });
+  }
+  }
+})
+client.on('interactionCreate', async interaction => {
+  if (!interaction.isCommand()) return;
+  if (interaction.commandName === 'giveway') {
+    if (interaction.options.getSubcommand() === 'koniec') {
+    const messageId = interaction.options.getString('id');
+    client.giveawaysManager.end(messageId).then(() => {
+        interaction.channel.send('Brawo! Zakończono giveway!');
+    }).catch((err) => {
+        interaction.channel.send(`Wystąpił problem.\n\`${err}\``);
+    });
+    }
+  }
+})
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 client.login(token);
 
 client.on("debug", () => {});
