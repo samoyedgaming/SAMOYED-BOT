@@ -19,9 +19,6 @@ module.exports = {
 
     const user = interaction.options.getUser("użytkownik")
 
-    let permissions = interaction.member.permissions.has("MODERATE_MEMBERS")
-    if (!permissions) return interaction.reply("Nie masz permisji do użycia tej komendy!")
-
     const member = await interaction.guild.members.fetch(user.id)
 
     const embed = new MessageEmbed()
