@@ -149,58 +149,58 @@ client.on("interactionCreate", async (interaction) => {
   }
 })
 
-client.on("guildMemberAdd", async (member) => {
-  const Discord = require("discord.js")
-  const Canvas = require('canvas');
-  const canvas = Canvas.createCanvas(1100, 500);
-  const ctx = canvas.getContext('2d');
-  const background = await Canvas.loadImage("./Pliki/card.png")
-  ctx.drawImage(background, 0, 0, 1100, 500);
+// client.on("guildMemberAdd", async (member) => {
+//   const Discord = require("discord.js")
+//   const Canvas = require('canvas');
+//   const canvas = Canvas.createCanvas(1100, 500);
+//   const ctx = canvas.getContext('2d');
+//   const background = await Canvas.loadImage("./Pliki/card.png")
+//   ctx.drawImage(background, 0, 0, 1100, 500);
 
-  ctx.font = '32px Sans Not-Rotated'
-  ctx.fillStyle = "white";
-  ctx.textAlign = "center";
-  ctx.fillText(`Użytkownik #${member.guild.memberCount}`, 550, 450)
+//   ctx.font = '32px Sans Not-Rotated'
+//   ctx.fillStyle = "white";
+//   ctx.textAlign = "center";
+//   ctx.fillText(`Użytkownik #${member.guild.memberCount}`, 550, 450)
 
-  ctx.font = '38px Sans Not-Rotated'
-  ctx.fillStyle = "white";
-  ctx.textAlign = "center";
-  ctx.fillText(`Witaj na serwerze ${member.user.tag}`, 550, 400)
+//   ctx.font = '38px Sans Not-Rotated'
+//   ctx.fillStyle = "white";
+//   ctx.textAlign = "center";
+//   ctx.fillText(`Witaj na serwerze ${member.user.tag}`, 550, 400)
 
-  ctx.beginPath()
-  ctx.arc(550, 200, 150, 0, 2 * Math.PI);
-  ctx.strokeStyle = "#23272a";
-  ctx.lineWidth = 15;
-  ctx.closePath();
-  ctx.clip();
+//   ctx.beginPath()
+//   ctx.arc(550, 200, 150, 0, 2 * Math.PI);
+//   ctx.strokeStyle = "#23272a";
+//   ctx.lineWidth = 15;
+//   ctx.closePath();
+//   ctx.clip();
 
-  const avatar = await Canvas.loadImage(member.user.displayAvatarURL({
-    format: "jpg",
-    size: 1024,
-    dynamic: true
-  }));
-  ctx.drawImage(avatar, 400, 50, 300, 300);
-  const attachment = new Discord.MessageAttachment(
-    canvas.toBuffer())
-  member.guild.channels.cache.get("920985574729469962").send({
-      content: `Witaj <@${member.user.id}> na serwerze\n :dog:**Samoyed Gaming**:dog:`,
-      files: [attachment]
-    })
+//   const avatar = await Canvas.loadImage(member.user.displayAvatarURL({
+//     format: "jpg",
+//     size: 1024,
+//     dynamic: true
+//   }));
+//   ctx.drawImage(avatar, 400, 50, 300, 300);
+//   const attachment = new Discord.MessageAttachment(
+//     canvas.toBuffer())
+//   member.guild.channels.cache.get("920985574729469962").send({
+//       content: `Witaj <@${member.user.id}> na serwerze\n :dog:**Samoyed Gaming**:dog:`,
+//       files: [attachment]
+//     })
 
-    .catch((err) => console.log(err));
-});
+//     .catch((err) => console.log(err));
+// });
 
-client.on("guildMemberRemove", (member) => {
-  const embed = new MessageEmbed()
-    .setAuthor(`${member.user.tag} opuścił/a nasz serwer!`, member.user.avatarURL())
-    .setDescription("Przykro nam z tego powodu <:cry:925797239652220929>")
-    .setColor("FF0000");
-  member.guild.channels.cache.get("920985577506078730").send({
-      embeds: [embed]
-    })
+// client.on("guildMemberRemove", (member) => {
+//   const embed = new MessageEmbed()
+//     .setAuthor(`${member.user.tag} opuścił/a nasz serwer!`, member.user.avatarURL())
+//     .setDescription("Przykro nam z tego powodu <:cry:925797239652220929>")
+//     .setColor("FF0000");
+//   member.guild.channels.cache.get("920985577506078730").send({
+//       embeds: [embed]
+//     })
 
-    .catch((err) => console.log(err));
-});
+//     .catch((err) => console.log(err));
+// });
 
 client.on("ready", () => {
   console.log(chalk.green(`Zalogowano jako ${client.user.tag}!`));
@@ -457,7 +457,8 @@ client.on("ready", () => {
   client.channels.cache.get("920985622695514112").send({
     embeds: [embed]
   });
-
+  client.emit('guildMemberAdd', client.guilds.cache.get('770930426767998987').members.cache.get("622714126841675778"));
+  client.emit('guildMemberRemove', client.guilds.cache.get('770930426767998987').members.cache.get("622714126841675778"));
   client.settings.forEach((config, guildid) => {
     const {
       guilds
