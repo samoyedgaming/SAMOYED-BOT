@@ -457,8 +457,6 @@ client.on("ready", () => {
   client.channels.cache.get("920985622695514112").send({
     embeds: [embed]
   });
-  client.emit('guildMemberAdd', client.guilds.cache.get('770930426767998987').members.cache.get("622714126841675778"));
-  client.emit('guildMemberRemove', client.guilds.cache.get('770930426767998987').members.cache.get("622714126841675778"));
   client.settings.forEach((config, guildid) => {
     const {
       guilds
