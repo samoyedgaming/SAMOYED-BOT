@@ -32,9 +32,7 @@ module.exports = {
       .setDescription("Wybierz Płeć.")
       .setDescription("Regulamin")
       .addField("Chłopak", "- 👦")
-      .addField("Dziewczyna", "- 👧")
-      .addField("Autor", botauthor, true)
-      .addField("Wersja", botversion, true);
+      .addField("Dziewczyna", "- 👧");
 
     const first = new MessageActionRow()
       .addComponents(
@@ -62,9 +60,7 @@ module.exports = {
       .addField("Pc", "- 🖥️")
       .addField("PlayStation", "- 🎮")
       .addField("Xbox", "- 🕹️")
-      .addField("Nintendo", "- ⌨️")
-      .addField("Autor", botauthor, true)
-      .addField("Wersja", botversion, true);
+      .addField("Nintendo", "- ⌨️");
 
     const second = new MessageActionRow()
       .addComponents(
@@ -105,9 +101,7 @@ module.exports = {
       .addField("Scrap Mechanic", "- :regional_indicator_s:")
       .addField("Minecraft", "- :regional_indicator_m:")
       .addField("Grand Theft Auto 5", "- :regional_indicator_g:")
-      .addField("Counter Strike", "- :regional_indicator_z:")
-      .addField("Autor", botauthor, true)
-      .addField("Wersja", botversion, true);
+      .addField("Counter Strike", "- :regional_indicator_z:");
 
     const third = new MessageActionRow()
       .addComponents(

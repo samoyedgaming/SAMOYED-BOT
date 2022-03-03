@@ -23,9 +23,7 @@ module.exports = {
 
       .setTitle(botname)
       .setColor(0xb65307)
-      .setDescription(`Masz ${random} IQ`)
-      .addField("Autor", botauthor, true)
-      .addField("Wersja", botversion, true);
+      .setDescription(`Masz ${random} IQ`);
 
 
       interaction.reply({

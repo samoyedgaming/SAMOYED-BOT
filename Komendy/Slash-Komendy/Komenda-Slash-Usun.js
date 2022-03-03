@@ -32,9 +32,7 @@ module.exports = {
 
         .setTitle(botname)
         .setColor(0xb65307)
-        .setDescription(`Musisz podać liczbę wiadomości którą chcesz usunąć.`)
-        .addField("Autor", botauthor, true)
-        .addField("Wersja", botversion, true);
+        .setDescription(`Musisz podać liczbę wiadomości którą chcesz usunąć.`);
 
       return interaction.reply({
         embeds: [embed],
@@ -49,9 +47,7 @@ module.exports = {
         .setColor(0xb65307)
         .setDescription(
           `Liczba usuwanych wiadomości nie może być większa niż 100 ani mniejsza niż 2.`
-        )
-        .addField("Autor", botauthor, true)
-        .addField("Wersja", botversion, true);
+        );
 
       return interaction.reply({
         embeds: [embed],
@@ -65,9 +61,7 @@ module.exports = {
 
       .setTitle(botname)
       .setColor(0xb65307)
-      .setDescription(`Usunąłem ${amount} wiadomości.`)
-      .addField("Autor", botauthor, true)
-      .addField("Wersja", botversion, true);
+      .setDescription(`Usunąłem ${amount} wiadomości.`);
     interaction.reply({
       embeds: [embed],
       ephemeral: true

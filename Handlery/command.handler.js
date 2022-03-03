@@ -93,9 +93,7 @@ console.log(table.toString());
       const embed = new MessageEmbed()
         .setTitle(botname)
         .setColor(0xb65307)
-        .setDescription(`Nie można używać komend na DM.`)
-        .addField("Autor", botauthor, true)
-        .addField("Wersja", botversion, true);
+        .setDescription(`Nie można używać komend na DM.`);
 
       return channel.send({
         embeds: [embed]
@@ -107,9 +105,7 @@ console.log(table.toString());
         const embed = new MessageEmbed()
           .setTitle(botname)
           .setColor(0xb65307)
-          .setDescription(`Ta komenda jest dostępna tylko dla właściciela`)
-          .addField("Autor", botauthor, true)
-          .addField("Wersja", botversion, true);
+          .setDescription(`Ta komenda jest dostępna tylko dla właściciela`);
 
         return channel.send({
           embeds: [embed]
@@ -123,9 +119,7 @@ console.log(table.toString());
         const embed = new MessageEmbed()
           .setTitle(botname)
           .setColor(0xb65307)
-          .setDescription(`Nie masz wymaganej permisji do używania tej komendy`)
-          .addField("Autor", botauthor, true)
-          .addField("Wersja", botversion, true);
+          .setDescription(`Nie masz wymaganej permisji do używania tej komendy`);
 
         return channel.send({
           embeds: [embed]
@@ -140,9 +134,7 @@ console.log(table.toString());
         .setDescription(
           `Nie podałeś argumentu. Poprawne użycie komendy: ${prefix}${cmdName} ${cmd.usage}.`,
           false
-        )
-        .addField("Autor", botauthor, true)
-        .addField("Wersja", botversion, true);
+        );
 
       return channel.send({
         embeds: [embed]
@@ -169,9 +161,7 @@ console.log(table.toString());
             `Proszę czekać ${timeLeft.toFixed(
               0
             )} sekund zanim użyjesz komendy \`${prefix}${cmdName}\` ponownie.`
-          )
-          .addField("Autor", botauthor, true)
-          .addField("Wersja", botversion, true);
+          );
 
         return channel.send({
           embeds: [embed]
@@ -189,9 +179,7 @@ console.log(table.toString());
       const embed = new MessageEmbed()
         .setTitle(botname)
         .setColor(0xb65307)
-        .setDescription(`Wystąpił problem spróbuj ponownie póżniej.`)
-        .addField("Autor", botauthor, true)
-        .addField("Wersja", botversion, true);
+        .setDescription(`Wystąpił problem spróbuj ponownie póżniej.`);
 
       channel.send({
         embeds: [embed]

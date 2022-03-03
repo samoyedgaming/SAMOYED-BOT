@@ -22,10 +22,7 @@ module.exports = {
       .setColor(0xb65307)
       .setDescription(
         "LINK NIGDY NIE WYGAŚNIE:   --->  https://samoyedgaming.ga <--- ZAPRASZAMY WSZYSTKICH! :heart:"
-      )
-      .addField("Autor", botauthor, true)
-      .addField("Wersja", botversion, true);
-
+      );
     interaction.reply({
       embeds: [embed],
       ephemeral: true

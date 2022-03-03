@@ -64,7 +64,7 @@
     "ucfirst": "^1.0.0",
     "youtube-dl-exec": "^2.0.2",
     "yt-channel-info": "^2.2.0",
-    "yt-search": "^0.1.1",
+    "yt-search": "^2.10.3",
     "ytdl-core": "^4.10.1",
     "ytpl": "^2.2.3",
     "ytsearch": "^1.0.4",

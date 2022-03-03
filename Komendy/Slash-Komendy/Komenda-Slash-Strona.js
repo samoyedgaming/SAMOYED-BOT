@@ -25,9 +25,7 @@ module.exports = {
       .setColor(0xb65307)
       .setDescription(
         "Moja własna strona internetowa: https://franek.ga."
-      )
-      .addField("Autor", botauthor, true)
-      .addField("Wersja", botversion, true);
+      );
 
     interaction.reply({
       embeds: [embed],

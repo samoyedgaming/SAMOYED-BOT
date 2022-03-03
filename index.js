@@ -451,9 +451,7 @@ client.on("ready", () => {
 
     .setTitle(botname)
     .setColor(0xb65307)
-    .setDescription(`Zostałem poprawnie załadowany.`)
-    .addField("Autor", botauthor, true)
-    .addField("Wersja", botversion, true);
+    .setDescription(`Zostałem poprawnie załadowany.`);
   client.channels.cache.get("920985622695514112").send({
     embeds: [embed]
   });

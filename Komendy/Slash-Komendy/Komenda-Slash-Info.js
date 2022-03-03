@@ -21,10 +21,7 @@ module.exports = {
 
       .setTitle(botname)
       .setColor(0xb65307)
-      .setDescription(botdescription)
-      .addField("Autor", botauthor, true)
-      .addField("Wersja", botversion, true);
-
+      .setDescription(botdescription);
     interaction.reply({
       embeds: [embed],
       ephemeral: true

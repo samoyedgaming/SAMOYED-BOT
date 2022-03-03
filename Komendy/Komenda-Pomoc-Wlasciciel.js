@@ -40,10 +40,7 @@ module.exports = {
       .addField(`${prefix}info`, info)
       .addField(`${prefix}pomoc`, pomoc)
       .addField(`${prefix}usun <liczba> | <liczba>`, usun)
-      .addField(`${prefix}link`, link)
-
-      .addField("Autor", botauthor, true)
-      .addField("Wersja", botversion, true);
+      .addField(`${prefix}link`, link);
 
     msg.channel.send({
       embeds: [embed]

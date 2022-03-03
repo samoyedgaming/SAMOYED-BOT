@@ -20,36 +20,28 @@ module.exports = {
       .setColor(0xb65307)
       .setDescription(
         "Musisz dołączyć na kanał głosowy!"
-      )
-      .addField("Autor", botauthor, true)
-      .addField("Wersja", botversion, true);
+      );
     const embed1 = new MessageEmbed()
 
       .setTitle(botname)
       .setColor(0xb65307)
       .setDescription(
         "Musisz być na tym samym kanale co ja!"
-      )
-      .addField("Autor", botauthor, true)
-      .addField("Wersja", botversion, true);
+      );
     const embed2 = new MessageEmbed()
 
       .setTitle(botname)
       .setColor(0xb65307)
       .setDescription(
         "Znalazłem twoją piosenkę!"
-      )
-      .addField("Autor", botauthor, true)
-      .addField("Wersja", botversion, true);
+      );
     const embed3 = new MessageEmbed()
 
       .setTitle(botname)
       .setColor(0xb65307)
       .setDescription(
         "Aktualnie nic nie gram!"
-      )
-      .addField("Autor", botauthor, true)
-      .addField("Wersja", botversion, true);
+      );
     const {
       DisTube
     } = require("distube")

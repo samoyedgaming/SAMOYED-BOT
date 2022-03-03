@@ -35,9 +35,7 @@ module.exports = {
       .addField(`/usun <liczba> | <liczba>`, usun)
       .addField(`/link`, link)
       .addField(`/strona`, str)
-      .addField(`/ile-mam-iq`, iq)
-      .addField("Autor", botauthor, true)
-      .addField("Wersja", botversion, true);
+      .addField(`/ile-mam-iq`, iq);
 
     interaction.reply({
       embeds: [embed],
