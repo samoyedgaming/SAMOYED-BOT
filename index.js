@@ -18,8 +18,7 @@ const client = new Client({
 const {
   token,
   prefix,
-  mongoDB,
-  botname
+  mongoDB
 } = require("./Config/config.js")
 
 const commandHandler = require("./Handlery/command.handler.js")
@@ -35,8 +34,6 @@ const {
 const INTERACTION_CREATE = require('discord.js/src/client/websocket/handlers/INTERACTION_CREATE');
 
 const botname = "Samoyed Bot"
-
-
 
 const log = console.log
 
