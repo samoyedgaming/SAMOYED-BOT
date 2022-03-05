@@ -18,7 +18,8 @@ const client = new Client({
 const {
   token,
   prefix,
-  mongoDB
+  mongoDB,
+  botname
 } = require("./Config/config.js")
 
 const commandHandler = require("./Handlery/command.handler.js")
@@ -33,8 +34,6 @@ const {
 } = require("@discordjs/rest");
 const INTERACTION_CREATE = require('discord.js/src/client/websocket/handlers/INTERACTION_CREATE');
 
-const botauthor = 'Samoyed Franek#9264'
-const botversion = 'v1.0 beta'
 const botname = "Samoyed Bot"
 
 
@@ -97,7 +96,7 @@ client.on("interactionCreate", async (interaction) => {
               allow: ["VIEW_CHANNEL", "SEND_MESSAGES"]
             },
             {
-              id: everyone,
+              id: 920985535571435552,
               deny: ["VIEW_CHANNEL", "SEND_MESSAGES"]
             }
           ]

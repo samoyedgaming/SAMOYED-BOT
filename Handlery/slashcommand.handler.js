@@ -1,7 +1,7 @@
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const { token } = require(`../Config/config.js`);
-const fs = require('fs');
+const fs = require('node:fs');
 
 const commands = [];
 const commandFiles = fs.readdirSync("./Komendy/Slash-Komendy").filter(file => file.startsWith('Komenda-Slash'));
