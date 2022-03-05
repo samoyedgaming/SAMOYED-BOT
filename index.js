@@ -86,9 +86,10 @@ client.on("interactionCreate", async (interaction) => {
       const everyone = interaction.guild.roles.cache.find(r => r.id === "922834801008979968")
       if (!interaction.client.channels.cache.find(c => c.name === `ticket-${interaction.user.id}`)) {
         interaction.guild.channels.create(`ticket-${interaction.user.id}`, {
-          type: "GUILD_TEXT",
+          type: "text",
           parent: "926160870550171670",
-          permissionsOverwrites: [{
+          permissionOverwrittes: [
+            {
               id: interaction.user.id,
               allow: ["VIEW_CHANNEL", "SEND_MESSAGES"]
             },
