@@ -93,7 +93,7 @@ client.on("interactionCreate", async (interaction) => {
               allow: ["VIEW_CHANNEL", "SEND_MESSAGES"]
             },
             {
-              id: 920985535571435552,
+              id: everyone,
               deny: ["VIEW_CHANNEL", "SEND_MESSAGES"]
             }
           ]
@@ -145,6 +145,13 @@ client.on("interactionCreate", async (interaction) => {
   }
 })
 
+client.on("interactionCreate", async (interaction) => {
+  if (interaction.isButton()) {
+    if (interaction.customId === "close") {
+      interaction.channel.delete
+  }
+}
+});
 // client.on("guildMemberAdd", async (member) => {
 //   const Discord = require("discord.js")
 //   const Canvas = require('canvas');
