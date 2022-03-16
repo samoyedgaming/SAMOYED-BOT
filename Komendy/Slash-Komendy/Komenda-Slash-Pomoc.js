@@ -29,13 +29,7 @@ module.exports = {
 
       .setTitle(botname)
       .setColor(0xb65307)
-      .setDescription("Oto Lista komend:")
-      .addField(`/info`, info)
-      .addField(`/pomoc`, pomoc)
-      .addField(`/usun <liczba> | <liczba>`, usun)
-      .addField(`/link`, link)
-      .addField(`/strona`, str)
-      .addField(`/ile-mam-iq`, iq);
+      .setDescription("Wszystkie komendy są na tej stronie: https://smydbot.ga (Jeszcze nie działa)")
 
     interaction.reply({
       embeds: [embed],

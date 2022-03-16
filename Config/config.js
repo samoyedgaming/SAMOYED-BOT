@@ -11,7 +11,6 @@ const {
   },
   MessageEmbed,
 } = require("discord.js");
-const { guildOnly } = require("../Komendy/Slash-Komendy/Komenda-Slash-Link");
 
 module.exports = {
   token: process.env.TOKEN,
