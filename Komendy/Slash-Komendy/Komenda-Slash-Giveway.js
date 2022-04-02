@@ -24,7 +24,7 @@ module.exports = {
             subcommand
             .setName('start')
             .setDescription('Startuje giveway')
-            .addStringOption(option => option.setName('czas').setDescription('Czas losowania 6000 = 60 sekund').setRequired(true))
+            .addStringOption(option => option.setName('czas').setDescription('Czas losowania 60000 = 60 sekund').setRequired(true))
             .addIntegerOption(option => option.setName('wygrani').setDescription('Ilość wygranych').setRequired(true))
             .addStringOption(option => option.setName('nagroda').setDescription('Co do wygrania').setRequired(true)))
         .addSubcommand(subcommand =>
