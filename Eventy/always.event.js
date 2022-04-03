@@ -10,7 +10,8 @@ module.exports = {
         //wiadomosc pierwsza
         client.user.setActivity("Programuje 24/7", {
             type: "STREAMING",
-            url: "https://www.twitch.tv/samoyedfranek"
+            url: "https://www.twitch.tv/samoyedfranek",
+            status: "dnd"
         });
         const embed = new MessageEmbed()
 
