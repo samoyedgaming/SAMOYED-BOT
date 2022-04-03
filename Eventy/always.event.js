@@ -11,55 +11,11 @@ module.exports = {
         client.user.setPresence({
             status: 'dnd'
         })
-        setInterval(async () => {
-            setTimeout(function () {
-                client.user.setPresence({
-                    activities: [{
-                        name: `Aktualnie nic nie robię`,
-                        type: `PLAYING`
-                    }]
-                });
-            }, 15000);
-            setTimeout(function () {
-                client.user.setPresence({
-                    activities: [{
-                        name: `Serdecznie cię zapraszam na https://discord.gg/tPrEPhCB38`,
-                        type: `PLAYING`
-                    }]
-                });
-            }, 15000);
-            setTimeout(function () {
-                client.user.setPresence({
-                    activities: [{
-                        name: `Programuje 24/7`,
-                        type: `STREAMING`
-                    }]
-                });
-            }, 15000);
-            setTimeout(function () {
-                client.user.setPresence({
-                    activities: [{
-                        name: `Mata - Szafir`,
-                        type: `LISTENING`
-                    }]
-                });
-            }, 15000);
-            setTimeout(function () {
-                client.user.setPresence({
-                    activities: [{
-                        name: `Mata - Schodki`,
-                        type: `LISTENING`
-                    }]
-                });
-            }, 15000);
-            setTimeout(function () {
-                client.user.setPresence({
-                    activities: [{
-                        name: `Mata - Prawy do lewego`,
-                        type: `LISTENING`
-                    }]
-                });
-            }, 15000);
+        client.user.setPresence({
+            activities: [{
+                name: `Programuje 24/7`,
+                type: `STREAMING`
+            }]
         });
         const embed = new MessageEmbed()
 
