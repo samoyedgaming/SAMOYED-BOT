@@ -30,7 +30,6 @@ module.exports = {
       .setTitle(botname)
       .setColor(0xb65307)
       .setDescription("Wybierz Płeć.")
-      .setDescription("Regulamin")
       .addField("Chłopak", "- 👦")
       .addField("Dziewczyna", "- 👧");
 
