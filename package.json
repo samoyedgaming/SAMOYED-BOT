@@ -62,6 +62,8 @@
     "nodemon": "^2.0.15",
     "npm": "^7.24.1",
     "opusscript": "^0.0.8",
+    "puppeteer": "^13.5.2",
+    "puppeteer-core": "^13.5.2",
     "tweetnacl": "^1.0.3",
     "ucfirst": "^1.0.0",
     "util": "^0.12.4",

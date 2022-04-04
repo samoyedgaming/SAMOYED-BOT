@@ -24,7 +24,7 @@ module.exports = {
   async run(client, interaction) {
     let permissions = interaction.member.permissions.has("MODERATE_MEMBERS")
     if (!permissions) return interaction.reply("Nie masz permisji do użycia tej komendy!")
-    const channel = interaction.channel 
+    const channel = interaction.channel
     const amount = interaction.options.getNumber('liczba');
 
     if (!Number.isInteger(amount)) {

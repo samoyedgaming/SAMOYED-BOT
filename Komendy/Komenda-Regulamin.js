@@ -24,7 +24,7 @@ module.exports = {
   guildOnly: true,
 
   async run(msg, reaction, channel) {
-    
+
     const embed = new MessageEmbed()
 
       .setTitle(botname)

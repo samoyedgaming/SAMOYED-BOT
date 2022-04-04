@@ -26,9 +26,9 @@ module.exports = {
       .setDescription(`Masz ${random} IQ`);
 
 
-      interaction.reply({
-        embeds: [embed],
-        ephemeral: true
+    interaction.reply({
+      embeds: [embed],
+      ephemeral: true
     })
   },
 };

@@ -55,21 +55,29 @@ module.exports = {
     const queue = distube.getQueue(interaction)
     const voiceChannel = interaction.member.voice.channel
     if (!voiceChannel) {
-        return interaction.reply({ embeds: [embed]})
+      return interaction.reply({
+        embeds: [embed]
+      })
     }
     if (!queue) {
-        return interaction.reply({ embeds: [embed3] })
+      return interaction.reply({
+        embeds: [embed3]
+      })
     }
     if (interaction.member.guild.me.voice.channelId !== interaction.member.voice.channelId) {
-        return interaction.reply({ embeds: [embed1]})
+      return interaction.reply({
+        embeds: [embed1]
+      })
     }
     try {
-        await distube.skip(interaction)
-        await interaction.reply("***Pominięto***")
-        const message = await interaction.fetchReply()
-        await message.react("⏭")
+      await distube.skip(interaction)
+      await interaction.reply("***Pominięto***")
+      const message = await interaction.fetchReply()
+      await message.react("⏭")
     } catch {
-        interaction.reply({ content: "Nie ma następnej piosenki"})
+      interaction.reply({
+        content: "Nie ma następnej piosenki"
+      })
     }
   }
 }

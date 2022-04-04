@@ -14,6 +14,7 @@ module.exports = {
         client.user.setPresence({
             activities: [{
                 name: `Programuje 24/7`,
+                url: "https://www.twitch.tv/samoyedfranek",
                 type: `STREAMING`
             }]
         });

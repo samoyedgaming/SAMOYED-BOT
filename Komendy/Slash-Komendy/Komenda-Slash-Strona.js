@@ -18,7 +18,7 @@ module.exports = {
     .setName("strona")
     .setDescription("Wysyła strone serwera"),
 
-    async run(client, interaction) {
+  async run(client, interaction) {
     const embed = new MessageEmbed()
 
       .setTitle(botname)

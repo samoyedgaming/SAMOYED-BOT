@@ -5,7 +5,6 @@ const {
   SlashCommandBuilder
 } = require('@discordjs/builders');
 const Discord = require("discord.js")
-const snipe = require("../../Schematy/snipeSchema.js")
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -18,7 +17,8 @@ module.exports = {
 
     interaction.reply({
       content: `<@${interaction.user.id}>, zamknął kanał`,
-    }).then(s => {{
+    }).then(s => {
+      {
         setTimeout(function () {
           interaction.channel.delete()
         }, 5000);

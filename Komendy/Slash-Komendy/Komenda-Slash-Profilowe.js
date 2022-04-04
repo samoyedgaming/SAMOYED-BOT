@@ -23,7 +23,10 @@ module.exports = {
 
     const embed = new MessageEmbed()
       .setTitle(`Avatar użytkownika:\n ${member.user.tag}`)
-      .setImage(member.user.displayAvatarURL({ size: 1024, dynamic: true }))
+      .setImage(member.user.displayAvatarURL({
+        size: 1024,
+        dynamic: true
+      }))
       .setColor("RANDOM")
       .setTimestamp()
 
