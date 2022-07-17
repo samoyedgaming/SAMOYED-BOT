@@ -95,7 +95,7 @@ client.on("messageCreate", async (message) => {
      wait(1000);
      message.channel.send({ embeds: [dmNotice] });
   }
-  if (message.content.includes("<@699240540385968218>")) {
+  if (message.content.includes("<@805872253282811946>")) {
       message.reply({
           embeds: [
               {
