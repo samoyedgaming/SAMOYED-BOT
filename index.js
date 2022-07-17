@@ -52,6 +52,73 @@ for (const file of slashcommandsFiles) {
   const slash = require(`./Komendy/Slash-Komendy/${file}`)
   client.slashcommands.set(slash.data.name, slash)
 }
+
+
+client.on("interactionCreate", async (interaction) => {
+  const command = client.commands.get(interaction.commandName);
+  if (!interaction.isCommand()) return;
+  if (!interaction.guild) {
+      interaction.reply({ embeds: [dmNotice] });
+  }
+  if (!command) return;
+  try {
+     command.execute(interaction);
+  } catch (error) {
+      console.error(error);
+     interaction.reply({
+          embeds: [
+              {
+                  color: "RANDOM",
+                  title: "**Wystąpił problem**",
+                  description:
+                      "Wystąpił problem podczas wywoływania komendy!\n`" +
+                      error +
+                      "`",
+                  timestamp: new Date(),
+                  footer: {
+                      text: "Stworzony z ❤️ przez 🌻Samoyed Franek ☁#9264",
+                  },
+              },
+          ],
+          content: "",
+          ephemeral: true,
+      });
+  }
+});
+
+client.on("messageCreate", async (message) => {
+  const wait = require("node:timers/promises").setTimeout;
+  if (message.author.bot) return;
+  if (message.channel.type == "DM") {
+     wait(500);
+     message.channel.sendTyping();
+     wait(1000);
+     message.channel.send({ embeds: [dmNotice] });
+  }
+  if (message.content.includes("<@699240540385968218>")) {
+      message.reply({
+          embeds: [
+              {
+                  color: "RANDOM",
+                  title: "**Potrzebujesz pomocy?**",
+                  description:
+                      "Wpisz `/` w polu wiadomości aby zobaczyć wszystkie dostępne komendy !",
+                  fields: [
+                      {
+                          name: "Masz inne pytania?",
+                          value: "Dołącz do mojego discorda [Klikając tutaj!](https://discord.gg/tPrEPhCB38)",
+                      },
+                  ],
+                  timestamp: new Date(),
+                  footer: {
+                      text: "Stworzony z ❤️ przez 🌻Samoyed Franek ☁#9264",
+                  },
+              },
+          ],
+      });
+  }
+});
+
 client.login(token);
 
 client.on("debug", () => {});
