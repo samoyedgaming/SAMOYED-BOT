@@ -39,7 +39,7 @@ module.exports = {
     const attachment = new Discord.MessageAttachment(
       canvas.toBuffer())
     member.guild.channels.cache.get("920985574729469962").send({
-        content: `Witaj <@${member.user.id}> na serwerze\n :dog:**Samoyed Gaming**:dog:`,
+        content: `Witaj <@${member.user.id}> na serwerze\n **Samoyed Studio**`,
         files: [attachment]
       })
 
