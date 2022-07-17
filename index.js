@@ -111,7 +111,7 @@ client.on("messageCreate", async (message) => {
                   ],
                   timestamp: new Date(),
                   footer: {
-                      text: "Stworzony z ❤️ przez 🌻Samoyed Franek ☁#9264",
+                      text: "Stworzony z ❤️ przez 🌻Samoyed Franek ☁#2137",
                   },
               },
           ],
