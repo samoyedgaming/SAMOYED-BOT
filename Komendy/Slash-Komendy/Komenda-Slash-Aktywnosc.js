@@ -19,11 +19,12 @@ module.exports = {
             option.setName('nazwa')
             .setDescription('Nazwa aktywności')
             .setRequired(true)
-            .addChoice('Youtube', 'youtube')
-            .addChoice('Betrayal', 'betrayal')
-            .addChoice('Fishing', 'fishing')
-            .addChoice('Sketchheads', 'sketchheads')
-            .addChoice('Wordsnack', 'wordsnack')),
+            .addChoices(
+                { name: "Youtube", value: "youtube" },
+                { name: "Sketchheads", value: "sketchheads" },
+                { name: "Wordsnack", value: "wordsnack" }
+            )
+    ),
     async run(client, interaction) {
         const embed = new MessageEmbed()
 
