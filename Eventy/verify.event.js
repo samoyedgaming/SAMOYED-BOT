@@ -11,7 +11,7 @@ module.exports = {
     name: "ready",
 
     run(client, msg) {
-        client.channels.cache.get("920985565682360320").messages.fetch("998267248466739242").then(msg => {
+        client.channels.cache.get("920985565682360320").messages.fetch("998558394489249834").then(msg => {
             let ifilter = i => !i.user.bot;
             const collector = msg.createMessageComponentCollector({
                 filter: ifilter
