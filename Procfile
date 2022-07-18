@@ -1,1 +1,1 @@
-worker: npm rebuild & node .
+worker: npm rebuild & npm start

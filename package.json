@@ -4,7 +4,7 @@
   "description": "Bot Franka",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js --ignore giveaways.json",
+    "start": "node index.js --ignore giveaways.json",
     "update": "node ./Handlery/slashcommand.handler.js"
   },
   "nodemonConfig": {
